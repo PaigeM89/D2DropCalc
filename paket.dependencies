@@ -10,6 +10,14 @@ nuget altcover ~> 7
 nuget Thoth.Json.Net
 nuget FsToolkit.ErrorHandling
 
+group Server
+    storage: none
+    source https://www.nuget.org/api/v2
+    source https://api.nuget.org/v3/index.json
+
+    nuget Giraffe 5.0.0-rc-6
+    nuget Giraffe.ViewEngine
+
 // [ FAKE GROUP ]
 group Build
     storage: none

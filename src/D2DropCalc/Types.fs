@@ -84,6 +84,20 @@ module Items =
                 "reqDex",  Encode.option Encode.int this.ReqDex
             ]
 
+        member this.EncodeMinimal() =
+            Encode.object [
+                "n", Encode.string this.Name
+                "t", Encode.string this.Type
+                "c", Encode.string this.Code
+                "r", Encode.option Encode.int this.Rarity
+                "s", Encode.option Encode.int this.Speed
+                "ilvl", Encode.option Encode.int this.ItemLevel
+                "rlvl", Encode.option Encode.int this.ReqLevel
+                "ms", Encode.option Encode.int this.MaxSockets
+                "rs",  Encode.option Encode.int this.ReqStrength
+                "rd",  Encode.option Encode.int this.ReqDex
+            ]
+
         static member Decode() : Decoder<Weapon> =
             Decode.object (fun get ->
                 {
@@ -133,7 +147,19 @@ module Items =
                 "speedPenalty", Encode.option Encode.int this.SpeedPenalty
             ]
 
-        static member Decode() : Decoder<Armor> =
+        member this.EncodeMinimal() =
+            Encode.object [
+                "n", Encode.string this.Name
+                "c", Encode.string this.Code
+                "r", Encode.option Encode.int this.Rarity
+                "ilvl", Encode.option Encode.int this.ItemLevel
+                "rlvl", Encode.option Encode.int this.ReqLevel
+                "rs", Encode.option Encode.int this.ReqStrength
+                "so", Encode.option Encode.int this.MaxSockets
+                "sp", Encode.option Encode.int this.SpeedPenalty
+            ]
+
+        static member Decoder() : Decoder<Armor> =
             Decode.object (fun get -> 
                 {
                     Name = get.Required.Field "name" Decode.string
@@ -394,14 +420,23 @@ module ItemTree =
         member this.Encode() = Encode.Auto.toString(0, this)
         static member Decode str = Decode.Auto.fromString<TreasureClassNode> str
 
-    module Loading =
-        open System
-        open System.IO
+module Loading =
+    open System
+    open System.IO
 
-        let loadTreasureClassesFromPath path =
-            let lines = File.ReadAllLines path
-            [ 
-                for line in lines do 
-                    if line <> "" then
-                        TreasureClassNode.Decode line
-            ]
+    let loadTreasureClassesFromPath path =
+        let lines = File.ReadAllLines path
+        [ 
+            for line in lines do 
+                if line <> "" then
+                    ItemTree.TreasureClassNode.Decode line
+        ]
+
+    let loadArmorsFromPath path =
+        let lines = File.ReadAllLines path
+        let decoder = Items.Armor.Decoder()
+        [
+            for line in lines do
+                if line <> "" then
+                    Decode.fromString decoder line
+        ]
