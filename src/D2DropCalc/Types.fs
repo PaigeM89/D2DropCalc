@@ -33,7 +33,7 @@ module Items =
                 "rarity", Encode.option Encode.int this.Rarity
             ]
 
-        member this.Decode() =
+        static member Decode() : Decoder<UniqueItem> =
             Decode.object (fun get ->
                 {
                     Name = get.Required.Field "name" Decode.string
@@ -84,7 +84,7 @@ module Items =
                 "reqDex",  Encode.option Encode.int this.ReqDex
             ]
 
-        member this.Decode str =
+        static member Decode() : Decoder<Weapon> =
             Decode.object (fun get ->
                 {
                     Name = get.Required.Field "name" Decode.string
@@ -132,6 +132,19 @@ module Items =
                 "sockets", Encode.option Encode.int this.MaxSockets
                 "speedPenalty", Encode.option Encode.int this.SpeedPenalty
             ]
+
+        static member Decode() : Decoder<Armor> =
+            Decode.object (fun get -> 
+                {
+                    Name = get.Required.Field "name" Decode.string
+                    Code = get.Required.Field "code" Decode.string
+                    Rarity = get.Optional.Field "rarity" Decode.int
+                    ItemLevel = get.Optional.Field "itemLevel" Decode.int
+                    ReqLevel = get.Optional.Field "reqLevel" Decode.int
+                    ReqStrength = get.Optional.Field "reqStrength" Decode.int
+                    MaxSockets = get.Optional.Field "sockets" Decode.int
+                    SpeedPenalty = get.Optional.Field "speedPenalty" Decode.int
+                })
 
 /// Types relating to the recursive item tree
 module ItemTree =
@@ -307,24 +320,55 @@ module ItemTree =
             | _ -> None
 
     type ChanceModifiers = {
-        Unique : int
-        Set : int
-        Rare : int
-        Magic : int
+        Unique : int option
+        Set : int option
+        Rare : int option
+        Magic : int option
     } with
-        static member (+) (cm1, cm2) = {
-            Unique = Math.Max(cm1.Unique, cm2.Unique)
-            Set = Math.Max(cm1.Set, cm2.Set)
-            Rare = Math.Max(cm1.Rare, cm2.Rare)
-            Magic = Math.Max(cm1.Magic, cm2.Magic)
-        }
+        // static member (+) (cm1, cm2) =
+        //     match cm1, cm2 with
+        //     | Some cm1, Some cm2 ->
+        //         let max (io1 : int option) io2 =
+        //             match io1, io2 with
+        //             | Some x, Some y -> Math.Max(x, y) |> Some
+        //             | Some x, None -> x |> Some
+        //             | None, Some y  -> y |> Some
+        //             | None, None -> None
+        //         {
+        //             Unique = max cm1.Unique cm2.Unique
+        //             Set = max cm1.Set cm2.Set
+        //             Rare = max cm1.Rare cm2.Rare
+        //             Magic = max cm1.Magic cm2.Magic
+        //         } |> Some
+        //     | Some cm1, None -> cm1 |> Some
+        //     | None, Some cm2 -> cm2 |> Some
+        //     | None, None -> None
 
         static member Empty = {
-            Unique = 0
-            Set = 0
-            Rare = 0
-            Magic = 0
+            Unique = None
+            Set = None
+            Rare = None
+            Magic = None
         }
+
+    let addChances cm1 cm2 =
+        match cm1, cm2 with
+        | Some cm1, Some cm2 ->
+            let max (io1 : int option) io2 =
+                match io1, io2 with
+                | Some x, Some y -> Math.Max(x, y) |> Some
+                | Some x, None -> x |> Some
+                | None, Some y  -> y |> Some
+                | None, None -> None
+            {
+                Unique = max cm1.Unique cm2.Unique
+                Set = max cm1.Set cm2.Set
+                Rare = max cm1.Rare cm2.Rare
+                Magic = max cm1.Magic cm2.Magic
+            } |> Some
+        | Some cm1, None -> cm1 |> Some
+        | None, Some cm2 -> cm2 |> Some
+        | None, None -> None
 
     /// A treasure class containing other treasure classes
     /// AND/OR containing item selection leafs
@@ -338,36 +382,26 @@ module ItemTree =
         /// The type of this treasure class.
         TreasureClassType : TreasureClassType option
         /// Modifiers on the chance of dropping higher rarity items (by magic find, not by base).
-        Chances : ChanceModifiers
+        /// Not all treasure classes have a chance modifier, and not all chance modifiers have all values
+        Chances : ChanceModifiers option
     } with
         /// the sum of all probabilities in this node, excluding nodrop
-        member this.SumNodesProbability = (this.Nodes |> List.sumBy (fun x -> x.Probability))
+        member this.SumNodesProbability() = (this.Nodes |> List.sumBy (fun x -> x.Probability))
         /// the sum of all probabilities in this node, INCLUDING nodrop
-        member this.SumAllProbability =
-            (this.Nodes |> List.sumBy (fun x -> x.Probability)) + this.NoDrop
+        member this.SumAllProbability() =
+            this.SumNodesProbability() + this.NoDrop
+
+        member this.Encode() = Encode.Auto.toString(0, this)
+        static member Decode str = Decode.Auto.fromString<TreasureClassNode> str
 
     module Loading =
         open System
         open System.IO
-        open Newtonsoft.Json
-
-        [<Literal>]
-        let path = "/Users/maxpaige/git/personal/d2data/formatted-json/custom-treasure-classes.json"
-
-        let loadCustomTreasureClasses() =
-            let lines = File.ReadAllLines path
-            [ 
-                for line in lines do 
-                    if line <> "" then
-                        let tcn = JsonConvert.DeserializeObject<TreasureClassNode> line
-                        yield tcn.Name, tcn
-            ] |> Map.ofList
 
         let loadTreasureClassesFromPath path =
             let lines = File.ReadAllLines path
             [ 
                 for line in lines do 
                     if line <> "" then
-                        let tcn = JsonConvert.DeserializeObject<TreasureClassNode> line
-                        yield tcn.Name, tcn
-            ] |> Map.ofList
+                        TreasureClassNode.Decode line
+            ]

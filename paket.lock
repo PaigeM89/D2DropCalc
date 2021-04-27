@@ -8,6 +8,8 @@ NUGET
     Fable.Core (3.2.6) - restriction: && (< net46) (>= netstandard2.0)
       FSharp.Core (>= 4.7.2) - restriction: >= netstandard2.0
     FSharp.Core (5.0)
+    FsToolkit.ErrorHandling (2.2)
+      FSharp.Core (>= 4.6.2) - restriction: >= netstandard2.0
     Microsoft.Build.Tasks.Git (1.0) - copy_local: true
     Microsoft.CodeCoverage (16.8) - restriction: || (>= net45) (>= netcoreapp2.1)
     Microsoft.NET.Test.Sdk (16.8)

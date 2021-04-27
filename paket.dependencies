@@ -8,6 +8,7 @@ nuget YoloDev.Expecto.TestSdk 0.9.2
 nuget Microsoft.NET.Test.Sdk 16.8.0
 nuget altcover ~> 7
 nuget Thoth.Json.Net
+nuget FsToolkit.ErrorHandling
 
 // [ FAKE GROUP ]
 group Build

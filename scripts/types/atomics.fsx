@@ -87,7 +87,7 @@ type AtomicTreasureClass = {
 
     member this.Encode() = Encode.Auto.toString(0, this)
 
-    static member Decode str = Decode.Auto.fromString<AtomicTreasureClass>(str, caseStrategy = CamelCase)
+    static member Decode str = Decode.Auto.fromString<AtomicTreasureClass>(str, caseStrategy = PascalCase)
 
 type AtomicMap = Map<string, AtomicTreasureClass>
 
