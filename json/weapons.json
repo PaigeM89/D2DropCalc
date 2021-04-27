@@ -1,0 +1,306 @@
+{"name":"Hand Axe","type":"hax","code":"axe","rarity":3,"speed":null,"itemLevel":3,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Axe","type":"axe","code":"axe","rarity":4,"speed":10,"itemLevel":7,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Double Axe","type":"2ax","code":"axe","rarity":4,"speed":10,"itemLevel":13,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Military Pick","type":"mpi","code":"axe","rarity":4,"speed":-10,"itemLevel":19,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"War Axe","type":"wax","code":"axe","rarity":4,"speed":null,"itemLevel":25,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Large Axe","type":"lax","code":"axe","rarity":4,"speed":-10,"itemLevel":6,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Broad Axe ","type":"bax","code":"axe","rarity":4,"speed":null,"itemLevel":12,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Battle Axe","type":"btx","code":"axe","rarity":4,"speed":10,"itemLevel":17,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Great Axe","type":"gax","code":"axe","rarity":4,"speed":-10,"itemLevel":23,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Giant Axe","type":"gix","code":"axe","rarity":4,"speed":10,"itemLevel":27,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Wand","type":"wnd","code":"wand","rarity":1,"speed":null,"itemLevel":2,"reqLevel":null,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Yew Wand","type":"ywn","code":"wand","rarity":1,"speed":10,"itemLevel":12,"reqLevel":null,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Bone Wand","type":"bwn","code":"wand","rarity":1,"speed":-20,"itemLevel":18,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Grim Wand","type":"gwn","code":"wand","rarity":1,"speed":null,"itemLevel":26,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Club","type":"clb","code":"club","rarity":1,"speed":-10,"itemLevel":1,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Scepter","type":"scp","code":"scep","rarity":2,"speed":null,"itemLevel":3,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Grand Scepter","type":"gsc","code":"scep","rarity":4,"speed":10,"itemLevel":15,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"War Scepter","type":"wsp","code":"scep","rarity":4,"speed":-10,"itemLevel":21,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Spiked Club","type":"spc","code":"club","rarity":3,"speed":null,"itemLevel":4,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Mace","type":"mac","code":"mace","rarity":4,"speed":null,"itemLevel":8,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Morning Star","type":"mst","code":"mace","rarity":4,"speed":10,"itemLevel":13,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Flail","type":"fla","code":"mace","rarity":4,"speed":-10,"itemLevel":19,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"War Hammer","type":"whm","code":"hamm","rarity":4,"speed":20,"itemLevel":25,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Maul","type":"mau","code":"hamm","rarity":4,"speed":10,"itemLevel":21,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Great Maul","type":"gma","code":"hamm","rarity":3,"speed":20,"itemLevel":32,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Short Sword","type":"ssd","code":"swor","rarity":3,"speed":null,"itemLevel":1,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Scimitar","type":"scm","code":"swor","rarity":3,"speed":-20,"itemLevel":5,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Saber","type":"sbr","code":"swor","rarity":3,"speed":-10,"itemLevel":8,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Falchion","type":"flc","code":"swor","rarity":4,"speed":20,"itemLevel":11,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Crystal Sword","type":"crs","code":"swor","rarity":2,"speed":null,"itemLevel":11,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Broad Sword","type":"bsd","code":"swor","rarity":4,"speed":null,"itemLevel":15,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Long Sword ","type":"lsd","code":"swor","rarity":4,"speed":-10,"itemLevel":20,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"War Sword","type":"wsd","code":"swor","rarity":4,"speed":null,"itemLevel":27,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Two-Handed Sword","type":"2hs","code":"swor","rarity":4,"speed":null,"itemLevel":10,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Claymore","type":"clm","code":"swor","rarity":4,"speed":10,"itemLevel":17,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Giant Sword","type":"gis","code":"swor","rarity":4,"speed":null,"itemLevel":21,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Bastard Sword","type":"bsw","code":"swor","rarity":4,"speed":10,"itemLevel":24,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Flamberge","type":"flb","code":"swor","rarity":4,"speed":-10,"itemLevel":27,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Great Sword","type":"gsd","code":"swor","rarity":4,"speed":10,"itemLevel":33,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Dagger","type":"dgr","code":"knif","rarity":2,"speed":-20,"itemLevel":3,"reqLevel":null,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Dirk","type":"dir","code":"knif","rarity":2,"speed":null,"itemLevel":9,"reqLevel":null,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Kriss","type":"kri","code":"knif","rarity":2,"speed":-20,"itemLevel":17,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Blade","type":"bld","code":"knif","rarity":3,"speed":-10,"itemLevel":23,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Throwing Knife","type":"tkf","code":"tkni","rarity":2,"speed":null,"itemLevel":2,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Throwing Axe","type":"tax","code":"taxe","rarity":2,"speed":10,"itemLevel":7,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Balanced Knife","type":"bkf","code":"tkni","rarity":2,"speed":-20,"itemLevel":13,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Balanced Axe","type":"bal","code":"taxe","rarity":2,"speed":-10,"itemLevel":16,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Javelin","type":"jav","code":"jave","rarity":4,"speed":-10,"itemLevel":1,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Pilum","type":"pil","code":"jave","rarity":4,"speed":null,"itemLevel":10,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Short Spear","type":"ssp","code":"jave","rarity":4,"speed":10,"itemLevel":15,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Glaive","type":"glv","code":"jave","rarity":4,"speed":20,"itemLevel":23,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Throwing Spear","type":"tsp","code":"jave","rarity":4,"speed":-10,"itemLevel":29,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Spear","type":"spr","code":"spea","rarity":4,"speed":-10,"itemLevel":5,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Trident","type":"tri","code":"spea","rarity":4,"speed":null,"itemLevel":9,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Brandistock","type":"brn","code":"spea","rarity":4,"speed":-20,"itemLevel":16,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Spetum","type":"spt","code":"spea","rarity":4,"speed":null,"itemLevel":20,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Pike","type":"pik","code":"spea","rarity":4,"speed":20,"itemLevel":24,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Bardiche","type":"bar","code":"pole","rarity":4,"speed":10,"itemLevel":5,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Voulge","type":"vou","code":"pole","rarity":4,"speed":null,"itemLevel":11,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Scythe","type":"scy","code":"pole","rarity":4,"speed":-10,"itemLevel":15,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Poleaxe","type":"pax","code":"pole","rarity":4,"speed":10,"itemLevel":21,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Halberd","type":"hal","code":"pole","rarity":4,"speed":null,"itemLevel":29,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"War Scythe","type":"wsc","code":"pole","rarity":3,"speed":-10,"itemLevel":34,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Short Staff","type":"sst","code":"staf","rarity":2,"speed":-10,"itemLevel":1,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Long Staff","type":"lst","code":"staf","rarity":2,"speed":null,"itemLevel":8,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Gnarled Staff","type":"cst","code":"staf","rarity":2,"speed":10,"itemLevel":12,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Battle Staff","type":"bst","code":"staf","rarity":2,"speed":null,"itemLevel":17,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"War Staff","type":"wst","code":"staf","rarity":2,"speed":20,"itemLevel":24,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Short Bow","type":"sbw","code":"bow","rarity":2,"speed":5,"itemLevel":1,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Hunter's Bow","type":"hbw","code":"bow","rarity":2,"speed":-10,"itemLevel":5,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Long Bow","type":"lbw","code":"bow","rarity":2,"speed":null,"itemLevel":8,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Composite Bow","type":"cbw","code":"bow","rarity":2,"speed":-10,"itemLevel":12,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Short Battle Bow","type":"sbb","code":"bow","rarity":2,"speed":null,"itemLevel":18,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Long Battle Bow","type":"lbb","code":"bow","rarity":2,"speed":10,"itemLevel":23,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Short War Bow","type":"swb","code":"bow","rarity":2,"speed":null,"itemLevel":27,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Long War Bow","type":"lwb","code":"bow","rarity":2,"speed":10,"itemLevel":31,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Light Crossbow","type":"lxb","code":"xbow","rarity":2,"speed":-10,"itemLevel":6,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Crossbow","type":"mxb","code":"xbow","rarity":2,"speed":null,"itemLevel":15,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Heavy Crossbow","type":"hxb","code":"xbow","rarity":2,"speed":10,"itemLevel":24,"reqLevel":null,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Repeating Crossbow","type":"rxb","code":"xbow","rarity":2,"speed":-40,"itemLevel":33,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Rancid Gas Potion","type":"gps","code":"tpot","rarity":null,"speed":null,"itemLevel":32,"reqLevel":24,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Oil Potion","type":"ops","code":"tpot","rarity":null,"speed":null,"itemLevel":28,"reqLevel":20,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Choking Gas Potion","type":"gpm","code":"tpot","rarity":null,"speed":null,"itemLevel":20,"reqLevel":16,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Exploding Potion","type":"opm","code":"tpot","rarity":null,"speed":null,"itemLevel":16,"reqLevel":12,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Strangling Gas Potion","type":"gpl","code":"tpot","rarity":null,"speed":null,"itemLevel":8,"reqLevel":6,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Fulminating Potion","type":"opl","code":"tpot","rarity":null,"speed":null,"itemLevel":4,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"decoy dagger","type":"d33","code":"knif","rarity":null,"speed":-20,"itemLevel":null,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Gidbinn","type":"g33","code":"knif","rarity":null,"speed":-20,"itemLevel":null,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Wirt's Leg","type":"leg","code":"club","rarity":null,"speed":-10,"itemLevel":null,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Horadric Malus","type":"hdm","code":"hamm","rarity":null,"speed":20,"itemLevel":null,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Hellforge Hammer","type":"hfh","code":"hamm","rarity":null,"speed":null,"itemLevel":null,"reqLevel":null,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Horadric Staff","type":"hst","code":"staf","rarity":null,"speed":null,"itemLevel":null,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Staff of the Kings","type":"msf","code":"staf","rarity":null,"speed":null,"itemLevel":null,"reqLevel":null,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Hatchet","type":"9ha","code":"axe","rarity":3,"speed":null,"itemLevel":31,"reqLevel":19,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Cleaver","type":"9ax","code":"axe","rarity":4,"speed":10,"itemLevel":34,"reqLevel":22,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Twin Axe","type":"92a","code":"axe","rarity":4,"speed":10,"itemLevel":39,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Crowbill","type":"9mp","code":"axe","rarity":4,"speed":-10,"itemLevel":43,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Naga","type":"9wa","code":"axe","rarity":4,"speed":null,"itemLevel":48,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Military Axe","type":"9la","code":"axe","rarity":4,"speed":-10,"itemLevel":34,"reqLevel":22,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Bearded Axe ","type":"9ba","code":"axe","rarity":4,"speed":null,"itemLevel":38,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Tabar","type":"9bt","code":"axe","rarity":4,"speed":10,"itemLevel":42,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Gothic Axe","type":"9ga","code":"axe","rarity":4,"speed":-10,"itemLevel":46,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Ancient Axe","type":"9gi","code":"axe","rarity":4,"speed":10,"itemLevel":51,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Burnt Wand","type":"9wn","code":"wand","rarity":1,"speed":null,"itemLevel":31,"reqLevel":19,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Petrified Wand","type":"9yw","code":"wand","rarity":1,"speed":10,"itemLevel":38,"reqLevel":25,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Tomb Wand","type":"9bw","code":"wand","rarity":1,"speed":-20,"itemLevel":43,"reqLevel":25,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Grave Wand","type":"9gw","code":"wand","rarity":1,"speed":null,"itemLevel":49,"reqLevel":25,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Cudgel","type":"9cl","code":"club","rarity":1,"speed":-10,"itemLevel":30,"reqLevel":18,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Rune Scepter","type":"9sc","code":"scep","rarity":2,"speed":null,"itemLevel":31,"reqLevel":19,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Holy Water Sprinkler","type":"9qs","code":"scep","rarity":4,"speed":10,"itemLevel":40,"reqLevel":25,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Divine Scepter","type":"9ws","code":"scep","rarity":4,"speed":-10,"itemLevel":45,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Barbed Club","type":"9sp","code":"club","rarity":3,"speed":null,"itemLevel":32,"reqLevel":20,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Flanged Mace","type":"9ma","code":"mace","rarity":4,"speed":null,"itemLevel":35,"reqLevel":23,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Jagged Star","type":"9mt","code":"mace","rarity":4,"speed":10,"itemLevel":39,"reqLevel":25,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Knout","type":"9fl","code":"mace","rarity":4,"speed":-10,"itemLevel":43,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Battle Hammer","type":"9wh","code":"hamm","rarity":4,"speed":20,"itemLevel":48,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"War Club","type":"9m9","code":"hamm","rarity":4,"speed":10,"itemLevel":45,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Martel de Fer","type":"9gm","code":"hamm","rarity":3,"speed":20,"itemLevel":53,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Gladius","type":"9ss","code":"swor","rarity":3,"speed":null,"itemLevel":30,"reqLevel":18,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Cutlass","type":"9sm","code":"swor","rarity":3,"speed":-30,"itemLevel":43,"reqLevel":25,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Shamshir","type":"9sb","code":"swor","rarity":3,"speed":-10,"itemLevel":35,"reqLevel":23,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Tulwar","type":"9fc","code":"swor","rarity":4,"speed":20,"itemLevel":37,"reqLevel":25,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Dimensional Blade","type":"9cr","code":"swor","rarity":2,"speed":null,"itemLevel":37,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Battle Sword","type":"9bs","code":"swor","rarity":4,"speed":null,"itemLevel":40,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Rune Sword","type":"9ls","code":"swor","rarity":4,"speed":-10,"itemLevel":44,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Ancient Sword","type":"9wd","code":"swor","rarity":4,"speed":null,"itemLevel":49,"reqLevel":25,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Espadon","type":"92h","code":"swor","rarity":4,"speed":null,"itemLevel":37,"reqLevel":25,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Dacian Falx","type":"9cm","code":"swor","rarity":4,"speed":10,"itemLevel":42,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Tusk Sword","type":"9gs","code":"swor","rarity":4,"speed":null,"itemLevel":45,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Gothic Sword","type":"9b9","code":"swor","rarity":4,"speed":10,"itemLevel":48,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Zweihander","type":"9fb","code":"swor","rarity":4,"speed":-10,"itemLevel":49,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Executioner Sword","type":"9gd","code":"swor","rarity":4,"speed":10,"itemLevel":54,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Poignard","type":"9dg","code":"knif","rarity":2,"speed":-20,"itemLevel":31,"reqLevel":19,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Rondel","type":"9di","code":"knif","rarity":2,"speed":null,"itemLevel":36,"reqLevel":24,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Cinquedeas","type":"9kr","code":"knif","rarity":2,"speed":-20,"itemLevel":42,"reqLevel":25,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Stilleto","type":"9bl","code":"knif","rarity":3,"speed":-10,"itemLevel":46,"reqLevel":25,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Battle Dart","type":"9tk","code":"tkni","rarity":2,"speed":null,"itemLevel":31,"reqLevel":19,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Francisca","type":"9ta","code":"taxe","rarity":2,"speed":10,"itemLevel":34,"reqLevel":22,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"War Dart","type":"9bk","code":"tkni","rarity":2,"speed":-20,"itemLevel":39,"reqLevel":25,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Hurlbat","type":"9b8","code":"taxe","rarity":2,"speed":-10,"itemLevel":41,"reqLevel":25,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"War Javelin","type":"9ja","code":"jave","rarity":4,"speed":-10,"itemLevel":30,"reqLevel":18,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Great Pilum","type":"9pi","code":"jave","rarity":4,"speed":null,"itemLevel":37,"reqLevel":25,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Simbilan","type":"9s9","code":"jave","rarity":4,"speed":10,"itemLevel":40,"reqLevel":25,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Spiculum","type":"9gl","code":"jave","rarity":4,"speed":20,"itemLevel":46,"reqLevel":25,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Harpoon","type":"9ts","code":"jave","rarity":4,"speed":-10,"itemLevel":51,"reqLevel":25,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"War Spear","type":"9sr","code":"spea","rarity":4,"speed":-10,"itemLevel":33,"reqLevel":21,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Fuscina","type":"9tr","code":"spea","rarity":4,"speed":null,"itemLevel":36,"reqLevel":24,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"War Fork","type":"9br","code":"spea","rarity":4,"speed":-20,"itemLevel":41,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Yari","type":"9st","code":"spea","rarity":4,"speed":null,"itemLevel":44,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Lance","type":"9p9","code":"spea","rarity":4,"speed":20,"itemLevel":47,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Lochaber Axe","type":"9b7","code":"pole","rarity":4,"speed":10,"itemLevel":33,"reqLevel":21,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Bill","type":"9vo","code":"pole","rarity":4,"speed":null,"itemLevel":37,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Battle Scythe","type":"9s8","code":"pole","rarity":4,"speed":-10,"itemLevel":40,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Partizan","type":"9pa","code":"pole","rarity":4,"speed":10,"itemLevel":35,"reqLevel":23,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Bec-de-Corbin","type":"9h9","code":"pole","rarity":4,"speed":null,"itemLevel":51,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Grim Scythe","type":"9wc","code":"pole","rarity":3,"speed":-10,"itemLevel":55,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Jo Staff","type":"8ss","code":"staf","rarity":2,"speed":-10,"itemLevel":30,"reqLevel":18,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Quarterstaff","type":"8ls","code":"staf","rarity":2,"speed":null,"itemLevel":35,"reqLevel":23,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Cedar Staff","type":"8cs","code":"staf","rarity":2,"speed":10,"itemLevel":38,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Gothic Staff","type":"8bs","code":"staf","rarity":2,"speed":null,"itemLevel":42,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Rune Staff","type":"8ws","code":"staf","rarity":2,"speed":20,"itemLevel":47,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Edge Bow","type":"8sb","code":"bow","rarity":2,"speed":5,"itemLevel":30,"reqLevel":18,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Razor Bow","type":"8hb","code":"bow","rarity":2,"speed":-10,"itemLevel":33,"reqLevel":21,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Cedar Bow","type":"8lb","code":"bow","rarity":2,"speed":null,"itemLevel":35,"reqLevel":23,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Double Bow","type":"8cb","code":"bow","rarity":2,"speed":-10,"itemLevel":39,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Short Siege Bow","type":"8s8","code":"bow","rarity":2,"speed":null,"itemLevel":43,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Long Siege Bow","type":"8l8","code":"bow","rarity":2,"speed":10,"itemLevel":46,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Rune Bow","type":"8sw","code":"bow","rarity":2,"speed":null,"itemLevel":49,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Gothic Bow","type":"8lw","code":"bow","rarity":2,"speed":10,"itemLevel":52,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Arbalest","type":"8lx","code":"xbow","rarity":2,"speed":-10,"itemLevel":34,"reqLevel":22,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Siege Crossbow","type":"8mx","code":"xbow","rarity":2,"speed":null,"itemLevel":40,"reqLevel":25,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Balista","type":"8hx","code":"xbow","rarity":2,"speed":10,"itemLevel":47,"reqLevel":25,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Chu-Ko-Nu","type":"8rx","code":"xbow","rarity":2,"speed":-60,"itemLevel":54,"reqLevel":25,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"KhalimFlail","type":"qf1","code":"mace","rarity":null,"speed":-10,"itemLevel":null,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"SuperKhalimFlail","type":"qf2","code":"mace","rarity":null,"speed":-10,"itemLevel":null,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Katar","type":"ktr","code":"h2h","rarity":2,"speed":-10,"itemLevel":1,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Wrist Blade","type":"wrb","code":"h2h","rarity":2,"speed":null,"itemLevel":9,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Hatchet Hands","type":"axf","code":"h2h","rarity":2,"speed":10,"itemLevel":12,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Cestus","type":"ces","code":"h2h","rarity":2,"speed":null,"itemLevel":15,"reqLevel":null,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Claws","type":"clw","code":"h2h","rarity":2,"speed":-10,"itemLevel":18,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Blade Talons","type":"btl","code":"h2h","rarity":2,"speed":-20,"itemLevel":21,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Scissors Katar","type":"skr","code":"h2h","rarity":2,"speed":-10,"itemLevel":24,"reqLevel":null,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Quhab","type":"9ar","code":"h2h","rarity":2,"speed":null,"itemLevel":28,"reqLevel":21,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Wrist Spike","type":"9wb","code":"h2h","rarity":2,"speed":-10,"itemLevel":32,"reqLevel":24,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Fascia","type":"9xf","code":"h2h","rarity":2,"speed":10,"itemLevel":36,"reqLevel":27,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Hand Scythe","type":"9cs","code":"h2h2","rarity":2,"speed":-10,"itemLevel":41,"reqLevel":30,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Greater Claws","type":"9lw","code":"h2h2","rarity":2,"speed":-20,"itemLevel":45,"reqLevel":33,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Greater Talons","type":"9tw","code":"h2h2","rarity":2,"speed":-30,"itemLevel":50,"reqLevel":37,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Scissors Quhab","type":"9qr","code":"h2h2","rarity":2,"speed":null,"itemLevel":54,"reqLevel":40,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Suwayyah","type":"7ar","code":"h2h2","rarity":2,"speed":null,"itemLevel":59,"reqLevel":44,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Wrist Sword","type":"7wb","code":"h2h2","rarity":2,"speed":-10,"itemLevel":62,"reqLevel":46,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"War Fist","type":"7xf","code":"h2h2","rarity":2,"speed":10,"itemLevel":68,"reqLevel":51,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Battle Cestus","type":"7cs","code":"h2h2","rarity":2,"speed":-10,"itemLevel":73,"reqLevel":54,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Feral Claws","type":"7lw","code":"h2h2","rarity":2,"speed":-20,"itemLevel":78,"reqLevel":58,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Runic Talons","type":"7tw","code":"h2h2","rarity":2,"speed":-30,"itemLevel":81,"reqLevel":60,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Scissors Suwayyah","type":"7qr","code":"h2h2","rarity":2,"speed":null,"itemLevel":85,"reqLevel":64,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Tomahawk","type":"7ha","code":"axe","rarity":3,"speed":null,"itemLevel":54,"reqLevel":40,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Small Crescent","type":"7ax","code":"axe","rarity":4,"speed":10,"itemLevel":61,"reqLevel":45,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Ettin Axe","type":"72a","code":"axe","rarity":4,"speed":10,"itemLevel":70,"reqLevel":52,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"War Spike","type":"7mp","code":"axe","rarity":4,"speed":-10,"itemLevel":79,"reqLevel":59,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Berserker Axe","type":"7wa","code":"axe","rarity":4,"speed":null,"itemLevel":85,"reqLevel":64,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Feral Axe","type":"7la","code":"axe","rarity":4,"speed":-15,"itemLevel":57,"reqLevel":42,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Silver Edged Axe","type":"7ba","code":"axe","rarity":4,"speed":null,"itemLevel":65,"reqLevel":48,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Decapitator","type":"7bt","code":"axe","rarity":4,"speed":10,"itemLevel":73,"reqLevel":54,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Champion Axe","type":"7ga","code":"axe","rarity":4,"speed":-10,"itemLevel":82,"reqLevel":61,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Glorious Axe","type":"7gi","code":"axe","rarity":4,"speed":10,"itemLevel":85,"reqLevel":66,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Polished Wand","type":"7wn","code":"wand","rarity":1,"speed":null,"itemLevel":55,"reqLevel":41,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Ghost Wand","type":"7yw","code":"wand","rarity":1,"speed":10,"itemLevel":65,"reqLevel":48,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Lich Wand","type":"7bw","code":"wand","rarity":1,"speed":-20,"itemLevel":75,"reqLevel":56,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Unearthed Wand","type":"7gw","code":"wand","rarity":1,"speed":null,"itemLevel":86,"reqLevel":64,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Truncheon","type":"7cl","code":"club","rarity":1,"speed":-10,"itemLevel":52,"reqLevel":39,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Mighty Scepter","type":"7sc","code":"scep","rarity":2,"speed":null,"itemLevel":62,"reqLevel":46,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Seraph Rod","type":"7qs","code":"scep","rarity":4,"speed":10,"itemLevel":76,"reqLevel":57,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Caduceus","type":"7ws","code":"scep","rarity":4,"speed":-10,"itemLevel":85,"reqLevel":66,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Tyrant Club","type":"7sp","code":"club","rarity":3,"speed":null,"itemLevel":57,"reqLevel":42,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Reinforced Mace","type":"7ma","code":"mace","rarity":4,"speed":null,"itemLevel":63,"reqLevel":47,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Devil Star","type":"7mt","code":"mace","rarity":4,"speed":10,"itemLevel":70,"reqLevel":52,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Scourge","type":"7fl","code":"mace","rarity":4,"speed":-10,"itemLevel":76,"reqLevel":57,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Legendary Mallet","type":"7wh","code":"hamm","rarity":4,"speed":20,"itemLevel":82,"reqLevel":61,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Ogre Maul","type":"7m7","code":"hamm","rarity":4,"speed":10,"itemLevel":69,"reqLevel":51,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Thunder Maul","type":"7gm","code":"hamm","rarity":3,"speed":20,"itemLevel":85,"reqLevel":65,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Falcata","type":"7ss","code":"swor","rarity":3,"speed":null,"itemLevel":56,"reqLevel":42,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Ataghan","type":"7sm","code":"swor","rarity":3,"speed":-20,"itemLevel":61,"reqLevel":45,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Elegant Blade","type":"7sb","code":"swor","rarity":3,"speed":-10,"itemLevel":63,"reqLevel":47,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Hydra Edge","type":"7fc","code":"swor","rarity":4,"speed":10,"itemLevel":69,"reqLevel":51,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Phase Blade","type":"7cr","code":"swor","rarity":2,"speed":-30,"itemLevel":73,"reqLevel":54,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Conquest Sword","type":"7bs","code":"swor","rarity":4,"speed":null,"itemLevel":78,"reqLevel":58,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Cryptic Sword","type":"7ls","code":"swor","rarity":4,"speed":-10,"itemLevel":82,"reqLevel":61,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Mythical Sword","type":"7wd","code":"swor","rarity":4,"speed":null,"itemLevel":85,"reqLevel":66,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Legend Sword","type":"72h","code":"swor","rarity":4,"speed":-15,"itemLevel":59,"reqLevel":44,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Highland Blade","type":"7cm","code":"swor","rarity":4,"speed":-5,"itemLevel":66,"reqLevel":49,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Balrog Blade","type":"7gs","code":"swor","rarity":4,"speed":null,"itemLevel":71,"reqLevel":53,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Champion Sword","type":"7b7","code":"swor","rarity":4,"speed":-10,"itemLevel":77,"reqLevel":57,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Colossal Sword","type":"7fb","code":"swor","rarity":4,"speed":10,"itemLevel":80,"reqLevel":60,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Colossus Blade","type":"7gd","code":"swor","rarity":4,"speed":5,"itemLevel":85,"reqLevel":63,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Bone Knife","type":"7dg","code":"knif","rarity":2,"speed":-20,"itemLevel":58,"reqLevel":43,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Mithral Point","type":"7di","code":"knif","rarity":2,"speed":null,"itemLevel":70,"reqLevel":52,"maxSockets":1,"reqStrength":null,"reqDex":null}
+{"name":"Fanged Knife","type":"7kr","code":"knif","rarity":2,"speed":-20,"itemLevel":83,"reqLevel":62,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Legend Spike","type":"7bl","code":"knif","rarity":3,"speed":-10,"itemLevel":85,"reqLevel":66,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Flying Knife","type":"7tk","code":"tkni","rarity":2,"speed":null,"itemLevel":64,"reqLevel":48,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Flying Axe","type":"7ta","code":"taxe","rarity":2,"speed":10,"itemLevel":56,"reqLevel":42,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Winged Knife","type":"7bk","code":"tkni","rarity":2,"speed":-20,"itemLevel":77,"reqLevel":57,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Winged Axe","type":"7b8","code":"taxe","rarity":2,"speed":-10,"itemLevel":80,"reqLevel":60,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Hyperion Javelin","type":"7ja","code":"jave","rarity":4,"speed":-10,"itemLevel":54,"reqLevel":40,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Stygian Pilum","type":"7pi","code":"jave","rarity":4,"speed":null,"itemLevel":62,"reqLevel":46,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Balrog Spear","type":"7s7","code":"jave","rarity":4,"speed":10,"itemLevel":71,"reqLevel":53,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Ghost Glaive","type":"7gl","code":"jave","rarity":4,"speed":20,"itemLevel":79,"reqLevel":59,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Winged Harpoon","type":"7ts","code":"jave","rarity":4,"speed":-10,"itemLevel":85,"reqLevel":65,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Hyperion Spear","type":"7sr","code":"spea","rarity":4,"speed":-10,"itemLevel":58,"reqLevel":43,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Stygian Pike","type":"7tr","code":"spea","rarity":4,"speed":null,"itemLevel":66,"reqLevel":49,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Mancatcher","type":"7br","code":"spea","rarity":4,"speed":-20,"itemLevel":74,"reqLevel":55,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Ghost Spear","type":"7st","code":"spea","rarity":4,"speed":null,"itemLevel":83,"reqLevel":62,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"War Pike","type":"7p7","code":"spea","rarity":4,"speed":20,"itemLevel":85,"reqLevel":66,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Ogre Axe","type":"7o7","code":"pole","rarity":4,"speed":null,"itemLevel":60,"reqLevel":45,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Colossus Voulge","type":"7vo","code":"pole","rarity":4,"speed":10,"itemLevel":64,"reqLevel":48,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Thresher","type":"7s8","code":"pole","rarity":4,"speed":-10,"itemLevel":71,"reqLevel":53,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Cryptic Axe","type":"7pa","code":"pole","rarity":4,"speed":10,"itemLevel":79,"reqLevel":59,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Great Poleaxe","type":"7h7","code":"pole","rarity":4,"speed":null,"itemLevel":84,"reqLevel":63,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Giant Thresher","type":"7wc","code":"pole","rarity":3,"speed":-10,"itemLevel":85,"reqLevel":66,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Walking Stick","type":"6ss","code":"staf","rarity":2,"speed":-10,"itemLevel":58,"reqLevel":43,"maxSockets":2,"reqStrength":null,"reqDex":null}
+{"name":"Stalagmite","type":"6ls","code":"staf","rarity":2,"speed":10,"itemLevel":66,"reqLevel":49,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Elder Staff","type":"6cs","code":"staf","rarity":2,"speed":null,"itemLevel":74,"reqLevel":55,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Shillelah","type":"6bs","code":"staf","rarity":2,"speed":null,"itemLevel":83,"reqLevel":62,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Archon Staff","type":"6ws","code":"staf","rarity":2,"speed":10,"itemLevel":85,"reqLevel":66,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Spider Bow","type":"6sb","code":"bow","rarity":2,"speed":5,"itemLevel":55,"reqLevel":41,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Blade Bow","type":"6hb","code":"bow","rarity":2,"speed":-10,"itemLevel":60,"reqLevel":45,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Shadow Bow","type":"6lb","code":"bow","rarity":2,"speed":null,"itemLevel":63,"reqLevel":47,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Great Bow","type":"6cb","code":"bow","rarity":2,"speed":-10,"itemLevel":68,"reqLevel":51,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Diamond Bow","type":"6s7","code":"bow","rarity":2,"speed":null,"itemLevel":72,"reqLevel":54,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Crusader Bow","type":"6l7","code":"bow","rarity":2,"speed":10,"itemLevel":77,"reqLevel":57,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Ward Bow","type":"6sw","code":"bow","rarity":2,"speed":null,"itemLevel":80,"reqLevel":60,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Hydra Bow","type":"6lw","code":"bow","rarity":2,"speed":10,"itemLevel":85,"reqLevel":63,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Pellet Bow","type":"6lx","code":"xbow","rarity":2,"speed":-10,"itemLevel":57,"reqLevel":42,"maxSockets":3,"reqStrength":null,"reqDex":null}
+{"name":"Gorgon Crossbow","type":"6mx","code":"xbow","rarity":2,"speed":null,"itemLevel":67,"reqLevel":50,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Colossus Crossbow","type":"6hx","code":"xbow","rarity":2,"speed":10,"itemLevel":75,"reqLevel":56,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Demon Crossbow","type":"6rx","code":"xbow","rarity":2,"speed":-60,"itemLevel":84,"reqLevel":63,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Eagle Orb","type":"ob1","code":"orb","rarity":2,"speed":-10,"itemLevel":1,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Sacred Globe","type":"ob2","code":"orb","rarity":3,"speed":-10,"itemLevel":8,"reqLevel":null,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Smoked Sphere","type":"ob3","code":"orb","rarity":3,"speed":null,"itemLevel":12,"reqLevel":8,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Clasped Orb","type":"ob4","code":"orb","rarity":4,"speed":null,"itemLevel":17,"reqLevel":13,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Dragon Stone","type":"ob5","code":"orb","rarity":5,"speed":10,"itemLevel":24,"reqLevel":18,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Stag Bow","type":"am1","code":"abow","rarity":3,"speed":null,"itemLevel":18,"reqLevel":14,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Reflex Bow","type":"am2","code":"abow","rarity":3,"speed":10,"itemLevel":27,"reqLevel":20,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Maiden Spear","type":"am3","code":"aspe","rarity":3,"speed":null,"itemLevel":18,"reqLevel":14,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Maiden Pike","type":"am4","code":"aspe","rarity":3,"speed":10,"itemLevel":27,"reqLevel":20,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Maiden Javelin","type":"am5","code":"ajav","rarity":3,"speed":-10,"itemLevel":23,"reqLevel":17,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Glowing Orb","type":"ob6","code":"orb","rarity":2,"speed":-10,"itemLevel":32,"reqLevel":24,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Crystalline Globe","type":"ob7","code":"orb","rarity":3,"speed":-10,"itemLevel":37,"reqLevel":27,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Cloudy Sphere","type":"ob8","code":"orb","rarity":3,"speed":null,"itemLevel":41,"reqLevel":30,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Sparkling Ball","type":"ob9","code":"orb","rarity":4,"speed":null,"itemLevel":46,"reqLevel":34,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Swirling Crystal","type":"oba","code":"orb","rarity":5,"speed":10,"itemLevel":50,"reqLevel":37,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Ashwood Bow","type":"am6","code":"abow","rarity":3,"speed":null,"itemLevel":39,"reqLevel":29,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Ceremonial Bow","type":"am7","code":"abow","rarity":3,"speed":10,"itemLevel":47,"reqLevel":35,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Ceremonial Spear","type":"am8","code":"aspe","rarity":3,"speed":null,"itemLevel":43,"reqLevel":32,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Ceremonial Pike","type":"am9","code":"aspe","rarity":3,"speed":20,"itemLevel":51,"reqLevel":38,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Ceremonial Javelin","type":"ama","code":"ajav","rarity":3,"speed":-10,"itemLevel":35,"reqLevel":26,"maxSockets":null,"reqStrength":null,"reqDex":null}
+{"name":"Heavenly Stone","type":"obb","code":"orb","rarity":2,"speed":-10,"itemLevel":59,"reqLevel":44,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Eldritch Orb","type":"obc","code":"orb","rarity":3,"speed":-10,"itemLevel":67,"reqLevel":50,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Demon Heart","type":"obd","code":"orb","rarity":3,"speed":null,"itemLevel":75,"reqLevel":56,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Vortex Orb","type":"obe","code":"orb","rarity":4,"speed":null,"itemLevel":84,"reqLevel":63,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Dimensional Shard","type":"obf","code":"orb","rarity":5,"speed":10,"itemLevel":85,"reqLevel":66,"maxSockets":4,"reqStrength":null,"reqDex":null}
+{"name":"Matriarchal Bow","type":"amb","code":"abow","rarity":3,"speed":-10,"itemLevel":53,"reqLevel":39,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Grand Matron Bow","type":"amc","code":"abow","rarity":3,"speed":10,"itemLevel":78,"reqLevel":58,"maxSockets":5,"reqStrength":null,"reqDex":null}
+{"name":"Matriarchal Spear","type":"amd","code":"aspe","rarity":3,"speed":null,"itemLevel":61,"reqLevel":45,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"Matriarchal Pike","type":"ame","code":"aspe","rarity":3,"speed":20,"itemLevel":81,"reqLevel":60,"maxSockets":6,"reqStrength":null,"reqDex":null}
+{"name":"MatriarchalJavelin","type":"amf","code":"ajav","rarity":3,"speed":-10,"itemLevel":65,"reqLevel":48,"maxSockets":null,"reqStrength":null,"reqDex":null}

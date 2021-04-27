@@ -1,0 +1,388 @@
+{"name":"The Gnasher","baseItemCode":"hax","baseItemName":"Hand Axe","itemLevel":7,"reqLevel":5,"rarity":1}
+{"name":"Deathspade","baseItemCode":"axe","baseItemName":"Axe","itemLevel":12,"reqLevel":9,"rarity":1}
+{"name":"Bladebone","baseItemCode":"2ax","baseItemName":"Double Axe","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"Mindrend","baseItemCode":"mpi","baseItemName":"Military Pick","itemLevel":28,"reqLevel":21,"rarity":1}
+{"name":"Rakescar","baseItemCode":"wax","baseItemName":"War Axe","itemLevel":36,"reqLevel":27,"rarity":1}
+{"name":"Fechmars Axe","baseItemCode":"lax","baseItemName":"Large Axe","itemLevel":11,"reqLevel":8,"rarity":1}
+{"name":"Goreshovel","baseItemCode":"bax","baseItemName":"Broad Axe","itemLevel":19,"reqLevel":14,"rarity":1}
+{"name":"The Chieftan","baseItemCode":"btx","baseItemName":"Battle Axe","itemLevel":26,"reqLevel":19,"rarity":1}
+{"name":"Brainhew","baseItemCode":"gax","baseItemName":"Great Axe","itemLevel":34,"reqLevel":25,"rarity":1}
+{"name":"The Humongous","baseItemCode":"gix","baseItemName":"Giant Axe","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Iros Torch","baseItemCode":"wnd","baseItemName":"Wand","itemLevel":7,"reqLevel":5,"rarity":1}
+{"name":"Maelstromwrath","baseItemCode":"ywn","baseItemName":"Yew Wand","itemLevel":19,"reqLevel":14,"rarity":1}
+{"name":"Gravenspine","baseItemCode":"bwn","baseItemName":"Bone Wand","itemLevel":27,"reqLevel":20,"rarity":1}
+{"name":"Umes Lament","baseItemCode":"gwn","baseItemName":"Grim Wand","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"Felloak","baseItemCode":"clb","baseItemName":"Club","itemLevel":4,"reqLevel":3,"rarity":1}
+{"name":"Knell Striker","baseItemCode":"scp","baseItemName":"Scepter","itemLevel":7,"reqLevel":5,"rarity":1}
+{"name":"Rusthandle","baseItemCode":"gsc","baseItemName":"Grand Scepter","itemLevel":23,"reqLevel":17,"rarity":1}
+{"name":"Stormeye","baseItemCode":"wsp","baseItemName":"War Scepter","itemLevel":31,"reqLevel":23,"rarity":1}
+{"name":"Stoutnail","baseItemCode":"spc","baseItemName":"Spiked Club","itemLevel":7,"reqLevel":5,"rarity":1}
+{"name":"Crushflange","baseItemCode":"mac","baseItemName":"Mace","itemLevel":12,"reqLevel":9,"rarity":1}
+{"name":"Bloodrise","baseItemCode":"mst","baseItemName":"Morning Star","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"The Generals Tan Do Li Ga","baseItemCode":"fla","baseItemName":"Flail","itemLevel":28,"reqLevel":21,"rarity":1}
+{"name":"Ironstone","baseItemCode":"whm","baseItemName":"War Hammer","itemLevel":36,"reqLevel":27,"rarity":1}
+{"name":"Bonesob","baseItemCode":"mau","baseItemName":"Maul","itemLevel":32,"reqLevel":24,"rarity":1}
+{"name":"Steeldriver","baseItemCode":"gma","baseItemName":"Great Maul","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Rixots Keen","baseItemCode":"ssd","baseItemName":"Short Sword","itemLevel":3,"reqLevel":2,"rarity":1}
+{"name":"Blood Crescent","baseItemCode":"scm","baseItemName":"Scimitar","itemLevel":10,"reqLevel":7,"rarity":1}
+{"name":"Krintizs Skewer","baseItemCode":"sbr","baseItemName":"Saber","itemLevel":14,"reqLevel":10,"rarity":1}
+{"name":"Gleamscythe","baseItemCode":"flc","baseItemName":"Falchion","itemLevel":18,"reqLevel":13,"rarity":1}
+{"name":"Azurewrath","baseItemCode":"crs","baseItemName":"Crystal Sword","itemLevel":18,"reqLevel":13,"rarity":1}
+{"name":"Griswolds Edge","baseItemCode":"bsd","baseItemName":"Broad Sword","itemLevel":23,"reqLevel":17,"rarity":1}
+{"name":"Hellplague","baseItemCode":"lsd","baseItemName":"Long Sword","itemLevel":30,"reqLevel":22,"rarity":1}
+{"name":"Culwens Point","baseItemCode":"wsd","baseItemName":"War Sword","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Shadowfang","baseItemCode":"2hs","baseItemName":"2-Handed Sword","itemLevel":16,"reqLevel":12,"rarity":1}
+{"name":"Soulflay","baseItemCode":"clm","baseItemName":"Claymore","itemLevel":26,"reqLevel":19,"rarity":1}
+{"name":"Kinemils Awl","baseItemCode":"gis","baseItemName":"Giant Sword","itemLevel":31,"reqLevel":23,"rarity":1}
+{"name":"Blacktongue","baseItemCode":"bsw","baseItemName":"Bastard Sword","itemLevel":35,"reqLevel":26,"rarity":1}
+{"name":"Ripsaw","baseItemCode":"flb","baseItemName":"Flamberge","itemLevel":35,"reqLevel":26,"rarity":1}
+{"name":"The Patriarch","baseItemCode":"gsd","baseItemName":"Great Sword","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Gull","baseItemCode":"dgr","baseItemName":"Dagger","itemLevel":6,"reqLevel":4,"rarity":1}
+{"name":"The Diggler","baseItemCode":"dir","baseItemName":"Dirk","itemLevel":15,"reqLevel":11,"rarity":1}
+{"name":"The Jade Tan Do","baseItemCode":"kri","baseItemName":"Kris","itemLevel":26,"reqLevel":19,"rarity":1}
+{"name":"Irices Shard","baseItemCode":"bld","baseItemName":"Blade","itemLevel":34,"reqLevel":25,"rarity":1}
+{"name":"The Dragon Chang","baseItemCode":"spr","baseItemName":"Spear","itemLevel":11,"reqLevel":8,"rarity":1}
+{"name":"Razortine","baseItemCode":"tri","baseItemName":"Trident","itemLevel":16,"reqLevel":12,"rarity":1}
+{"name":"Bloodthief","baseItemCode":"brn","baseItemName":"Brandistock","itemLevel":23,"reqLevel":17,"rarity":1}
+{"name":"Lance of Yaggai","baseItemCode":"spt","baseItemName":"Spetum","itemLevel":30,"reqLevel":22,"rarity":1}
+{"name":"The Tannr Gorerod","baseItemCode":"pik","baseItemName":"Pike","itemLevel":36,"reqLevel":27,"rarity":1}
+{"name":"Dimoaks Hew","baseItemCode":"bar","baseItemName":"Bardiche","itemLevel":11,"reqLevel":8,"rarity":1}
+{"name":"Steelgoad","baseItemCode":"vou","baseItemName":"Voulge","itemLevel":19,"reqLevel":14,"rarity":1}
+{"name":"Soul Harvest","baseItemCode":"scy","baseItemName":"Scythe","itemLevel":26,"reqLevel":19,"rarity":1}
+{"name":"The Battlebranch","baseItemCode":"pax","baseItemName":"Poleaxe","itemLevel":34,"reqLevel":25,"rarity":1}
+{"name":"Woestave","baseItemCode":"hal","baseItemName":"Halberd","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"The Grim Reaper","baseItemCode":"wsc","baseItemName":"War Scythe","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Bane Ash","baseItemCode":"sst","baseItemName":"Short Staff","itemLevel":7,"reqLevel":5,"rarity":1}
+{"name":"Serpent Lord","baseItemCode":"lst","baseItemName":"Long Staff","itemLevel":12,"reqLevel":9,"rarity":1}
+{"name":"Lazarus Spire","baseItemCode":"cst","baseItemName":"Gnarled Staff","itemLevel":24,"reqLevel":18,"rarity":1}
+{"name":"The Salamander","baseItemCode":"bst","baseItemName":"Battle Staff","itemLevel":28,"reqLevel":21,"rarity":1}
+{"name":"The Iron Jang Bong","baseItemCode":"wst","baseItemName":"War Staff","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"Pluckeye","baseItemCode":"sbw","baseItemName":"Short Bow","itemLevel":10,"reqLevel":7,"rarity":1}
+{"name":"Witherstring","baseItemCode":"hbw","baseItemName":"Hunter�s Bow","itemLevel":18,"reqLevel":13,"rarity":1}
+{"name":"Rimeraven","baseItemCode":"lbw","baseItemName":"Long Bow","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"Piercerib","baseItemCode":"cbw","baseItemName":"Composite Bow","itemLevel":27,"reqLevel":20,"rarity":1}
+{"name":"Pullspite","baseItemCode":"sbb","baseItemName":"Short Battle Bow","itemLevel":34,"reqLevel":25,"rarity":1}
+{"name":"Wizendraw","baseItemCode":"lbb","baseItemName":"Long Battle Bow","itemLevel":35,"reqLevel":26,"rarity":1}
+{"name":"Hellclap","baseItemCode":"swb","baseItemName":"Short War Bow","itemLevel":36,"reqLevel":27,"rarity":1}
+{"name":"Blastbark","baseItemCode":"lwb","baseItemName":"Long War Bow","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"Leadcrow","baseItemCode":"lxb","baseItemName":"Light Crossbow","itemLevel":12,"reqLevel":9,"rarity":1}
+{"name":"Ichorsting","baseItemCode":"mxb","baseItemName":"Crossbow","itemLevel":24,"reqLevel":18,"rarity":1}
+{"name":"Hellcast","baseItemCode":"hxb","baseItemName":"Heavy Crossbow","itemLevel":36,"reqLevel":27,"rarity":1}
+{"name":"Doomspittle","baseItemCode":"rxb","baseItemName":"Repeating Crossbow","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"War Bonnet","baseItemCode":"cap","baseItemName":"Cap","itemLevel":4,"reqLevel":3,"rarity":1}
+{"name":"Tarnhelm","baseItemCode":"skp","baseItemName":"Skull Cap","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"Coif of Glory","baseItemCode":"hlm","baseItemName":"Helm","itemLevel":19,"reqLevel":14,"rarity":1}
+{"name":"Duskdeep","baseItemCode":"fhl","baseItemName":"Full Helm","itemLevel":23,"reqLevel":17,"rarity":1}
+{"name":"Wormskull","baseItemCode":"bhm","baseItemName":"Bone Helm","itemLevel":28,"reqLevel":21,"rarity":1}
+{"name":"Howltusk","baseItemCode":"ghm","baseItemName":"Great Helm","itemLevel":34,"reqLevel":25,"rarity":1}
+{"name":"Undead Crown","baseItemCode":"crn","baseItemName":"Crown","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"The Face of Horror","baseItemCode":"msk","baseItemName":"Mask","itemLevel":27,"reqLevel":20,"rarity":1}
+{"name":"Greyform","baseItemCode":"qui","baseItemName":"Quilted Armor","itemLevel":10,"reqLevel":7,"rarity":1}
+{"name":"Blinkbats Form","baseItemCode":"lea","baseItemName":"Leather Armor","itemLevel":16,"reqLevel":12,"rarity":1}
+{"name":"The Centurion","baseItemCode":"hla","baseItemName":"Hard Leather","itemLevel":19,"reqLevel":14,"rarity":1}
+{"name":"Twitchthroe","baseItemCode":"stu","baseItemName":"Studded Leather","itemLevel":22,"reqLevel":16,"rarity":1}
+{"name":"Darkglow","baseItemCode":"rng","baseItemName":"Ring Mail","itemLevel":19,"reqLevel":14,"rarity":1}
+{"name":"Hawkmail","baseItemCode":"scl","baseItemName":"Scale Mail","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"Sparking Mail","baseItemCode":"chn","baseItemName":"Chain Mail","itemLevel":23,"reqLevel":17,"rarity":1}
+{"name":"Venomsward","baseItemCode":"brs","baseItemName":"Breast Plate","itemLevel":27,"reqLevel":20,"rarity":1}
+{"name":"Iceblink","baseItemCode":"spl","baseItemName":"Splint Mail","itemLevel":30,"reqLevel":22,"rarity":1}
+{"name":"Boneflesh","baseItemCode":"plt","baseItemName":"Plate Mail","itemLevel":35,"reqLevel":26,"rarity":1}
+{"name":"Rockfleece","baseItemCode":"fld","baseItemName":"Field Plate","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"Rattlecage","baseItemCode":"gth","baseItemName":"Gothic Plate","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Goldskin","baseItemCode":"ful","baseItemName":"Full Plate Mail","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"Victors Silk","baseItemCode":"aar","baseItemName":"AncientArmor","itemLevel":38,"reqLevel":28,"rarity":1}
+{"name":"Heavenly Garb","baseItemCode":"ltp","baseItemName":"Light Plate","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Pelta Lunata","baseItemCode":"buc","baseItemName":"Buckler","itemLevel":3,"reqLevel":2,"rarity":1}
+{"name":"Umbral Disk","baseItemCode":"sml","baseItemName":"Small Shield","itemLevel":12,"reqLevel":9,"rarity":1}
+{"name":"Stormguild","baseItemCode":"lrg","baseItemName":"Large Shield","itemLevel":18,"reqLevel":13,"rarity":1}
+{"name":"Wall of the Eyeless","baseItemCode":"bsh","baseItemName":"Bone Shield","itemLevel":27,"reqLevel":20,"rarity":1}
+{"name":"Swordback Hold","baseItemCode":"spk","baseItemName":"Spiked Shield","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"Steelclash","baseItemCode":"kit","baseItemName":"Kite Shield","itemLevel":23,"reqLevel":17,"rarity":1}
+{"name":"Bverrit Keep","baseItemCode":"tow","baseItemName":"Tower Shield","itemLevel":26,"reqLevel":19,"rarity":1}
+{"name":"The Ward","baseItemCode":"gts","baseItemName":"Gothic Shield","itemLevel":35,"reqLevel":26,"rarity":1}
+{"name":"The Hand of Broc","baseItemCode":"lgl","baseItemName":"Gloves","itemLevel":7,"reqLevel":5,"rarity":1}
+{"name":"Bloodfist","baseItemCode":"vgl","baseItemName":"Heavy Gloves","itemLevel":12,"reqLevel":9,"rarity":1}
+{"name":"Chance Guards","baseItemCode":"mgl","baseItemName":"Bracers","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"Magefist","baseItemCode":"tgl","baseItemName":"Light Gauntlets","itemLevel":31,"reqLevel":23,"rarity":1}
+{"name":"Frostburn","baseItemCode":"hgl","baseItemName":"Gauntlets","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Hotspur","baseItemCode":"lbt","baseItemName":"Leather Boots","itemLevel":7,"reqLevel":5,"rarity":1}
+{"name":"Gorefoot","baseItemCode":"vbt","baseItemName":"Heavy Boots","itemLevel":12,"reqLevel":9,"rarity":1}
+{"name":"Treads of Cthon","baseItemCode":"mbt","baseItemName":"Chain Boots","itemLevel":20,"reqLevel":15,"rarity":1}
+{"name":"Goblin Toe","baseItemCode":"tbt","baseItemName":"Light Plate Boots","itemLevel":30,"reqLevel":22,"rarity":1}
+{"name":"Tearhaunch","baseItemCode":"hbt","baseItemName":"Plate Boots","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Lenyms Cord","baseItemCode":"lbl","baseItemName":"Sash","itemLevel":10,"reqLevel":7,"rarity":1}
+{"name":"Snakecord","baseItemCode":"vbl","baseItemName":"Light Belt","itemLevel":16,"reqLevel":12,"rarity":1}
+{"name":"Nightsmoke","baseItemCode":"mbl","baseItemName":"Belt","itemLevel":27,"reqLevel":20,"rarity":1}
+{"name":"Goldwrap","baseItemCode":"tbl","baseItemName":"Heavy Belt","itemLevel":36,"reqLevel":27,"rarity":1}
+{"name":"Bladebuckle","baseItemCode":"hbl","baseItemName":"Girdle","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Nokozan Relic","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":14,"reqLevel":10,"rarity":20}
+{"name":"The Eye of Etlich","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":20,"reqLevel":15,"rarity":5}
+{"name":"The Mahim-Oak Curio","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":34,"reqLevel":25,"rarity":10}
+{"name":"Nagelring","baseItemCode":"rin","baseItemName":"Ring","itemLevel":10,"reqLevel":7,"rarity":15}
+{"name":"Manald Heal","baseItemCode":"rin","baseItemName":"Ring","itemLevel":20,"reqLevel":15,"rarity":15}
+{"name":"The Stone of Jordan","baseItemCode":"rin","baseItemName":"Ring","itemLevel":39,"reqLevel":29,"rarity":1}
+{"name":"Amulet of the Viper","baseItemCode":"vip","baseItemName":"Amulet","itemLevel":null,"reqLevel":null,"rarity":1}
+{"name":"Staff of Kings","baseItemCode":"msf","baseItemName":"Staff","itemLevel":null,"reqLevel":null,"rarity":1}
+{"name":"Horadric Staff","baseItemCode":"hst","baseItemName":"Staff","itemLevel":null,"reqLevel":null,"rarity":1}
+{"name":"Hell Forge Hammer","baseItemCode":"hfh","baseItemName":"Hammer","itemLevel":null,"reqLevel":null,"rarity":1}
+{"name":"KhalimFlail","baseItemCode":"qf1","baseItemName":"Flail","itemLevel":null,"reqLevel":null,"rarity":1}
+{"name":"SuperKhalimFlail","baseItemCode":"qf2","baseItemName":"Flail","itemLevel":null,"reqLevel":null,"rarity":1}
+{"name":"Coldkill","baseItemCode":"9ha","baseItemName":"Hatchet","itemLevel":44,"reqLevel":36,"rarity":1}
+{"name":"Butcher's Pupil","baseItemCode":"9ax","baseItemName":"Cleaver","itemLevel":47,"reqLevel":39,"rarity":1}
+{"name":"Islestrike","baseItemCode":"92a","baseItemName":"Twin Axe","itemLevel":51,"reqLevel":43,"rarity":1}
+{"name":"Pompe's Wrath","baseItemCode":"9mp","baseItemName":"Crowbill","itemLevel":53,"reqLevel":45,"rarity":1}
+{"name":"Guardian Naga","baseItemCode":"9wa","baseItemName":"Naga","itemLevel":56,"reqLevel":48,"rarity":1}
+{"name":"Warlord's Trust","baseItemCode":"9la","baseItemName":"Military Axe","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Spellsteel","baseItemCode":"9ba","baseItemName":"Bearded Axe","itemLevel":47,"reqLevel":39,"rarity":1}
+{"name":"Stormrider","baseItemCode":"9bt","baseItemName":"Tabar","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Boneslayer Blade","baseItemCode":"9ga","baseItemName":"Gothic Axe","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"The Minataur","baseItemCode":"9gi","baseItemName":"Ancient Axe","itemLevel":53,"reqLevel":45,"rarity":1}
+{"name":"Suicide Branch","baseItemCode":"9wn","baseItemName":"Burnt Wand","itemLevel":41,"reqLevel":33,"rarity":1}
+{"name":"Carin Shard","baseItemCode":"9yw","baseItemName":"Petrified Wand","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Arm of King Leoric","baseItemCode":"9bw","baseItemName":"Tomb Wand","itemLevel":44,"reqLevel":36,"rarity":1}
+{"name":"Blackhand Key","baseItemCode":"9gw","baseItemName":"Grave Wand","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Dark Clan Crusher","baseItemCode":"9cl","baseItemName":"Cudgel","itemLevel":42,"reqLevel":34,"rarity":1}
+{"name":"Zakarum's Hand","baseItemCode":"9sc","baseItemName":"Rune Scepter","itemLevel":45,"reqLevel":37,"rarity":1}
+{"name":"The Fetid Sprinkler","baseItemCode":"9qs","baseItemName":"Holy Water Sprinkler","itemLevel":46,"reqLevel":38,"rarity":1}
+{"name":"Hand of Blessed Light","baseItemCode":"9ws","baseItemName":"Divine Scepter","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Fleshrender","baseItemCode":"9sp","baseItemName":"Barbed Club","itemLevel":46,"reqLevel":38,"rarity":1}
+{"name":"Sureshrill Frost","baseItemCode":"9ma","baseItemName":"Flanged Mace","itemLevel":47,"reqLevel":39,"rarity":1}
+{"name":"Moonfall","baseItemCode":"9mt","baseItemName":"Jagged Star","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Baezil's Vortex","baseItemCode":"9fl","baseItemName":"Knout","itemLevel":53,"reqLevel":45,"rarity":1}
+{"name":"Earthshaker","baseItemCode":"9wh","baseItemName":"Battle Hammer","itemLevel":51,"reqLevel":43,"rarity":1}
+{"name":"Bloodtree Stump","baseItemCode":"9m9","baseItemName":"War Club","itemLevel":56,"reqLevel":48,"rarity":1}
+{"name":"The Gavel of Pain","baseItemCode":"9gm","baseItemName":"Martel de Fer","itemLevel":53,"reqLevel":45,"rarity":1}
+{"name":"Bloodletter","baseItemCode":"9ss","baseItemName":"Gladius","itemLevel":38,"reqLevel":30,"rarity":1}
+{"name":"Coldsteel Eye","baseItemCode":"9sm","baseItemName":"Cutlass","itemLevel":39,"reqLevel":31,"rarity":1}
+{"name":"Hexfire","baseItemCode":"9sb","baseItemName":"Shamshir","itemLevel":41,"reqLevel":33,"rarity":1}
+{"name":"Blade of Ali Baba","baseItemCode":"9fc","baseItemName":"Tulwar","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Ginther's Rift","baseItemCode":"9cr","baseItemName":"Dimensional Blade","itemLevel":45,"reqLevel":37,"rarity":1}
+{"name":"Headstriker","baseItemCode":"9bs","baseItemName":"Battle Sword","itemLevel":47,"reqLevel":39,"rarity":1}
+{"name":"Plague Bearer","baseItemCode":"9ls","baseItemName":"Rune Sword","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"The Atlantian","baseItemCode":"9wd","baseItemName":"Ancient Sword","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Crainte Vomir","baseItemCode":"92h","baseItemName":"Espadon","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Bing Sz Wang","baseItemCode":"9cm","baseItemName":"Dacian Falx","itemLevel":51,"reqLevel":43,"rarity":1}
+{"name":"The Vile Husk","baseItemCode":"9gs","baseItemName":"Tusk Sword","itemLevel":52,"reqLevel":44,"rarity":1}
+{"name":"Cloudcrack","baseItemCode":"9b9","baseItemName":"Gothic Sword","itemLevel":53,"reqLevel":45,"rarity":1}
+{"name":"Todesfaelle Flamme","baseItemCode":"9fb","baseItemName":"Zweihander","itemLevel":54,"reqLevel":46,"rarity":1}
+{"name":"Swordguard","baseItemCode":"9gd","baseItemName":"Executioner Sword","itemLevel":55,"reqLevel":48,"rarity":1}
+{"name":"Spineripper","baseItemCode":"9dg","baseItemName":"Poignard","itemLevel":40,"reqLevel":32,"rarity":1}
+{"name":"Heart Carver","baseItemCode":"9di","baseItemName":"Rondel","itemLevel":44,"reqLevel":36,"rarity":1}
+{"name":"Blackbog's Sharp","baseItemCode":"9kr","baseItemName":"Cinquedeas","itemLevel":46,"reqLevel":38,"rarity":1}
+{"name":"Stormspike","baseItemCode":"9bl","baseItemName":"Stilleto","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"The Impaler","baseItemCode":"9sr","baseItemName":"War Spear","itemLevel":39,"reqLevel":31,"rarity":1}
+{"name":"Kelpie Snare","baseItemCode":"9tr","baseItemName":"Fuscina","itemLevel":41,"reqLevel":33,"rarity":1}
+{"name":"Soulfeast Tine","baseItemCode":"9br","baseItemName":"War Fork","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Hone Sundan","baseItemCode":"9st","baseItemName":"Yari","itemLevel":45,"reqLevel":37,"rarity":1}
+{"name":"Spire of Honor","baseItemCode":"9p9","baseItemName":"Lance","itemLevel":47,"reqLevel":39,"rarity":1}
+{"name":"The Meat Scraper","baseItemCode":"9b7","baseItemName":"Lochaber Axe","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Blackleach Blade","baseItemCode":"9vo","baseItemName":"Bill","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Athena's Wrath","baseItemCode":"9s8","baseItemName":"Battle Scythe","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Pierre Tombale Couant","baseItemCode":"9pa","baseItemName":"Partizan","itemLevel":51,"reqLevel":43,"rarity":1}
+{"name":"Husoldal Evo","baseItemCode":"9h9","baseItemName":"Bec-de-Corbin","itemLevel":52,"reqLevel":44,"rarity":1}
+{"name":"Grim's Burning Dead","baseItemCode":"9wc","baseItemName":"Grim Scythe","itemLevel":52,"reqLevel":45,"rarity":1}
+{"name":"Razorswitch","baseItemCode":"8ss","baseItemName":"Jo Stalf","itemLevel":36,"reqLevel":28,"rarity":1}
+{"name":"Ribcracker","baseItemCode":"8ls","baseItemName":"Quarterstaff","itemLevel":39,"reqLevel":31,"rarity":1}
+{"name":"Chromatic Ire","baseItemCode":"8cs","baseItemName":"Cedar Staff","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Warpspear","baseItemCode":"8bs","baseItemName":"Gothic Staff","itemLevel":47,"reqLevel":39,"rarity":1}
+{"name":"Skullcollector","baseItemCode":"8ws","baseItemName":"Rune Staff","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Skystrike","baseItemCode":"8sb","baseItemName":"Edge Bow","itemLevel":36,"reqLevel":28,"rarity":1}
+{"name":"Riphook","baseItemCode":"8hb","baseItemName":"Razor Bow","itemLevel":39,"reqLevel":31,"rarity":1}
+{"name":"Kuko Shakaku","baseItemCode":"8lb","baseItemName":"CedarBow","itemLevel":41,"reqLevel":33,"rarity":1}
+{"name":"Endlesshail","baseItemCode":"8cb","baseItemName":"Double Bow","itemLevel":44,"reqLevel":36,"rarity":1}
+{"name":"Whichwild String","baseItemCode":"8s8","baseItemName":"Short Siege Bow","itemLevel":47,"reqLevel":39,"rarity":1}
+{"name":"Cliffkiller","baseItemCode":"8l8","baseItemName":"Long Siege Bow","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Magewrath","baseItemCode":"8sw","baseItemName":"Rune Bow","itemLevel":51,"reqLevel":43,"rarity":1}
+{"name":"Godstrike Arch","baseItemCode":"8lw","baseItemName":"Gothic Bow","itemLevel":54,"reqLevel":46,"rarity":1}
+{"name":"Langer Briser","baseItemCode":"8lx","baseItemName":"Arbalest","itemLevel":40,"reqLevel":32,"rarity":1}
+{"name":"Pus Spiter","baseItemCode":"8mx","baseItemName":"Siege Crossbow","itemLevel":44,"reqLevel":36,"rarity":1}
+{"name":"Buriza-Do Kyanon","baseItemCode":"8hx","baseItemName":"Balista","itemLevel":59,"reqLevel":41,"rarity":1}
+{"name":"Demon Machine","baseItemCode":"8rx","baseItemName":"Chu-Ko-Nu","itemLevel":57,"reqLevel":49,"rarity":1}
+{"name":"Peasent Crown","baseItemCode":"xap","baseItemName":"War Hat","itemLevel":36,"reqLevel":28,"rarity":1}
+{"name":"Rockstopper","baseItemCode":"xkp","baseItemName":"Sallet","itemLevel":39,"reqLevel":31,"rarity":1}
+{"name":"Stealskull","baseItemCode":"xlm","baseItemName":"Casque","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Darksight Helm","baseItemCode":"xhl","baseItemName":"Basinet","itemLevel":46,"reqLevel":38,"rarity":1}
+{"name":"Valkiry Wing","baseItemCode":"xhm","baseItemName":"Winged Helm","itemLevel":52,"reqLevel":44,"rarity":1}
+{"name":"Crown of Thieves","baseItemCode":"xrn","baseItemName":"Grand Crown","itemLevel":57,"reqLevel":49,"rarity":1}
+{"name":"Blackhorn's Face","baseItemCode":"xsk","baseItemName":"Death Mask","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Vampiregaze","baseItemCode":"xh9","baseItemName":"Grim Helm","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"The Spirit Shroud","baseItemCode":"xui","baseItemName":"Ghost Armor","itemLevel":36,"reqLevel":28,"rarity":1}
+{"name":"Skin of the Vipermagi","baseItemCode":"xea","baseItemName":"SerpentSkin Armor","itemLevel":37,"reqLevel":29,"rarity":1}
+{"name":"Skin of the Flayerd One","baseItemCode":"xla","baseItemName":"Demonhide Armor","itemLevel":39,"reqLevel":31,"rarity":1}
+{"name":"Ironpelt","baseItemCode":"xtu","baseItemName":"Tresllised Armor","itemLevel":41,"reqLevel":33,"rarity":1}
+{"name":"Spiritforge","baseItemCode":"xng","baseItemName":"Linked Mail","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Crow Caw","baseItemCode":"xcl","baseItemName":"Tigulated Mail","itemLevel":45,"reqLevel":37,"rarity":1}
+{"name":"Shaftstop","baseItemCode":"xhn","baseItemName":"Mesh Armor","itemLevel":46,"reqLevel":38,"rarity":1}
+{"name":"Duriel's Shell","baseItemCode":"xrs","baseItemName":"Cuirass","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Skullder's Ire","baseItemCode":"xpl","baseItemName":"Russet Armor","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Guardian Angel","baseItemCode":"xlt","baseItemName":"Templar Coat","itemLevel":53,"reqLevel":45,"rarity":1}
+{"name":"Toothrow","baseItemCode":"xld","baseItemName":"Sharktooth Armor","itemLevel":56,"reqLevel":48,"rarity":1}
+{"name":"Atma's Wail","baseItemCode":"xth","baseItemName":"Embossed Plate","itemLevel":59,"reqLevel":51,"rarity":1}
+{"name":"Black Hades","baseItemCode":"xul","baseItemName":"Chaos Armor","itemLevel":61,"reqLevel":53,"rarity":1}
+{"name":"Corpsemourn","baseItemCode":"xar","baseItemName":"Ornate Armor","itemLevel":63,"reqLevel":55,"rarity":1}
+{"name":"Que-Hegan's Wisdon","baseItemCode":"xtp","baseItemName":"Mage Plate","itemLevel":59,"reqLevel":51,"rarity":1}
+{"name":"Visceratuant","baseItemCode":"xuc","baseItemName":"Defender","itemLevel":36,"reqLevel":28,"rarity":1}
+{"name":"Mosers Blessed Circle","baseItemCode":"xml","baseItemName":"Round Shield","itemLevel":39,"reqLevel":31,"rarity":1}
+{"name":"Stormchaser","baseItemCode":"xrg","baseItemName":"Scutum","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Tiamat's Rebuke","baseItemCode":"xit","baseItemName":"Dragon Shield","itemLevel":46,"reqLevel":38,"rarity":1}
+{"name":"Kerke's Sanctuary","baseItemCode":"xow","baseItemName":"Pavise","itemLevel":52,"reqLevel":44,"rarity":1}
+{"name":"Radimant's Sphere","baseItemCode":"xts","baseItemName":"Ancient Shield","itemLevel":58,"reqLevel":50,"rarity":1}
+{"name":"Lidless Wall","baseItemCode":"xsh","baseItemName":"Grim Shield","itemLevel":49,"reqLevel":41,"rarity":1}
+{"name":"Lance Guard","baseItemCode":"xpk","baseItemName":"Barbed Shield","itemLevel":43,"reqLevel":35,"rarity":1}
+{"name":"Venom Grip","baseItemCode":"xlg","baseItemName":"Demonhide Gloves","itemLevel":37,"reqLevel":29,"rarity":1}
+{"name":"Gravepalm","baseItemCode":"xvg","baseItemName":"Sharkskin Gloves","itemLevel":39,"reqLevel":32,"rarity":1}
+{"name":"Ghoulhide","baseItemCode":"xmg","baseItemName":"Heavy Bracers","itemLevel":44,"reqLevel":36,"rarity":1}
+{"name":"Lavagout","baseItemCode":"xtg","baseItemName":"Battle Guantlets","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Hellmouth","baseItemCode":"xhg","baseItemName":"War Gauntlets","itemLevel":55,"reqLevel":47,"rarity":1}
+{"name":"Infernostride","baseItemCode":"xlb","baseItemName":"Demonhide Boots","itemLevel":37,"reqLevel":29,"rarity":1}
+{"name":"Waterwalk","baseItemCode":"xvb","baseItemName":"Sharkskin Boots","itemLevel":40,"reqLevel":32,"rarity":1}
+{"name":"Silkweave","baseItemCode":"xmb","baseItemName":"Mesh Boots","itemLevel":44,"reqLevel":36,"rarity":1}
+{"name":"Wartraveler","baseItemCode":"xtb","baseItemName":"Battle Boots","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Gorerider","baseItemCode":"xhb","baseItemName":"War Boots","itemLevel":55,"reqLevel":47,"rarity":1}
+{"name":"String of Ears","baseItemCode":"zlb","baseItemName":"Demonhide Sash","itemLevel":37,"reqLevel":29,"rarity":1}
+{"name":"Razortail","baseItemCode":"zvb","baseItemName":"Sharkskin Belt","itemLevel":39,"reqLevel":32,"rarity":1}
+{"name":"Gloomstrap","baseItemCode":"zmb","baseItemName":"Mesh Belt","itemLevel":45,"reqLevel":36,"rarity":1}
+{"name":"Snowclash","baseItemCode":"ztb","baseItemName":"Battle Belt","itemLevel":49,"reqLevel":42,"rarity":1}
+{"name":"Thudergod's Vigor","baseItemCode":"zhb","baseItemName":"War Belt","itemLevel":55,"reqLevel":47,"rarity":1}
+{"name":"Harlequin Crest","baseItemCode":"uap","baseItemName":"Shako","itemLevel":69,"reqLevel":62,"rarity":1}
+{"name":"Veil of Steel","baseItemCode":"uhm","baseItemName":"Spired Helm","itemLevel":77,"reqLevel":73,"rarity":1}
+{"name":"The Gladiator's Bane","baseItemCode":"utu","baseItemName":"Wire Fleece","itemLevel":85,"reqLevel":85,"rarity":1}
+{"name":"Arkaine's Valor","baseItemCode":"upl","baseItemName":"Balrog Skin","itemLevel":85,"reqLevel":85,"rarity":1}
+{"name":"Blackoak Shield","baseItemCode":"uml","baseItemName":"Luna","itemLevel":67,"reqLevel":61,"rarity":1}
+{"name":"Stormshield","baseItemCode":"uit","baseItemName":"Monarch","itemLevel":77,"reqLevel":73,"rarity":1}
+{"name":"Hellslayer","baseItemCode":"7bt","baseItemName":"Decapitator","itemLevel":71,"reqLevel":66,"rarity":1}
+{"name":"Messerschmidt's Reaver","baseItemCode":"7ga","baseItemName":"Champion Axe","itemLevel":75,"reqLevel":70,"rarity":1}
+{"name":"Baranar's Star","baseItemCode":"7mt","baseItemName":"Devil Star","itemLevel":70,"reqLevel":65,"rarity":1}
+{"name":"Schaefer's Hammer","baseItemCode":"7wh","baseItemName":"Legendary Mallet","itemLevel":83,"reqLevel":79,"rarity":1}
+{"name":"The Cranium Basher","baseItemCode":"7gm","baseItemName":"Thunder Maul","itemLevel":85,"reqLevel":87,"rarity":1}
+{"name":"Lightsabre","baseItemCode":"7cr","baseItemName":"Phase Blade","itemLevel":66,"reqLevel":58,"rarity":5}
+{"name":"Doombringer","baseItemCode":"7b7","baseItemName":"Champion Sword","itemLevel":75,"reqLevel":69,"rarity":1}
+{"name":"The Grandfather","baseItemCode":"7gd","baseItemName":"Colossus Blade","itemLevel":85,"reqLevel":81,"rarity":1}
+{"name":"Wizardspike","baseItemCode":"7dg","baseItemName":"Bone Knife","itemLevel":69,"reqLevel":61,"rarity":1}
+{"name":"Constricting Ring","baseItemCode":"rin","baseItemName":"Ring","itemLevel":95,"reqLevel":95,"rarity":1}
+{"name":"Stormspire","baseItemCode":"7wc","baseItemName":"Giant Thresher","itemLevel":78,"reqLevel":70,"rarity":1}
+{"name":"Eaglehorn","baseItemCode":"6l7","baseItemName":"Crusader Bow","itemLevel":77,"reqLevel":69,"rarity":1}
+{"name":"Windforce","baseItemCode":"6lw","baseItemName":"Hydra Bow","itemLevel":80,"reqLevel":73,"rarity":1}
+{"name":"Bul Katho's Wedding Band","baseItemCode":"rin","baseItemName":"Ring","itemLevel":66,"reqLevel":58,"rarity":1}
+{"name":"The Cat's Eye","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":58,"reqLevel":50,"rarity":5}
+{"name":"The Rising Sun","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":73,"reqLevel":65,"rarity":5}
+{"name":"Crescent Moon","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":58,"reqLevel":50,"rarity":5}
+{"name":"Mara's Kaleidoscope","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":80,"reqLevel":67,"rarity":5}
+{"name":"Atma's Scarab","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":60,"reqLevel":60,"rarity":5}
+{"name":"Dwarf Star","baseItemCode":"rin","baseItemName":"Ring","itemLevel":53,"reqLevel":45,"rarity":10}
+{"name":"Raven Frost","baseItemCode":"rin","baseItemName":"Ring","itemLevel":53,"reqLevel":45,"rarity":10}
+{"name":"Highlord's Wrath","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":73,"reqLevel":65,"rarity":5}
+{"name":"Saracen's Chance","baseItemCode":"amu","baseItemName":"Amulet","itemLevel":55,"reqLevel":47,"rarity":5}
+{"name":"Arreat's Face","baseItemCode":"baa","baseItemName":"Slayer Guard","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Homunculus","baseItemCode":"nea","baseItemName":"Heirophant Trophy","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Titan's Revenge","baseItemCode":"ama","baseItemName":"Ceremonial Javelin","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Lycander's Aim","baseItemCode":"am7","baseItemName":"Ceremonial Bow","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Lycander's Flank","baseItemCode":"am9","baseItemName":"Ceremonial Pike","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"The Oculus","baseItemCode":"oba","baseItemName":"Swirling Crystal","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Herald of Zakarum","baseItemCode":"pa9","baseItemName":"Aerin Shield","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Cutthroat1","baseItemCode":"9tw","baseItemName":"Runic Talons","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"Jalal's Mane","baseItemCode":"dra","baseItemName":"Dream Spirit","itemLevel":50,"reqLevel":42,"rarity":1}
+{"name":"The Scalper","baseItemCode":"9ta","baseItemName":"Francisca","itemLevel":65,"reqLevel":57,"rarity":1}
+{"name":"Bloodmoon","baseItemCode":"7sb","baseItemName":"elegant blade","itemLevel":69,"reqLevel":61,"rarity":1}
+{"name":"Djinnslayer","baseItemCode":"7sm","baseItemName":"ataghan","itemLevel":73,"reqLevel":65,"rarity":1}
+{"name":"Deathbit","baseItemCode":"9tk","baseItemName":"battle dart","itemLevel":52,"reqLevel":44,"rarity":1}
+{"name":"Warshrike","baseItemCode":"7bk","baseItemName":"winged knife","itemLevel":83,"reqLevel":75,"rarity":1}
+{"name":"Gutsiphon","baseItemCode":"6rx","baseItemName":"demon crossbow","itemLevel":79,"reqLevel":71,"rarity":1}
+{"name":"Razoredge","baseItemCode":"7ha","baseItemName":"tomahawk","itemLevel":75,"reqLevel":67,"rarity":1}
+{"name":"Demonlimb","baseItemCode":"7sp","baseItemName":"tyrant club","itemLevel":71,"reqLevel":63,"rarity":1}
+{"name":"Steelshade","baseItemCode":"ulm","baseItemName":"armet","itemLevel":70,"reqLevel":62,"rarity":1}
+{"name":"Tomb Reaver","baseItemCode":"7pa","baseItemName":"cryptic axe","itemLevel":86,"reqLevel":84,"rarity":1}
+{"name":"Deaths's Web","baseItemCode":"7gw","baseItemName":"unearthed wand","itemLevel":74,"reqLevel":66,"rarity":1}
+{"name":"Nature's Peace","baseItemCode":"rin","baseItemName":"ring","itemLevel":77,"reqLevel":69,"rarity":3}
+{"name":"Azurewrath","baseItemCode":"7cr","baseItemName":"phase blade","itemLevel":87,"reqLevel":85,"rarity":1}
+{"name":"Seraph's Hymn","baseItemCode":"amu","baseItemName":"amulet","itemLevel":73,"reqLevel":65,"rarity":3}
+{"name":"Fleshripper","baseItemCode":"7kr","baseItemName":"fanged knife","itemLevel":76,"reqLevel":68,"rarity":1}
+{"name":"Horizon's Tornado","baseItemCode":"7fl","baseItemName":"scourge","itemLevel":72,"reqLevel":64,"rarity":5}
+{"name":"Stone Crusher","baseItemCode":"7wh","baseItemName":"legendary mallet","itemLevel":76,"reqLevel":68,"rarity":4}
+{"name":"Jadetalon","baseItemCode":"7wb","baseItemName":"wrist sword","itemLevel":74,"reqLevel":66,"rarity":1}
+{"name":"Shadowdancer","baseItemCode":"uhb","baseItemName":"myrmidon greaves","itemLevel":79,"reqLevel":71,"rarity":1}
+{"name":"Cerebus","baseItemCode":"drb","baseItemName":"blood spirit","itemLevel":71,"reqLevel":63,"rarity":1}
+{"name":"Tyrael's Might","baseItemCode":"uar","baseItemName":"sacred armor","itemLevel":87,"reqLevel":84,"rarity":1}
+{"name":"Souldrain","baseItemCode":"umg","baseItemName":"vambraces","itemLevel":82,"reqLevel":74,"rarity":1}
+{"name":"Runemaster","baseItemCode":"72a","baseItemName":"ettin axe","itemLevel":80,"reqLevel":72,"rarity":1}
+{"name":"Deathcleaver","baseItemCode":"7wa","baseItemName":"berserker axe","itemLevel":78,"reqLevel":70,"rarity":1}
+{"name":"Executioner's Justice","baseItemCode":"7gi","baseItemName":"glorious axe","itemLevel":83,"reqLevel":75,"rarity":1}
+{"name":"Stoneraven","baseItemCode":"amd","baseItemName":"matriarchal spear","itemLevel":72,"reqLevel":64,"rarity":1}
+{"name":"Leviathan","baseItemCode":"uld","baseItemName":"kraken shell","itemLevel":73,"reqLevel":65,"rarity":1}
+{"name":"Wisp","baseItemCode":"rin","baseItemName":"ring","itemLevel":84,"reqLevel":76,"rarity":1}
+{"name":"Gargoyle's Bite","baseItemCode":"7ts","baseItemName":"winged harpoon","itemLevel":78,"reqLevel":70,"rarity":1}
+{"name":"Lacerator","baseItemCode":"7b8","baseItemName":"winged axe","itemLevel":76,"reqLevel":68,"rarity":1}
+{"name":"Mang Song's Lesson","baseItemCode":"6ws","baseItemName":"archon staff","itemLevel":86,"reqLevel":82,"rarity":1}
+{"name":"Viperfork","baseItemCode":"7br","baseItemName":"war fork","itemLevel":79,"reqLevel":71,"rarity":1}
+{"name":"Ethereal Edge","baseItemCode":"7ba","baseItemName":"silver-edged axe","itemLevel":82,"reqLevel":74,"rarity":1}
+{"name":"Demonhorn's Edge","baseItemCode":"bad","baseItemName":"destroyer helm","itemLevel":69,"reqLevel":61,"rarity":1}
+{"name":"The Reaper's Toll","baseItemCode":"7s8","baseItemName":"thresher","itemLevel":83,"reqLevel":75,"rarity":1}
+{"name":"Spiritkeeper","baseItemCode":"drd","baseItemName":"earth spirit","itemLevel":75,"reqLevel":67,"rarity":1}
+{"name":"Hellrack","baseItemCode":"6hx","baseItemName":"colossus crossbow","itemLevel":84,"reqLevel":76,"rarity":1}
+{"name":"Alma Negra","baseItemCode":"pac","baseItemName":"sacred rondache","itemLevel":85,"reqLevel":77,"rarity":1}
+{"name":"Darkforge Spawn","baseItemCode":"nef","baseItemName":"bloodlord skull","itemLevel":72,"reqLevel":64,"rarity":1}
+{"name":"Widowmaker","baseItemCode":"6sw","baseItemName":"ward bow","itemLevel":73,"reqLevel":65,"rarity":1}
+{"name":"Bloodraven's Charge","baseItemCode":"amb","baseItemName":"matriarchal bow","itemLevel":79,"reqLevel":71,"rarity":1}
+{"name":"Ghostflame","baseItemCode":"7bl","baseItemName":"legend spike","itemLevel":70,"reqLevel":62,"rarity":1}
+{"name":"Shadowkiller","baseItemCode":"7cs","baseItemName":"battle cestus","itemLevel":85,"reqLevel":78,"rarity":1}
+{"name":"Gimmershred","baseItemCode":"7ta","baseItemName":"flying axe","itemLevel":78,"reqLevel":70,"rarity":1}
+{"name":"Griffon's Eye","baseItemCode":"ci3","baseItemName":"diadem","itemLevel":84,"reqLevel":76,"rarity":1}
+{"name":"Windhammer","baseItemCode":"7m7","baseItemName":"ogre maul","itemLevel":76,"reqLevel":68,"rarity":1}
+{"name":"Thunderstroke","baseItemCode":"amf","baseItemName":"matriarchal javelin","itemLevel":77,"reqLevel":69,"rarity":1}
+{"name":"Demon's Arch","baseItemCode":"7s7","baseItemName":"balrog spear","itemLevel":76,"reqLevel":68,"rarity":1}
+{"name":"Boneflame","baseItemCode":"nee","baseItemName":"succubae skull","itemLevel":80,"reqLevel":72,"rarity":1}
+{"name":"Steelpillar","baseItemCode":"7p7","baseItemName":"war pike","itemLevel":77,"reqLevel":69,"rarity":1}
+{"name":"Nightwing's Veil","baseItemCode":"uhm","baseItemName":"spired helm","itemLevel":75,"reqLevel":67,"rarity":1}
+{"name":"Crown of Ages","baseItemCode":"urn","baseItemName":"corona","itemLevel":86,"reqLevel":82,"rarity":1}
+{"name":"Andariel's Visage","baseItemCode":"usk","baseItemName":"demonhead","itemLevel":85,"reqLevel":83,"rarity":1}
+{"name":"Darkfear","baseItemCode":"ulm","baseItemName":"armet","itemLevel":null,"reqLevel":null,"rarity":1}
+{"name":"Dragonscale","baseItemCode":"pae","baseItemName":"zakarum shield","itemLevel":84,"reqLevel":80,"rarity":1}
+{"name":"Steel Carapice","baseItemCode":"uul","baseItemName":"shadow plate","itemLevel":74,"reqLevel":66,"rarity":1}
+{"name":"Medusa's Gaze","baseItemCode":"uow","baseItemName":"aegis","itemLevel":84,"reqLevel":76,"rarity":1}
+{"name":"Ravenlore","baseItemCode":"dre","baseItemName":"sky spirit","itemLevel":82,"reqLevel":74,"rarity":1}
+{"name":"Boneshade","baseItemCode":"7bw","baseItemName":"lich wand","itemLevel":84,"reqLevel":79,"rarity":1}
+{"name":"Flamebellow","baseItemCode":"7gs","baseItemName":"balrog blade","itemLevel":79,"reqLevel":71,"rarity":1}
+{"name":"Fathom","baseItemCode":"obf","baseItemName":"dimensional shard","itemLevel":81,"reqLevel":73,"rarity":1}
+{"name":"Wolfhowl","baseItemCode":"bac","baseItemName":"fury visor","itemLevel":85,"reqLevel":79,"rarity":1}
+{"name":"Spirit Ward","baseItemCode":"uts","baseItemName":"ward","itemLevel":76,"reqLevel":68,"rarity":1}
+{"name":"Kira's Guardian","baseItemCode":"ci2","baseItemName":"tiara","itemLevel":85,"reqLevel":77,"rarity":1}
+{"name":"Ormus' Robes","baseItemCode":"uui","baseItemName":"dusk shroud","itemLevel":83,"reqLevel":75,"rarity":1}
+{"name":"Gheed's Fortune","baseItemCode":"cm3","baseItemName":"charm","itemLevel":70,"reqLevel":62,"rarity":1}
+{"name":"Stormlash","baseItemCode":"7fl","baseItemName":"scourge","itemLevel":86,"reqLevel":82,"rarity":1}
+{"name":"Halaberd's Reign","baseItemCode":"bae","baseItemName":"conqueror crown","itemLevel":85,"reqLevel":77,"rarity":1}
+{"name":"Spike Thorn","baseItemCode":"upk","baseItemName":"blade barrier","itemLevel":78,"reqLevel":70,"rarity":1}
+{"name":"Dracul's Grasp","baseItemCode":"uvg","baseItemName":"vampirebone gloves","itemLevel":84,"reqLevel":76,"rarity":1}
+{"name":"Frostwind","baseItemCode":"7ls","baseItemName":"cryptic sword","itemLevel":78,"reqLevel":70,"rarity":1}
+{"name":"Templar's Might","baseItemCode":"uar","baseItemName":"sacred armor","itemLevel":82,"reqLevel":74,"rarity":8}
+{"name":"Eschuta's temper","baseItemCode":"obc","baseItemName":"eldritch orb","itemLevel":80,"reqLevel":72,"rarity":1}
+{"name":"Firelizard's Talons","baseItemCode":"7lw","baseItemName":"feral claws","itemLevel":75,"reqLevel":67,"rarity":1}
+{"name":"Sandstorm Trek","baseItemCode":"uvb","baseItemName":"scarabshell boots","itemLevel":72,"reqLevel":64,"rarity":1}
+{"name":"Marrowwalk","baseItemCode":"umb","baseItemName":"boneweave boots","itemLevel":74,"reqLevel":66,"rarity":1}
+{"name":"Heaven's Light","baseItemCode":"7sc","baseItemName":"mighty scepter","itemLevel":69,"reqLevel":61,"rarity":1}
+{"name":"Arachnid Mesh","baseItemCode":"ulc","baseItemName":"spiderweb sash","itemLevel":87,"reqLevel":80,"rarity":1}
+{"name":"Nosferatu's Coil","baseItemCode":"uvc","baseItemName":"vampirefang belt","itemLevel":68,"reqLevel":51,"rarity":1}
+{"name":"Metalgrid","baseItemCode":"amu","baseItemName":"amulet","itemLevel":85,"reqLevel":81,"rarity":2}
+{"name":"Verdugo's Hearty Cord","baseItemCode":"umc","baseItemName":"mithril coil","itemLevel":71,"reqLevel":63,"rarity":1}
+{"name":"Carrion Wind","baseItemCode":"rin","baseItemName":"ring","itemLevel":68,"reqLevel":60,"rarity":3}
+{"name":"Giantskull","baseItemCode":"uh9","baseItemName":"bone visage","itemLevel":73,"reqLevel":65,"rarity":1}
+{"name":"Ironward","baseItemCode":"7ws","baseItemName":"caduceus","itemLevel":68,"reqLevel":60,"rarity":1}
+{"name":"Annihilus","baseItemCode":"cm1","baseItemName":"charm","itemLevel":110,"reqLevel":70,"rarity":1}
+{"name":"Arioc's Needle","baseItemCode":"7sr","baseItemName":"hyperion spear","itemLevel":85,"reqLevel":81,"rarity":1}
+{"name":"Cranebeak","baseItemCode":"7mp","baseItemName":"war spike","itemLevel":71,"reqLevel":63,"rarity":1}
+{"name":"Nord's Tenderizer","baseItemCode":"7cl","baseItemName":"truncheon","itemLevel":76,"reqLevel":68,"rarity":1}
+{"name":"Earthshifter","baseItemCode":"7gm","baseItemName":"thunder maul","itemLevel":77,"reqLevel":69,"rarity":1}
+{"name":"Wraithflight","baseItemCode":"7gl","baseItemName":"ghost glaive","itemLevel":84,"reqLevel":76,"rarity":1}
+{"name":"Bonehew","baseItemCode":"7o7","baseItemName":"ogre axe","itemLevel":72,"reqLevel":64,"rarity":1}
+{"name":"Ondal's Wisdom","baseItemCode":"6cs","baseItemName":"elder staff","itemLevel":74,"reqLevel":66,"rarity":1}
+{"name":"The Reedeemer","baseItemCode":"7sc","baseItemName":"mighty scepter","itemLevel":80,"reqLevel":72,"rarity":1}
+{"name":"Headhunter's Glory","baseItemCode":"ush","baseItemName":"troll nest","itemLevel":83,"reqLevel":75,"rarity":1}
+{"name":"Steelrend","baseItemCode":"uhg","baseItemName":"ogre gauntlets","itemLevel":78,"reqLevel":70,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Rainbow Facet","baseItemCode":"jew","baseItemName":"jewel","itemLevel":85,"reqLevel":49,"rarity":1}
+{"name":"Hellfire Torch","baseItemCode":"cm2","baseItemName":"charm","itemLevel":110,"reqLevel":75,"rarity":1}

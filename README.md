@@ -2,6 +2,12 @@
 
 [Enter useful description for D2DropCalc]
 
+## Json Formatting
+
+`input-json` contains json sourced from [blizzhackers/d2data](https://github.com/blizzhackers/d2data), with minor manual cleanup to make the json parsable by [FSharp.Data](https://github.com/fsprojects/FSharp.Data). Scripts in `scripts` are used to transform that data into a usable format and drop that data into `json`, which is used as the final input for loading on the project.
+
+Items are encoded and decoded via [Thoth.Json.Net](https://github.com/thoth-org/Thoth.Json) for better compaction with no effort compared to regular Newtonsoft.Json.
+
 ---
 
 ## Builds
@@ -162,4 +168,7 @@ macOS/Linux Environment Variable:
 RELEASE_VERSION=0.2.0 ./build.sh Release
 ```
 
+## Licenses
+
+[blizzhackers/d2data](https://github.com/blizzhackers/d2data) is under an MIT license, here redistributed under a GNU GPL V3.0 license.
 
