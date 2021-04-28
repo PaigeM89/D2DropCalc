@@ -2,6 +2,16 @@
 
 [Enter useful description for D2DropCalc]
 
+## Hot Reloading
+
+Scripts are served per page, sourced from the `WebRoot` folder. Run `yarn build` in the Fable project to build the scripts. They (well, it) is automatically dumped in the webroot folder in server. 
+
+To get live reloading on these scripts, use `browser-sync` from the web root folder to watch for changes:
+```
+browser-sync start --proxy http://localhost:5000/ --files '**/*.js'
+```
+(source: [this blog post](https://weblog.west-wind.com/posts/2019/May/18/Live-Reloading-Server-Side-ASPNET-Core-Apps))
+
 ## Json Formatting
 
 `input-json` contains json sourced from [blizzhackers/d2data](https://github.com/blizzhackers/d2data), with minor manual cleanup to make the json parsable by [FSharp.Data](https://github.com/fsprojects/FSharp.Data). Scripts in `scripts` are used to transform that data into a usable format and drop that data into `json`, which is used as the final input for loading on the project.

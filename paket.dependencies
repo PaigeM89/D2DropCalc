@@ -19,6 +19,7 @@ group Client
     nuget Fable.Core 3.2.3
     nuget Thoth.Json
     nuget Fable.SimpleHttp
+    nuget Fable.Promise
 
 group Server
     storage: none

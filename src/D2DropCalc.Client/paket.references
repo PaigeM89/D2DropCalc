@@ -5,3 +5,4 @@ Fable.Browser.Dom
 Fable.Core
 Thoth.Json
 Fable.SimpleHttp
+Fable.Promise

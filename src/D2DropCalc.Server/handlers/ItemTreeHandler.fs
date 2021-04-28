@@ -16,12 +16,18 @@ module ItemTreeHandler =
                     link [ _rel  "stylesheet"
                            _type "text/css"
                            _href "/main.css" ]
-                    script [ _src "scripts/bundle.js"; _type "application/javascript" ] []
+                    script [ _src "scripts/bundle.js"; _type "module" ] [ ]
+                        //_type "application/javascript" ] []
                 ]
                 body [] [
                     div [ _id "content" ] [
                         button [ _id "loadArmors" ] [ str "Click to load armors" ]
+                        div [ _id "armorOutputDiv" ] [
+                            p [ _id "armorText" ] [str "Armors not yet loaded"]
+                        ]
+                        p [_id "ignore-this"] [ str "this should appear" ]
                     ]
+                    p [ _id "ignore-this-2" ] [ str "appears outside the div" ]
                 ]
             ] |> htmlView
 

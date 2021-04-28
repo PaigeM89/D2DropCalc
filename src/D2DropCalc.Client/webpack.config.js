@@ -14,7 +14,8 @@ if (!outputWebpackStatsAsJson) {
 
 module.exports = {
     mode: isProduction ? 'production' : 'development',
-    entry: "./src/App.fsproj", 
+    entry: "./src/App.fsproj",
+    watch: true,
     output: {
         path: path.join(__dirname, "../D2DropCalc.Server/WebRoot/scripts/"),
         filename: "bundle.js",

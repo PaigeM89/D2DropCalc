@@ -14,6 +14,7 @@
   "dependencies": {
     "@babel/core": "^7.13.16",
     "fable-compiler": "^2.13.0",
-    "fable-loader": "^2.1.9"
+    "fable-loader": "^2.1.9",
+    "fable-splitter": "^2.2.1"
   }
 }
