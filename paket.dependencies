@@ -10,6 +10,16 @@ nuget altcover ~> 7
 nuget Thoth.Json.Net
 nuget FsToolkit.ErrorHandling
 
+group Client
+    storage: none
+    source https://www.nuget.org/api/v2
+    source https://api.nuget.org/v3/index.json
+
+    nuget Fable.Browser.Dom 2.3.0
+    nuget Fable.Core 3.2.3
+    nuget Thoth.Json
+    nuget Fable.SimpleHttp
+
 group Server
     storage: none
     source https://www.nuget.org/api/v2

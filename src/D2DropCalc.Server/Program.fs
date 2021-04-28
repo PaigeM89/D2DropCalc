@@ -34,6 +34,7 @@ module Views =
                 link [ _rel  "stylesheet"
                        _type "text/css"
                        _href "/main.css" ]
+                script [ _src "./scripts/bundle.js" ] []
             ]
             body [] content
         ]
@@ -50,32 +51,6 @@ module Views =
 // ---------------------------------
 // Web app
 // ---------------------------------
-
-let isOk r =
-    match r with
-    | Ok _ -> true
-    | Error _ -> false
-
-let forceResult r =
-    match r with
-    | Ok x -> x
-    | Error e -> failwithf "Unable to force result. Error: %A" e
-
-let getArmors next (ctx : HttpContext) =
-    let conf = ctx.GetService<Config.IServeConfig>()
-    let conf = conf.Serve()
-    let armorResults = TreasureClasses.Loading.loadArmors conf
-    armorResults
-    |> List.filter (isOk >> not)
-    |> List.iter (fun x ->
-        printfn "Unable to decode armor %A" x
-    )
-    let response = 
-        armorResults
-        |> List.filter isOk
-        |> List.map forceResult
-        |> List.map (fun x -> x.EncodeMinimal())
-    json response next ctx
 
 let indexHandler (name : string) =
     let greetings = sprintf "Hello %s, from Giraffe!" name
@@ -103,7 +78,7 @@ let webApp =
                 POST >=> reloadConfig
                 GET >=> configHandler
             ]
-            route "/armors" >=> GET >=> getArmors
+            Handlers.ItemTreeHandler.Routes.routes
         ]
         setStatusCode 404 >=> text "Not Found"
     ]
@@ -152,13 +127,23 @@ let configureServices (services : IServiceCollection) =
     services.AddGiraffe() |> ignore
     let conf = initConfigServer()
     
-    services.AddSingleton<Config.IServeConfig, LoadJson.ConfigServer>(fun _ -> conf)
+    services
+        .AddSingleton<Config.IServeConfig, LoadJson.ConfigServer>(fun _ -> conf)
         .AddSingleton<Config.ILoadConfig, LoadJson.ConfigServer>(fun _ -> conf)
+        .AddSingleton<Loading.ILoadData, Loading.DataSource>(fun provider ->
+            let confServe = provider.GetService<Config.IServeConfig>()
+            Loading.DataSource(confServe)
+        )
+        .AddSingleton<Loading.IServeData, Loading.DataSource>(fun provider ->
+            let src = provider.GetService<Loading.ILoadData>()
+            src :?> Loading.DataSource
+        )
+
         |> ignore
 
 let configureLogging (builder : ILoggingBuilder) =
     builder.AddConsole()
-           .AddDebug() |> ignore
+            .AddDebug() |> ignore
 
 let buildWebHost args contentRoot webRoot =
     Microsoft.AspNetCore.WebHost.CreateDefaultBuilder(args)
@@ -188,6 +173,8 @@ let main args =
         //                 .ConfigureLogging(configureLogging)
         //                 |> ignore)
         //     .Build()
+    let dataLoader = webHost.Services.GetService<Loading.ILoadData>()
+    dataLoader.LoadAll()
     webHost.Start()
     printfn "Webhost started, ready for requests."
     webHost.WaitForShutdown()
