@@ -17,7 +17,6 @@ module ItemTreeHandler =
                            _type "text/css"
                            _href "/main.css" ]
                     script [ _src "scripts/bundle.js"; _type "module" ] [ ]
-                        //_type "application/javascript" ] []
                 ]
                 body [] [
                     div [ _id "content" ] [
