@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- <Compile Include="../../shared/Types.fs" /> -->
+    <Compile Include="../../D2DropCalc/Types.fs" />
+    <Compile Include="Fetch.fs" />
+    <Compile Include="components/micro/*.fs" />
+    <Compile Include="components/ItemBaseDropdowns.fs" />
+    <Compile Include="components/Armors.fs" />
+    <Compile Include="components/ViewItem.fs" />
+    <Compile Include="components/Navbar.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <Import Project="..\..\..\.paket\Paket.Restore.targets" />
+</Project>

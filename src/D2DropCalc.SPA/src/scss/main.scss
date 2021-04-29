@@ -1,0 +1,36 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+@import '~bulma/bulma.sass';
+
+//@import "~bulma/sass/utilities/initial-variables";
+@import '~bulma/sass/utilities/initial-variables';
+
+//@import "~bulma/sass/utilities/functions";
+@import '~bulma/sass/utilities/functions';
+
+$diablo-red: #9C0000;
+$diablo-red-invert: findColorInvert($diablo-red);
+
+$custom-colors: (
+  'diablo-red': ($diablo-red, $diablo-red-invert),
+);
+
+.github {
+  color: $black !important; // Override bulma
+  border-color: black;
+}
+
+
+
+// Import the derived variables from Bulma
+// It will use our $custom-colors
+@import '~bulma/sass/utilities/derived-variables';
+//@import "~bulma/sass/utilities/derived-variables";
+
+// Import all Bulma
+@import '~bulma/bulma';
+//@import '~bulma/bulma';

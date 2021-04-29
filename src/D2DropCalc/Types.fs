@@ -1,7 +1,12 @@
 namespace D2DropCalc.Types
 
 open System
+#if FABLE_COMPILER
+open Thoth.Json
+#else
 open Thoth.Json.Net
+#endif
+
 
 /// types relating to base items, and their magical variants
 module Items =
@@ -45,6 +50,46 @@ module Items =
                 }
             )
 
+    /// Items come in 3 tiers: normal, exceptional, and elite. This is the "item base" 
+    /// and is a rough gauge for effectiveness and requirements.
+    type BaseType = 
+    | Normal
+    | Exceptional
+    | Elite
+    with
+        member this.MinimalString() =
+            match this with
+            | Normal -> "no"
+            | Exceptional -> "ex"
+            | Elite -> "el"
+        member this.Encode() =
+            let str = 
+                match this with
+                | Normal -> "normal"
+                | Exceptional -> "exceptional"
+                | Elite -> "elite"
+            Encode.string str
+        static member FromString str = 
+            match str with
+            | "normal" -> Normal
+            | "exceptional" -> Exceptional
+            | "elite" -> Elite
+            | _ -> failwithf "Unknown base item type: '%s'" str
+        member this.EncodeMinimal() =
+            let str = this.MinimalString()
+            Encode.string str
+        static member FromMinimalString str = 
+            match str with
+            | "no" -> Normal
+            | "ex" -> Exceptional
+            | "el" -> Elite
+            | _ -> failwithf "Unknown base item type from minimal string: '%s'" str
+        override this.ToString() =
+            match this with
+            | Normal -> "Normal"
+            | Exceptional -> "Exceptional"
+            | Elite -> "Elite"
+
     type Weapon = {
         Name : string
         Type : string
@@ -56,8 +101,9 @@ module Items =
         MaxSockets : int option
         ReqStrength : int option
         ReqDex : int option
+        BaseType : BaseType
     } with
-        static member Create name _type code rarity speed ilvl rlvl sockets str dex = {
+        static member Create name _type code rarity speed ilvl rlvl sockets str dex _base = {
             Name = name
             Type = _type
             Code = code
@@ -68,6 +114,7 @@ module Items =
             MaxSockets = sockets
             ReqStrength = str
             ReqDex = dex
+            BaseType = _base
         }
 
         member this.Encode() =
@@ -82,6 +129,7 @@ module Items =
                 "maxSockets", Encode.option Encode.int this.MaxSockets
                 "reqStrength",  Encode.option Encode.int this.ReqStrength
                 "reqDex",  Encode.option Encode.int this.ReqDex
+                "baseType", (this.BaseType.Encode())
             ]
 
         member this.EncodeMinimal() =
@@ -96,9 +144,10 @@ module Items =
                 "ms", Encode.option Encode.int this.MaxSockets
                 "rs",  Encode.option Encode.int this.ReqStrength
                 "rd",  Encode.option Encode.int this.ReqDex
+                "bt", (this.BaseType.EncodeMinimal())
             ]
 
-        static member Decode() : Decoder<Weapon> =
+        static member Decoder() : Decoder<Weapon> =
             Decode.object (fun get ->
                 {
                     Name = get.Required.Field "name" Decode.string
@@ -111,8 +160,26 @@ module Items =
                     MaxSockets = get.Optional.Field "maxSockets" Decode.int
                     ReqStrength = get.Optional.Field "reqStrength" Decode.int
                     ReqDex = get.Optional.Field "reqDex" Decode.int
+                    BaseType = get.Required.Field "baseType" Decode.string |> BaseType.FromString
                 }
             )
+
+        static member DecoderMinimal() : Decoder<Weapon> =
+            Decode.object (fun get ->
+                {
+                    Name = get.Required.Field "n" Decode.string
+                    Type = get.Required.Field "t" Decode.string
+                    Code = get.Required.Field "c" Decode.string
+                    Rarity = get.Optional.Field "r" Decode.int
+                    Speed = get.Optional.Field "s" Decode.int
+                    ItemLevel = get.Optional.Field "ilvl" Decode.int
+                    ReqLevel = get.Optional.Field "rlvl" Decode.int
+                    MaxSockets = get.Optional.Field "ms" Decode.int
+                    ReqStrength = get.Optional.Field "rs" Decode.int
+                    ReqDex = get.Optional.Field "rd" Decode.int
+                    BaseType = get.Required.Field "bt" Decode.string |> BaseType.FromMinimalString
+                }
+        )
 
     type Armor = {
         Name : string
@@ -123,8 +190,9 @@ module Items =
         ReqStrength : int option
         MaxSockets : int option
         SpeedPenalty : int option
+        BaseType : BaseType
     } with
-        static member Create name code rarity ilvl rlvl str sockets penalty = {
+        static member Create name code rarity ilvl rlvl str sockets penalty _base = {
             Name = name
             Code = code
             Rarity = rarity
@@ -133,6 +201,7 @@ module Items =
             ReqStrength = str
             MaxSockets = sockets
             SpeedPenalty = penalty
+            BaseType = _base
         }
 
         member this.Encode() =
@@ -145,6 +214,7 @@ module Items =
                 "reqStrength", Encode.option Encode.int this.ReqStrength
                 "sockets", Encode.option Encode.int this.MaxSockets
                 "speedPenalty", Encode.option Encode.int this.SpeedPenalty
+                "baseType", (this.BaseType.Encode())
             ]
 
         member this.EncodeMinimal() =
@@ -157,6 +227,7 @@ module Items =
                 "rs", Encode.option Encode.int this.ReqStrength
                 "so", Encode.option Encode.int this.MaxSockets
                 "sp", Encode.option Encode.int this.SpeedPenalty
+                "bt", (this.BaseType.EncodeMinimal())
             ]
 
         static member Decoder() : Decoder<Armor> =
@@ -170,7 +241,54 @@ module Items =
                     ReqStrength = get.Optional.Field "reqStrength" Decode.int
                     MaxSockets = get.Optional.Field "sockets" Decode.int
                     SpeedPenalty = get.Optional.Field "speedPenalty" Decode.int
+                    BaseType = get.Required.Field "baseType" Decode.string |> BaseType.FromString
                 })
+
+        static member DecoderMinimal() : Decoder<Armor> = 
+            Decode.object (fun get -> 
+                {
+                    Name = get.Required.Field "n" Decode.string
+                    Code = get.Required.Field "c" Decode.string
+                    Rarity = get.Optional.Field "r" Decode.int
+                    ItemLevel = get.Optional.Field "ilvl" Decode.int
+                    ReqLevel = get.Optional.Field "rlvl" Decode.int
+                    ReqStrength = get.Optional.Field "rs" Decode.int
+                    MaxSockets = get.Optional.Field "so" Decode.int
+                    SpeedPenalty = get.Optional.Field "sp" Decode.int
+                    BaseType = get.Required.Field "bt" Decode.string |> BaseType.FromMinimalString
+                })
+
+    let encodeArmorAsData (armors : Armor list) =
+        let jstr (str : string) = Newtonsoft.Json.Linq.JValue str
+        let jinto (i : int option) =
+            if i.IsSome then
+                Newtonsoft.Json.Linq.JValue(i.Value)
+            else
+                Newtonsoft.Json.Linq.JValue(Unchecked.defaultof<string>)
+        let header = [
+            jstr "name"
+            jstr "code"
+            jstr "rarity"
+            jstr "itemLevel"
+            jstr "reqLevl"
+            jstr "sockets"
+            jstr "speedPenalty"
+            jstr "baseType"
+        ]
+        let makeRow (armor : Armor) =
+            [
+                jstr armor.Name
+                jstr armor.Code
+                jinto armor.Rarity
+                jinto armor.ItemLevel
+                jinto armor.ReqLevel
+                jinto armor.MaxSockets
+                jinto armor.SpeedPenalty
+                jstr (armor.BaseType.MinimalString())
+            ]
+
+        let armorsEncoded = armors |> List.map makeRow
+        header :: armorsEncoded
 
 /// Types relating to the recursive item tree
 module ItemTree =
@@ -420,23 +538,23 @@ module ItemTree =
         member this.Encode() = Encode.Auto.toString(0, this)
         static member Decode str = Decode.Auto.fromString<TreasureClassNode> str
 
-module Loading =
-    open System
-    open System.IO
+// module Loading =
+//     open System
+//     open System.IO
 
-    let loadTreasureClassesFromPath path =
-        let lines = File.ReadAllLines path
-        [ 
-            for line in lines do 
-                if line <> "" then
-                    ItemTree.TreasureClassNode.Decode line
-        ]
+//     let loadTreasureClassesFromPath path =
+//         let lines = File.ReadAllLines path
+//         [ 
+//             for line in lines do 
+//                 if line <> "" then
+//                     ItemTree.TreasureClassNode.Decode line
+//         ]
 
-    let loadArmorsFromPath path =
-        let lines = File.ReadAllLines path
-        let decoder = Items.Armor.Decoder()
-        [
-            for line in lines do
-                if line <> "" then
-                    Decode.fromString decoder line
-        ]
+//     let loadArmorsFromPath path =
+//         let lines = File.ReadAllLines path
+//         let decoder = Items.Armor.Decoder()
+//         [
+//             for line in lines do
+//                 if line <> "" then
+//                     Decode.fromString decoder line
+//         ]

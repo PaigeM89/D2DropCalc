@@ -27,6 +27,28 @@ let inline forceResult (r : Result<'a, 'b>) =
     | Ok x -> x
     | Error e -> failwithf "Could not get value from result. Result is Error: %A" e
 
+let maybeGetPropAs (v : JsonValue) (k : string) f =
+    match v.TryGetProperty k with
+    | Some value -> f value |> Some
+    | None -> None
+
+
+let getPropAs (v : JsonValue) (k : string) f =
+    v.GetProperty k |> f
+
+let asInt = fun (jv : JsonValue) -> jv.AsInteger()
+let asString = fun (jv : JsonValue) -> jv.AsString()
+
+let getBase code (jv : JsonValue) =
+    let ubercode = maybeGetPropAs jv "ubercode" asString |> Option.defaultValue "not found"
+    let ultracode = maybeGetPropAs jv "ultracode" asString |> Option.defaultValue "not found"
+    if ultracode = code then
+        Elite
+    elif ubercode = code then
+        Exceptional
+    else
+        Normal
+
 // **************************
 // UNIQUES
 // **************************
@@ -37,17 +59,6 @@ let uniqueItemInputPath = __SOURCE_DIRECTORY__ + "/../../input-json/raw/UniqueIt
 type UniqueItems = JsonProvider<uniqueItemInputPath>
 
 let jv = UniqueItems.GetSample().JsonValue.Properties()
-
-let maybeGetPropAs (v : JsonValue) (k : string) f =
-    match v.TryGetProperty k with
-    | Some value -> f value |> Some
-    | None -> None
-
-let getPropAs (v : JsonValue) (k : string) f =
-    v.GetProperty k |> f
-
-let asInt = fun (jv : JsonValue) -> jv.AsInteger()
-let asString = fun (jv : JsonValue) -> jv.AsString()
 
 let maybeCreateUniqueItem (v : JsonValue) =
     let code = maybeGetPropAs v "code" asString
@@ -101,8 +112,8 @@ let maybeCreateWeapon (v : JsonValue) =
     | Some code ->
         Weapon.Create
             (getPropAs v "name" asString)
-            code
             (getPropAs v "type" asString)
+            code
             (maybeGetPropAs v "rarity" asInt)
             (maybeGetPropAs v "speed" asInt)
             (maybeGetPropAs v "level" asInt)
@@ -110,6 +121,7 @@ let maybeCreateWeapon (v : JsonValue) =
             (maybeGetPropAs v "gemsockets" asInt)
             (maybeGetPropAs v "reqStr" asInt)
             (maybeGetPropAs v "reqDex" asInt)
+            (getBase code v)
         |> Ok
     | None ->
         printfn "Unable to create weapon from json value %A" v
@@ -124,6 +136,14 @@ let weaponResults =
     )
 
 let encodeWpn (w : Weapon) = w.Encode()
+
+let wpns =
+    weaponResults
+    |> Array.filter (fun x -> isOk x)
+    |> Array.map (fun x -> forceResult x)
+
+let dupeCodes =
+    wpns |> Array.groupBy (fun x -> x.Code) |> Array.filter (fun (_, v) -> Array.length v > 1)
 
 let errorWeapons = weaponResults |> Array.filter (isOk >> not)
 let weapons =
@@ -147,19 +167,33 @@ printfn "Weapon file created!"
 // **************************
 
 
-
 [<Literal>]
 let armorPath = __SOURCE_DIRECTORY__ + "/../../input-json/raw/armor.json"
 type Armors = JsonProvider<armorPath>
 
 let armorProps = Armors.GetSample().JsonValue.Properties()
 
+
+let getName code (v : JsonValue) =
+    let manualFixes =
+        [
+            "lbl", "Sash"
+            "hgl", "Gauntlets"
+            "mgl", "Bracers"
+            "lgl", "Gloves"
+            "hbl", "Girdle"
+            "mbl", "Belt"
+        ] |> Map.ofList
+    match Map.tryFind code manualFixes with
+    | Some name -> name
+    | None -> getPropAs v "name" asString
+
 let maybeCreateArmor (v : JsonValue) =
     let code = maybeGetPropAs v "code" asString
     match code with
     | Some code ->
         Armor.Create
-            (getPropAs v "name" asString)
+            (getName code v)
             code
             (maybeGetPropAs v "rarity" asInt)
             (maybeGetPropAs v "level" asInt)
@@ -167,6 +201,7 @@ let maybeCreateArmor (v : JsonValue) =
             (maybeGetPropAs v "reqstr" asInt)
             (maybeGetPropAs v "gemsockets" asInt)
             (maybeGetPropAs v "speed" asInt)
+            (getBase code v)
         |> Ok
     | None ->
         printfn "Unable to create weapon from json value %A" v

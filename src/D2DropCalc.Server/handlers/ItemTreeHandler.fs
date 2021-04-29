@@ -16,7 +16,8 @@ module ItemTreeHandler =
                     link [ _rel  "stylesheet"
                            _type "text/css"
                            _href "/main.css" ]
-                    script [ _src "scripts/bundle.js"; _type "module" ] [ ]
+                    // if i try doing scripts sent with the page, i use this
+                    // script [ _src "scripts/bundle.js"; _type "module" ] [ ]
                 ]
                 body [] [
                     div [ _id "content" ] [
@@ -32,8 +33,20 @@ module ItemTreeHandler =
 
 
     let getArmors next (ctx : HttpContext) =
+        printfn "sending armors"
         let loader = ctx.GetService<Loading.IServeData>()
-        let armors = loader.Armors() |> List.map(fun x -> x.EncodeMinimal())
+        let armors = loader.Armors() |> List.map (fun x -> x.EncodeMinimal()) |> Thoth.Json.Net.Encode.list
+        json armors next ctx
+
+    let getArmorsAsData next (ctx : HttpContext) =
+        let loader = ctx.GetService<Loading.IServeData>()
+        let armors = loader.Armors() |> D2DropCalc.Types.Items.encodeArmorAsData
+        json armors next ctx
+
+    let getWeapons next (ctx : HttpContext) =
+        printfn "sending weapons"
+        let loader = ctx.GetService<Loading.IServeData>()
+        let armors = loader.Weapons() |> List.map (fun x -> x.EncodeMinimal()) |> Thoth.Json.Net.Encode.list
         json armors next ctx
 
     let reloadData next (ctx : HttpContext) =
@@ -45,6 +58,9 @@ module ItemTreeHandler =
 
         let routes : HttpHandler = choose [
             route "/armors" >=> GET >=> Views.armorsView
+            
+            route "/api/reload" >=> POST >=> reloadData
             route "/api/armors" >=> GET >=> getArmors
-            route "/reload" >=> POST >=> reloadData
+            route "/api/armors/asdata" >=> GET >=> getArmorsAsData
+            route "/api/weapons" >=> GET >=> getWeapons
         ]

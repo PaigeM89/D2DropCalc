@@ -1,0 +1,15 @@
+FSharp.Core
+Newtonsoft.Json
+
+group Client
+Fable.Browser.Dom
+Fable.Core
+Thoth.Json
+Fable.SimpleHttp
+Fable.Promise
+Feliz
+Feliz.UseDeferred
+Feliz.SelectSearch
+Fulma
+Fable.FontAwesome
+Fable.FontAwesome.Free

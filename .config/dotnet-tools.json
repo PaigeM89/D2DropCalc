@@ -37,6 +37,12 @@
       "commands": [
         "fsharp-analyzers"
       ]
+    },
+    "fable": {
+      "version": "3.1.15",
+      "commands": [
+        "fable"
+      ]
     }
   }
 }

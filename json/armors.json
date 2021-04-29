@@ -1,202 +1,202 @@
-{"name":"Cap/hat","code":"cap","rarity":1,"itemLevel":1,"reqLevel":null,"reqStrength":null,"sockets":2,"speedPenalty":null}
-{"name":"Skull Cap","code":"skp","rarity":4,"itemLevel":5,"reqLevel":null,"reqStrength":15,"sockets":2,"speedPenalty":null}
-{"name":"Helm","code":"hlm","rarity":4,"itemLevel":11,"reqLevel":null,"reqStrength":26,"sockets":2,"speedPenalty":null}
-{"name":"Full Helm","code":"fhl","rarity":4,"itemLevel":15,"reqLevel":null,"reqStrength":41,"sockets":2,"speedPenalty":null}
-{"name":"Great Helm","code":"ghm","rarity":4,"itemLevel":23,"reqLevel":null,"reqStrength":63,"sockets":3,"speedPenalty":null}
-{"name":"Crown","code":"crn","rarity":4,"itemLevel":29,"reqLevel":null,"reqStrength":55,"sockets":3,"speedPenalty":null}
-{"name":"Mask","code":"msk","rarity":4,"itemLevel":19,"reqLevel":null,"reqStrength":23,"sockets":3,"speedPenalty":null}
-{"name":"Quilted Armor","code":"qui","rarity":1,"itemLevel":1,"reqLevel":null,"reqStrength":12,"sockets":2,"speedPenalty":null}
-{"name":"Leather Armor","code":"lea","rarity":2,"itemLevel":3,"reqLevel":null,"reqStrength":15,"sockets":2,"speedPenalty":null}
-{"name":"Hard Leather Armor","code":"hla","rarity":3,"itemLevel":5,"reqLevel":null,"reqStrength":20,"sockets":2,"speedPenalty":null}
-{"name":"Studded Leather ","code":"stu","rarity":4,"itemLevel":8,"reqLevel":null,"reqStrength":27,"sockets":2,"speedPenalty":null}
-{"name":"Ring Mail","code":"rng","rarity":4,"itemLevel":11,"reqLevel":null,"reqStrength":36,"sockets":3,"speedPenalty":5}
-{"name":"Scale Mail","code":"scl","rarity":4,"itemLevel":13,"reqLevel":null,"reqStrength":44,"sockets":2,"speedPenalty":10}
-{"name":"Chain Mail","code":"chn","rarity":4,"itemLevel":15,"reqLevel":null,"reqStrength":48,"sockets":2,"speedPenalty":5}
-{"name":"Breast Plate","code":"brs","rarity":4,"itemLevel":18,"reqLevel":null,"reqStrength":30,"sockets":3,"speedPenalty":null}
-{"name":"Splint Mail","code":"spl","rarity":4,"itemLevel":20,"reqLevel":null,"reqStrength":51,"sockets":2,"speedPenalty":5}
-{"name":"Plate Mail","code":"plt","rarity":4,"itemLevel":24,"reqLevel":null,"reqStrength":65,"sockets":2,"speedPenalty":10}
-{"name":"Field Plate","code":"fld","rarity":4,"itemLevel":28,"reqLevel":null,"reqStrength":55,"sockets":2,"speedPenalty":5}
-{"name":"Gothic Plate","code":"gth","rarity":4,"itemLevel":32,"reqLevel":null,"reqStrength":70,"sockets":4,"speedPenalty":5}
-{"name":"Full Plate Mail","code":"ful","rarity":4,"itemLevel":37,"reqLevel":null,"reqStrength":80,"sockets":4,"speedPenalty":10}
-{"name":"Ancient Armor","code":"aar","rarity":4,"itemLevel":40,"reqLevel":null,"reqStrength":100,"sockets":4,"speedPenalty":5}
-{"name":"Light Plate","code":"ltp","rarity":4,"itemLevel":35,"reqLevel":null,"reqStrength":41,"sockets":3,"speedPenalty":null}
-{"name":"Buckler","code":"buc","rarity":2,"itemLevel":1,"reqLevel":null,"reqStrength":12,"sockets":1,"speedPenalty":null}
-{"name":"Small Shield","code":"sml","rarity":3,"itemLevel":5,"reqLevel":null,"reqStrength":22,"sockets":2,"speedPenalty":null}
-{"name":"Large Shield","code":"lrg","rarity":4,"itemLevel":11,"reqLevel":null,"reqStrength":34,"sockets":3,"speedPenalty":5}
-{"name":"Kite Shield","code":"kit","rarity":4,"itemLevel":15,"reqLevel":null,"reqStrength":47,"sockets":3,"speedPenalty":null}
-{"name":"Tower Shield","code":"tow","rarity":4,"itemLevel":22,"reqLevel":null,"reqStrength":75,"sockets":3,"speedPenalty":10}
-{"name":"Gothic Shield","code":"gts","rarity":4,"itemLevel":30,"reqLevel":null,"reqStrength":60,"sockets":3,"speedPenalty":5}
-{"name":"Gloves(L)","code":"lgl","rarity":1,"itemLevel":3,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null}
-{"name":"Heavy Gloves","code":"vgl","rarity":1,"itemLevel":7,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null}
-{"name":"Bracers(M)","code":"mgl","rarity":2,"itemLevel":12,"reqLevel":null,"reqStrength":25,"sockets":null,"speedPenalty":null}
-{"name":"Light Gauntlets","code":"tgl","rarity":3,"itemLevel":20,"reqLevel":null,"reqStrength":45,"sockets":null,"speedPenalty":null}
-{"name":"Gaunlets(H)","code":"hgl","rarity":4,"itemLevel":27,"reqLevel":null,"reqStrength":60,"sockets":null,"speedPenalty":null}
-{"name":"Leather Boots","code":"lbt","rarity":1,"itemLevel":3,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null}
-{"name":"Heavy Boots","code":"vbt","rarity":1,"itemLevel":7,"reqLevel":null,"reqStrength":18,"sockets":null,"speedPenalty":null}
-{"name":"Chain Boots","code":"mbt","rarity":2,"itemLevel":12,"reqLevel":null,"reqStrength":30,"sockets":null,"speedPenalty":null}
-{"name":"Light Plate Boots","code":"tbt","rarity":3,"itemLevel":20,"reqLevel":null,"reqStrength":50,"sockets":null,"speedPenalty":null}
-{"name":"Plate Boots","code":"hbt","rarity":4,"itemLevel":27,"reqLevel":null,"reqStrength":70,"sockets":null,"speedPenalty":null}
-{"name":"Sash(L)","code":"lbl","rarity":1,"itemLevel":3,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null}
-{"name":"Light Belt","code":"vbl","rarity":1,"itemLevel":7,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null}
-{"name":"Belt(M)","code":"mbl","rarity":2,"itemLevel":12,"reqLevel":null,"reqStrength":25,"sockets":null,"speedPenalty":null}
-{"name":"Heavy Belt","code":"tbl","rarity":2,"itemLevel":20,"reqLevel":null,"reqStrength":45,"sockets":null,"speedPenalty":null}
-{"name":"Girdle(H)","code":"hbl","rarity":3,"itemLevel":27,"reqLevel":null,"reqStrength":60,"sockets":null,"speedPenalty":null}
-{"name":"Bone Helm","code":"bhm","rarity":2,"itemLevel":22,"reqLevel":null,"reqStrength":25,"sockets":2,"speedPenalty":null}
-{"name":"Bone Shield","code":"bsh","rarity":2,"itemLevel":19,"reqLevel":null,"reqStrength":25,"sockets":2,"speedPenalty":null}
-{"name":"Spiked Shield","code":"spk","rarity":3,"itemLevel":11,"reqLevel":null,"reqStrength":30,"sockets":2,"speedPenalty":null}
-{"name":"War Hat","code":"xap","rarity":1,"itemLevel":34,"reqLevel":22,"reqStrength":20,"sockets":2,"speedPenalty":null}
-{"name":"Sallet","code":"xkp","rarity":4,"itemLevel":37,"reqLevel":25,"reqStrength":43,"sockets":2,"speedPenalty":null}
-{"name":"Casque","code":"xlm","rarity":4,"itemLevel":42,"reqLevel":25,"reqStrength":59,"sockets":2,"speedPenalty":null}
-{"name":"Basinet","code":"xhl","rarity":4,"itemLevel":45,"reqLevel":25,"reqStrength":82,"sockets":2,"speedPenalty":null}
-{"name":"Winged Helm","code":"xhm","rarity":4,"itemLevel":51,"reqLevel":25,"reqStrength":115,"sockets":3,"speedPenalty":null}
-{"name":"Grand Crown","code":"xrn","rarity":4,"itemLevel":55,"reqLevel":25,"reqStrength":103,"sockets":3,"speedPenalty":null}
-{"name":"Death Mask","code":"xsk","rarity":4,"itemLevel":48,"reqLevel":25,"reqStrength":55,"sockets":3,"speedPenalty":null}
-{"name":"Ghost Armor","code":"xui","rarity":1,"itemLevel":34,"reqLevel":22,"reqStrength":38,"sockets":2,"speedPenalty":null}
-{"name":"Serpentskin Armor","code":"xea","rarity":2,"itemLevel":36,"reqLevel":24,"reqStrength":43,"sockets":2,"speedPenalty":null}
-{"name":"Demonhide Armor","code":"xla","rarity":3,"itemLevel":37,"reqLevel":25,"reqStrength":50,"sockets":2,"speedPenalty":null}
-{"name":"Trellised Armor","code":"xtu","rarity":4,"itemLevel":40,"reqLevel":25,"reqStrength":61,"sockets":2,"speedPenalty":null}
-{"name":"Linked Mail","code":"xng","rarity":4,"itemLevel":42,"reqLevel":25,"reqStrength":74,"sockets":3,"speedPenalty":5}
-{"name":"Tigulated Mail","code":"xcl","rarity":4,"itemLevel":43,"reqLevel":25,"reqStrength":86,"sockets":3,"speedPenalty":10}
-{"name":"Mesh Armor","code":"xhn","rarity":4,"itemLevel":45,"reqLevel":25,"reqStrength":92,"sockets":3,"speedPenalty":5}
-{"name":"Cuirass","code":"xrs","rarity":4,"itemLevel":47,"reqLevel":25,"reqStrength":65,"sockets":3,"speedPenalty":null}
-{"name":"Russet Armor","code":"xpl","rarity":4,"itemLevel":49,"reqLevel":25,"reqStrength":97,"sockets":3,"speedPenalty":5}
-{"name":"Templar Coat","code":"xlt","rarity":4,"itemLevel":52,"reqLevel":25,"reqStrength":118,"sockets":3,"speedPenalty":10}
-{"name":"Sharktooth Armor","code":"xld","rarity":4,"itemLevel":55,"reqLevel":25,"reqStrength":103,"sockets":3,"speedPenalty":5}
-{"name":"Embossed Plate","code":"xth","rarity":4,"itemLevel":58,"reqLevel":25,"reqStrength":125,"sockets":4,"speedPenalty":5}
-{"name":"Chaos Armor","code":"xul","rarity":4,"itemLevel":61,"reqLevel":25,"reqStrength":140,"sockets":4,"speedPenalty":10}
-{"name":"Ornate Armor","code":"xar","rarity":4,"itemLevel":64,"reqLevel":25,"reqStrength":170,"sockets":4,"speedPenalty":5}
-{"name":"Mage Plate","code":"xtp","rarity":4,"itemLevel":60,"reqLevel":25,"reqStrength":55,"sockets":3,"speedPenalty":null}
-{"name":"Defender","code":"xuc","rarity":2,"itemLevel":34,"reqLevel":22,"reqStrength":38,"sockets":1,"speedPenalty":null}
-{"name":"Round Shield","code":"xml","rarity":3,"itemLevel":37,"reqLevel":25,"reqStrength":53,"sockets":2,"speedPenalty":null}
-{"name":"Scutum","code":"xrg","rarity":4,"itemLevel":42,"reqLevel":25,"reqStrength":71,"sockets":3,"speedPenalty":5}
-{"name":"Dragon Shield","code":"xit","rarity":4,"itemLevel":45,"reqLevel":25,"reqStrength":91,"sockets":3,"speedPenalty":null}
-{"name":"Pavise","code":"xow","rarity":4,"itemLevel":50,"reqLevel":25,"reqStrength":133,"sockets":3,"speedPenalty":10}
-{"name":"Ancient Shield","code":"xts","rarity":4,"itemLevel":56,"reqLevel":25,"reqStrength":110,"sockets":3,"speedPenalty":5}
-{"name":"Demonhide Gloves","code":"xlg","rarity":1,"itemLevel":33,"reqLevel":21,"reqStrength":20,"sockets":null,"speedPenalty":null}
-{"name":"Sharkskin Gloves","code":"xvg","rarity":1,"itemLevel":39,"reqLevel":25,"reqStrength":20,"sockets":null,"speedPenalty":null}
-{"name":"Heavy Bracers","code":"xmg","rarity":2,"itemLevel":43,"reqLevel":25,"reqStrength":58,"sockets":null,"speedPenalty":null}
-{"name":"Battle Gauntlets","code":"xtg","rarity":3,"itemLevel":49,"reqLevel":25,"reqStrength":88,"sockets":null,"speedPenalty":null}
-{"name":"War Gauntlets","code":"xhg","rarity":4,"itemLevel":54,"reqLevel":25,"reqStrength":110,"sockets":null,"speedPenalty":null}
-{"name":"Demonhide Boots","code":"xlb","rarity":1,"itemLevel":36,"reqLevel":24,"reqStrength":20,"sockets":null,"speedPenalty":null}
-{"name":"Sharkskin Boots","code":"xvb","rarity":1,"itemLevel":39,"reqLevel":25,"reqStrength":47,"sockets":null,"speedPenalty":null}
-{"name":"Mesh Boots","code":"xmb","rarity":2,"itemLevel":43,"reqLevel":25,"reqStrength":65,"sockets":null,"speedPenalty":null}
-{"name":"Battle Boots","code":"xtb","rarity":3,"itemLevel":49,"reqLevel":25,"reqStrength":95,"sockets":null,"speedPenalty":null}
-{"name":"War Boots","code":"xhb","rarity":4,"itemLevel":54,"reqLevel":25,"reqStrength":125,"sockets":null,"speedPenalty":null}
-{"name":"Demonhide Sash","code":"zlb","rarity":1,"itemLevel":36,"reqLevel":24,"reqStrength":20,"sockets":null,"speedPenalty":null}
-{"name":"Sharkskin Belt","code":"zvb","rarity":1,"itemLevel":39,"reqLevel":25,"reqStrength":20,"sockets":null,"speedPenalty":null}
-{"name":"Mesh Belt","code":"zmb","rarity":2,"itemLevel":43,"reqLevel":25,"reqStrength":58,"sockets":null,"speedPenalty":null}
-{"name":"Battle Belt","code":"ztb","rarity":2,"itemLevel":49,"reqLevel":25,"reqStrength":88,"sockets":null,"speedPenalty":null}
-{"name":"War Belt","code":"zhb","rarity":3,"itemLevel":54,"reqLevel":25,"reqStrength":110,"sockets":null,"speedPenalty":null}
-{"name":"Grim Helm","code":"xh9","rarity":2,"itemLevel":50,"reqLevel":25,"reqStrength":58,"sockets":2,"speedPenalty":null}
-{"name":"Grim Shield","code":"xsh","rarity":2,"itemLevel":48,"reqLevel":25,"reqStrength":58,"sockets":2,"speedPenalty":null}
-{"name":"Barbed Shield","code":"xpk","rarity":3,"itemLevel":42,"reqLevel":25,"reqStrength":65,"sockets":2,"speedPenalty":null}
-{"name":"Wolf Head","code":"dr1","rarity":1,"itemLevel":4,"reqLevel":3,"reqStrength":16,"sockets":3,"speedPenalty":null}
-{"name":"Hawk Helm","code":"dr2","rarity":1,"itemLevel":8,"reqLevel":6,"reqStrength":20,"sockets":3,"speedPenalty":null}
-{"name":"Antlers","code":"dr3","rarity":1,"itemLevel":16,"reqLevel":12,"reqStrength":24,"sockets":3,"speedPenalty":null}
-{"name":"Falcon Mask","code":"dr4","rarity":1,"itemLevel":20,"reqLevel":15,"reqStrength":28,"sockets":3,"speedPenalty":null}
-{"name":"Spirit Mask","code":"dr5","rarity":1,"itemLevel":24,"reqLevel":18,"reqStrength":30,"sockets":3,"speedPenalty":null}
-{"name":"Jawbone Cap","code":"ba1","rarity":2,"itemLevel":4,"reqLevel":3,"reqStrength":25,"sockets":3,"speedPenalty":null}
-{"name":"Fanged Helm","code":"ba2","rarity":2,"itemLevel":8,"reqLevel":6,"reqStrength":35,"sockets":3,"speedPenalty":null}
-{"name":"Horned Helm","code":"ba3","rarity":2,"itemLevel":16,"reqLevel":12,"reqStrength":45,"sockets":3,"speedPenalty":null}
-{"name":"Assault Helmet","code":"ba4","rarity":2,"itemLevel":20,"reqLevel":15,"reqStrength":55,"sockets":3,"speedPenalty":null}
-{"name":"Avenger Guard","code":"ba5","rarity":2,"itemLevel":24,"reqLevel":18,"reqStrength":65,"sockets":3,"speedPenalty":null}
-{"name":"Targe","code":"pa1","rarity":2,"itemLevel":4,"reqLevel":3,"reqStrength":16,"sockets":4,"speedPenalty":null}
-{"name":"Rondache","code":"pa2","rarity":2,"itemLevel":8,"reqLevel":6,"reqStrength":26,"sockets":4,"speedPenalty":null}
-{"name":"Heraldic Shield","code":"pa3","rarity":2,"itemLevel":16,"reqLevel":12,"reqStrength":40,"sockets":4,"speedPenalty":null}
-{"name":"Aerin Shield","code":"pa4","rarity":2,"itemLevel":20,"reqLevel":15,"reqStrength":50,"sockets":4,"speedPenalty":null}
-{"name":"Crown Shield","code":"pa5","rarity":2,"itemLevel":24,"reqLevel":18,"reqStrength":65,"sockets":4,"speedPenalty":null}
-{"name":"Preserved Head","code":"ne1","rarity":1,"itemLevel":4,"reqLevel":3,"reqStrength":12,"sockets":2,"speedPenalty":null}
-{"name":"Zombie Head","code":"ne2","rarity":1,"itemLevel":8,"reqLevel":6,"reqStrength":14,"sockets":2,"speedPenalty":null}
-{"name":"Unraveller Head","code":"ne3","rarity":1,"itemLevel":16,"reqLevel":12,"reqStrength":18,"sockets":2,"speedPenalty":null}
-{"name":"Gargoyle Head","code":"ne4","rarity":1,"itemLevel":20,"reqLevel":15,"reqStrength":20,"sockets":2,"speedPenalty":null}
-{"name":"Demon Head","code":"ne5","rarity":1,"itemLevel":24,"reqLevel":18,"reqStrength":25,"sockets":2,"speedPenalty":null}
-{"name":"Circlet","code":"ci0","rarity":1,"itemLevel":24,"reqLevel":16,"reqStrength":null,"sockets":2,"speedPenalty":null}
-{"name":"Coronet","code":"ci1","rarity":1,"itemLevel":52,"reqLevel":39,"reqStrength":null,"sockets":2,"speedPenalty":null}
-{"name":"Tiara","code":"ci2","rarity":1,"itemLevel":70,"reqLevel":52,"reqStrength":null,"sockets":3,"speedPenalty":null}
-{"name":"Diadem","code":"ci3","rarity":1,"itemLevel":85,"reqLevel":64,"reqStrength":null,"sockets":3,"speedPenalty":null}
-{"name":"Shako","code":"uap","rarity":1,"itemLevel":58,"reqLevel":43,"reqStrength":50,"sockets":2,"speedPenalty":null}
-{"name":"Hydraskull","code":"ukp","rarity":4,"itemLevel":63,"reqLevel":47,"reqStrength":84,"sockets":2,"speedPenalty":null}
-{"name":"Armet","code":"ulm","rarity":4,"itemLevel":68,"reqLevel":51,"reqStrength":109,"sockets":2,"speedPenalty":null}
-{"name":"Giant Conch","code":"uhl","rarity":4,"itemLevel":54,"reqLevel":40,"reqStrength":142,"sockets":2,"speedPenalty":null}
-{"name":"Spired Helm","code":"uhm","rarity":4,"itemLevel":79,"reqLevel":59,"reqStrength":192,"sockets":3,"speedPenalty":null}
-{"name":"Corona","code":"urn","rarity":4,"itemLevel":85,"reqLevel":66,"reqStrength":174,"sockets":3,"speedPenalty":null}
-{"name":"Demonhead","code":"usk","rarity":4,"itemLevel":74,"reqLevel":55,"reqStrength":102,"sockets":3,"speedPenalty":null}
-{"name":"Dusk Shroud","code":"uui","rarity":1,"itemLevel":65,"reqLevel":49,"reqStrength":77,"sockets":4,"speedPenalty":null}
-{"name":"Wyrmhide","code":"uea","rarity":2,"itemLevel":67,"reqLevel":50,"reqStrength":84,"sockets":4,"speedPenalty":null}
-{"name":"Scarab Husk","code":"ula","rarity":3,"itemLevel":68,"reqLevel":51,"reqStrength":95,"sockets":4,"speedPenalty":null}
-{"name":"Wire Fleece","code":"utu","rarity":4,"itemLevel":70,"reqLevel":53,"reqStrength":111,"sockets":4,"speedPenalty":null}
-{"name":"Diamond Mail","code":"ung","rarity":4,"itemLevel":72,"reqLevel":54,"reqStrength":131,"sockets":4,"speedPenalty":5}
-{"name":"Loricated Mail","code":"ucl","rarity":4,"itemLevel":73,"reqLevel":55,"reqStrength":149,"sockets":4,"speedPenalty":10}
-{"name":"Boneweave","code":"uhn","rarity":4,"itemLevel":62,"reqLevel":47,"reqStrength":158,"sockets":4,"speedPenalty":5}
-{"name":"Great Hauberk","code":"urs","rarity":4,"itemLevel":75,"reqLevel":56,"reqStrength":118,"sockets":4,"speedPenalty":null}
-{"name":"Balrog Skin","code":"upl","rarity":4,"itemLevel":76,"reqLevel":57,"reqStrength":165,"sockets":4,"speedPenalty":5}
-{"name":"Hellforged Plate","code":"ult","rarity":4,"itemLevel":78,"reqLevel":59,"reqStrength":196,"sockets":4,"speedPenalty":10}
-{"name":"Kraken Shell","code":"uld","rarity":4,"itemLevel":81,"reqLevel":61,"reqStrength":174,"sockets":4,"speedPenalty":5}
-{"name":"Lacquered Plate","code":"uth","rarity":4,"itemLevel":82,"reqLevel":62,"reqStrength":208,"sockets":4,"speedPenalty":5}
-{"name":"Shadow Plate","code":"uul","rarity":4,"itemLevel":83,"reqLevel":64,"reqStrength":230,"sockets":4,"speedPenalty":10}
-{"name":"Sacred Armor","code":"uar","rarity":4,"itemLevel":85,"reqLevel":66,"reqStrength":232,"sockets":4,"speedPenalty":5}
-{"name":"Archon Plate","code":"utp","rarity":4,"itemLevel":84,"reqLevel":63,"reqStrength":103,"sockets":4,"speedPenalty":null}
-{"name":"Heater","code":"uuc","rarity":2,"itemLevel":58,"reqLevel":43,"reqStrength":77,"sockets":2,"speedPenalty":null}
-{"name":"Luna","code":"uml","rarity":3,"itemLevel":61,"reqLevel":45,"reqStrength":100,"sockets":2,"speedPenalty":null}
-{"name":"Hyperion","code":"urg","rarity":4,"itemLevel":64,"reqLevel":48,"reqStrength":127,"sockets":3,"speedPenalty":5}
-{"name":"Monarch","code":"uit","rarity":4,"itemLevel":72,"reqLevel":54,"reqStrength":156,"sockets":4,"speedPenalty":null}
-{"name":"Aegis","code":"uow","rarity":4,"itemLevel":79,"reqLevel":59,"reqStrength":219,"sockets":4,"speedPenalty":10}
-{"name":"Ward","code":"uts","rarity":4,"itemLevel":84,"reqLevel":63,"reqStrength":185,"sockets":4,"speedPenalty":5}
-{"name":"Bramble Mitts","code":"ulg","rarity":1,"itemLevel":57,"reqLevel":42,"reqStrength":50,"sockets":null,"speedPenalty":null}
-{"name":"Vampirebone Gloves","code":"uvg","rarity":1,"itemLevel":63,"reqLevel":47,"reqStrength":50,"sockets":null,"speedPenalty":null}
-{"name":"Vambraces","code":"umg","rarity":2,"itemLevel":69,"reqLevel":51,"reqStrength":106,"sockets":null,"speedPenalty":null}
-{"name":"Crusader Gauntlets","code":"utg","rarity":3,"itemLevel":76,"reqLevel":57,"reqStrength":151,"sockets":null,"speedPenalty":null}
-{"name":"Ogre Gauntlets","code":"uhg","rarity":4,"itemLevel":85,"reqLevel":64,"reqStrength":185,"sockets":null,"speedPenalty":null}
-{"name":"Wyrmhide Boots","code":"ulb","rarity":1,"itemLevel":60,"reqLevel":45,"reqStrength":50,"sockets":null,"speedPenalty":null}
-{"name":"Scarabshell Boots","code":"uvb","rarity":1,"itemLevel":66,"reqLevel":49,"reqStrength":91,"sockets":null,"speedPenalty":null}
-{"name":"Boneweave Boots","code":"umb","rarity":2,"itemLevel":72,"reqLevel":54,"reqStrength":118,"sockets":null,"speedPenalty":null}
-{"name":"Mirrored Boots","code":"utb","rarity":3,"itemLevel":81,"reqLevel":60,"reqStrength":163,"sockets":null,"speedPenalty":null}
-{"name":"Myrmidon Greaves","code":"uhb","rarity":4,"itemLevel":85,"reqLevel":65,"reqStrength":208,"sockets":null,"speedPenalty":null}
-{"name":"Spiderweb Sash","code":"ulc","rarity":1,"itemLevel":61,"reqLevel":46,"reqStrength":50,"sockets":null,"speedPenalty":null}
-{"name":"Vampirefang Belt","code":"uvc","rarity":1,"itemLevel":68,"reqLevel":51,"reqStrength":50,"sockets":null,"speedPenalty":null}
-{"name":"Mithril Coil","code":"umc","rarity":2,"itemLevel":75,"reqLevel":56,"reqStrength":106,"sockets":null,"speedPenalty":null}
-{"name":"Troll Belt","code":"utc","rarity":2,"itemLevel":82,"reqLevel":62,"reqStrength":151,"sockets":null,"speedPenalty":null}
-{"name":"Colossus Girdle","code":"uhc","rarity":3,"itemLevel":85,"reqLevel":67,"reqStrength":185,"sockets":null,"speedPenalty":null}
-{"name":"Bone Visage","code":"uh9","rarity":2,"itemLevel":84,"reqLevel":63,"reqStrength":106,"sockets":3,"speedPenalty":null}
-{"name":"Troll Nest","code":"ush","rarity":2,"itemLevel":76,"reqLevel":57,"reqStrength":106,"sockets":3,"speedPenalty":null}
-{"name":"Blade Barrier","code":"upk","rarity":3,"itemLevel":68,"reqLevel":51,"reqStrength":118,"sockets":3,"speedPenalty":null}
-{"name":"Alpha Helm","code":"dr6","rarity":1,"itemLevel":35,"reqLevel":26,"reqStrength":44,"sockets":3,"speedPenalty":null}
-{"name":"Griffon Headress","code":"dr7","rarity":1,"itemLevel":40,"reqLevel":30,"reqStrength":50,"sockets":3,"speedPenalty":null}
-{"name":"Hunter's Guise","code":"dr8","rarity":1,"itemLevel":46,"reqLevel":29,"reqStrength":56,"sockets":3,"speedPenalty":null}
-{"name":"Sacred Feathers","code":"dr9","rarity":1,"itemLevel":50,"reqLevel":32,"reqStrength":62,"sockets":3,"speedPenalty":null}
-{"name":"Totemic Mask","code":"dra","rarity":1,"itemLevel":55,"reqLevel":41,"reqStrength":65,"sockets":3,"speedPenalty":null}
-{"name":"Jawbone Visor","code":"ba6","rarity":2,"itemLevel":33,"reqLevel":25,"reqStrength":58,"sockets":3,"speedPenalty":null}
-{"name":"Lion Helm","code":"ba7","rarity":2,"itemLevel":38,"reqLevel":29,"reqStrength":73,"sockets":3,"speedPenalty":null}
-{"name":"Rage Mask","code":"ba8","rarity":2,"itemLevel":44,"reqLevel":29,"reqStrength":88,"sockets":3,"speedPenalty":null}
-{"name":"Savage Helmet","code":"ba9","rarity":2,"itemLevel":49,"reqLevel":32,"reqStrength":103,"sockets":3,"speedPenalty":null}
-{"name":"Slayer Guard","code":"baa","rarity":2,"itemLevel":54,"reqLevel":40,"reqStrength":118,"sockets":3,"speedPenalty":null}
-{"name":"Akaran Targe","code":"pa6","rarity":2,"itemLevel":35,"reqLevel":26,"reqStrength":44,"sockets":4,"speedPenalty":null}
-{"name":"Akaran Rondache","code":"pa7","rarity":2,"itemLevel":40,"reqLevel":30,"reqStrength":59,"sockets":4,"speedPenalty":null}
-{"name":"Protector Shield","code":"pa8","rarity":2,"itemLevel":46,"reqLevel":34,"reqStrength":69,"sockets":4,"speedPenalty":null}
-{"name":"Guilded Shield","code":"pa9","rarity":2,"itemLevel":51,"reqLevel":38,"reqStrength":89,"sockets":4,"speedPenalty":null}
-{"name":"Royal Shield","code":"paa","rarity":2,"itemLevel":55,"reqLevel":41,"reqStrength":114,"sockets":4,"speedPenalty":null}
-{"name":"Mummified Trophy","code":"ne6","rarity":1,"itemLevel":33,"reqLevel":24,"reqStrength":38,"sockets":2,"speedPenalty":null}
-{"name":"Fetish Trophy","code":"ne7","rarity":1,"itemLevel":39,"reqLevel":29,"reqStrength":41,"sockets":2,"speedPenalty":null}
-{"name":"Sexton Trophy","code":"ne8","rarity":1,"itemLevel":45,"reqLevel":33,"reqStrength":47,"sockets":2,"speedPenalty":null}
-{"name":"Cantor Trophy","code":"ne9","rarity":1,"itemLevel":49,"reqLevel":36,"reqStrength":50,"sockets":2,"speedPenalty":null}
-{"name":"Heirophant Trophy","code":"nea","rarity":1,"itemLevel":54,"reqLevel":40,"reqStrength":58,"sockets":2,"speedPenalty":null}
-{"name":"Blood Spirt","code":"drb","rarity":1,"itemLevel":62,"reqLevel":46,"reqStrength":86,"sockets":3,"speedPenalty":null}
-{"name":"Sun Spirit","code":"drc","rarity":1,"itemLevel":69,"reqLevel":51,"reqStrength":95,"sockets":3,"speedPenalty":null}
-{"name":"Earth Spirit","code":"drd","rarity":1,"itemLevel":76,"reqLevel":57,"reqStrength":104,"sockets":3,"speedPenalty":null}
-{"name":"Sky Spirit","code":"dre","rarity":1,"itemLevel":83,"reqLevel":62,"reqStrength":113,"sockets":3,"speedPenalty":null}
-{"name":"Dream Spirit","code":"drf","rarity":1,"itemLevel":85,"reqLevel":66,"reqStrength":118,"sockets":3,"speedPenalty":null}
-{"name":"Carnage Helm","code":"bab","rarity":2,"itemLevel":60,"reqLevel":45,"reqStrength":106,"sockets":3,"speedPenalty":null}
-{"name":"Fury Visor","code":"bac","rarity":2,"itemLevel":66,"reqLevel":49,"reqStrength":129,"sockets":3,"speedPenalty":null}
-{"name":"Destroyer Helm","code":"bad","rarity":2,"itemLevel":73,"reqLevel":54,"reqStrength":151,"sockets":3,"speedPenalty":null}
-{"name":"Conquerer Crown","code":"bae","rarity":2,"itemLevel":80,"reqLevel":60,"reqStrength":174,"sockets":3,"speedPenalty":null}
-{"name":"Guardian Crown","code":"baf","rarity":2,"itemLevel":85,"reqLevel":65,"reqStrength":196,"sockets":3,"speedPenalty":null}
-{"name":"Sacred Targe","code":"pab","rarity":2,"itemLevel":63,"reqLevel":47,"reqStrength":86,"sockets":4,"speedPenalty":null}
-{"name":"Sacred Rondache","code":"pac","rarity":2,"itemLevel":70,"reqLevel":52,"reqStrength":109,"sockets":4,"speedPenalty":null}
-{"name":"Ancient Shield","code":"pad","rarity":2,"itemLevel":74,"reqLevel":55,"reqStrength":124,"sockets":4,"speedPenalty":null}
-{"name":"Zakarum Shield","code":"pae","rarity":2,"itemLevel":82,"reqLevel":61,"reqStrength":142,"sockets":4,"speedPenalty":null}
-{"name":"Vortex Shield","code":"paf","rarity":2,"itemLevel":85,"reqLevel":66,"reqStrength":148,"sockets":4,"speedPenalty":null}
-{"name":"Minion Skull","code":"neb","rarity":1,"itemLevel":59,"reqLevel":44,"reqStrength":77,"sockets":2,"speedPenalty":null}
-{"name":"Hellspawn Skull","code":"neg","rarity":1,"itemLevel":67,"reqLevel":50,"reqStrength":82,"sockets":2,"speedPenalty":null}
-{"name":"Overseer Skull","code":"ned","rarity":1,"itemLevel":66,"reqLevel":49,"reqStrength":91,"sockets":2,"speedPenalty":null}
-{"name":"Succubae Skull","code":"nee","rarity":1,"itemLevel":81,"reqLevel":60,"reqStrength":95,"sockets":2,"speedPenalty":null}
-{"name":"Bloodlord Skull","code":"nef","rarity":1,"itemLevel":85,"reqLevel":65,"reqStrength":106,"sockets":2,"speedPenalty":null}
+{"name":"Cap/hat","code":"cap","rarity":1,"itemLevel":1,"reqLevel":null,"reqStrength":null,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Skull Cap","code":"skp","rarity":4,"itemLevel":5,"reqLevel":null,"reqStrength":15,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Helm","code":"hlm","rarity":4,"itemLevel":11,"reqLevel":null,"reqStrength":26,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Full Helm","code":"fhl","rarity":4,"itemLevel":15,"reqLevel":null,"reqStrength":41,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Great Helm","code":"ghm","rarity":4,"itemLevel":23,"reqLevel":null,"reqStrength":63,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Crown","code":"crn","rarity":4,"itemLevel":29,"reqLevel":null,"reqStrength":55,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Mask","code":"msk","rarity":4,"itemLevel":19,"reqLevel":null,"reqStrength":23,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Quilted Armor","code":"qui","rarity":1,"itemLevel":1,"reqLevel":null,"reqStrength":12,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Leather Armor","code":"lea","rarity":2,"itemLevel":3,"reqLevel":null,"reqStrength":15,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Hard Leather Armor","code":"hla","rarity":3,"itemLevel":5,"reqLevel":null,"reqStrength":20,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Studded Leather ","code":"stu","rarity":4,"itemLevel":8,"reqLevel":null,"reqStrength":27,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Ring Mail","code":"rng","rarity":4,"itemLevel":11,"reqLevel":null,"reqStrength":36,"sockets":3,"speedPenalty":5,"baseType":"normal"}
+{"name":"Scale Mail","code":"scl","rarity":4,"itemLevel":13,"reqLevel":null,"reqStrength":44,"sockets":2,"speedPenalty":10,"baseType":"normal"}
+{"name":"Chain Mail","code":"chn","rarity":4,"itemLevel":15,"reqLevel":null,"reqStrength":48,"sockets":2,"speedPenalty":5,"baseType":"normal"}
+{"name":"Breast Plate","code":"brs","rarity":4,"itemLevel":18,"reqLevel":null,"reqStrength":30,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Splint Mail","code":"spl","rarity":4,"itemLevel":20,"reqLevel":null,"reqStrength":51,"sockets":2,"speedPenalty":5,"baseType":"normal"}
+{"name":"Plate Mail","code":"plt","rarity":4,"itemLevel":24,"reqLevel":null,"reqStrength":65,"sockets":2,"speedPenalty":10,"baseType":"normal"}
+{"name":"Field Plate","code":"fld","rarity":4,"itemLevel":28,"reqLevel":null,"reqStrength":55,"sockets":2,"speedPenalty":5,"baseType":"normal"}
+{"name":"Gothic Plate","code":"gth","rarity":4,"itemLevel":32,"reqLevel":null,"reqStrength":70,"sockets":4,"speedPenalty":5,"baseType":"normal"}
+{"name":"Full Plate Mail","code":"ful","rarity":4,"itemLevel":37,"reqLevel":null,"reqStrength":80,"sockets":4,"speedPenalty":10,"baseType":"normal"}
+{"name":"Ancient Armor","code":"aar","rarity":4,"itemLevel":40,"reqLevel":null,"reqStrength":100,"sockets":4,"speedPenalty":5,"baseType":"normal"}
+{"name":"Light Plate","code":"ltp","rarity":4,"itemLevel":35,"reqLevel":null,"reqStrength":41,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Buckler","code":"buc","rarity":2,"itemLevel":1,"reqLevel":null,"reqStrength":12,"sockets":1,"speedPenalty":null,"baseType":"normal"}
+{"name":"Small Shield","code":"sml","rarity":3,"itemLevel":5,"reqLevel":null,"reqStrength":22,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Large Shield","code":"lrg","rarity":4,"itemLevel":11,"reqLevel":null,"reqStrength":34,"sockets":3,"speedPenalty":5,"baseType":"normal"}
+{"name":"Kite Shield","code":"kit","rarity":4,"itemLevel":15,"reqLevel":null,"reqStrength":47,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Tower Shield","code":"tow","rarity":4,"itemLevel":22,"reqLevel":null,"reqStrength":75,"sockets":3,"speedPenalty":10,"baseType":"normal"}
+{"name":"Gothic Shield","code":"gts","rarity":4,"itemLevel":30,"reqLevel":null,"reqStrength":60,"sockets":3,"speedPenalty":5,"baseType":"normal"}
+{"name":"Gloves","code":"lgl","rarity":1,"itemLevel":3,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Heavy Gloves","code":"vgl","rarity":1,"itemLevel":7,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Bracers","code":"mgl","rarity":2,"itemLevel":12,"reqLevel":null,"reqStrength":25,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Light Gauntlets","code":"tgl","rarity":3,"itemLevel":20,"reqLevel":null,"reqStrength":45,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Gauntlets","code":"hgl","rarity":4,"itemLevel":27,"reqLevel":null,"reqStrength":60,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Leather Boots","code":"lbt","rarity":1,"itemLevel":3,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Heavy Boots","code":"vbt","rarity":1,"itemLevel":7,"reqLevel":null,"reqStrength":18,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Chain Boots","code":"mbt","rarity":2,"itemLevel":12,"reqLevel":null,"reqStrength":30,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Light Plate Boots","code":"tbt","rarity":3,"itemLevel":20,"reqLevel":null,"reqStrength":50,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Plate Boots","code":"hbt","rarity":4,"itemLevel":27,"reqLevel":null,"reqStrength":70,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Sash","code":"lbl","rarity":1,"itemLevel":3,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Light Belt","code":"vbl","rarity":1,"itemLevel":7,"reqLevel":null,"reqStrength":null,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Belt","code":"mbl","rarity":2,"itemLevel":12,"reqLevel":null,"reqStrength":25,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Heavy Belt","code":"tbl","rarity":2,"itemLevel":20,"reqLevel":null,"reqStrength":45,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Girdle","code":"hbl","rarity":3,"itemLevel":27,"reqLevel":null,"reqStrength":60,"sockets":null,"speedPenalty":null,"baseType":"normal"}
+{"name":"Bone Helm","code":"bhm","rarity":2,"itemLevel":22,"reqLevel":null,"reqStrength":25,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Bone Shield","code":"bsh","rarity":2,"itemLevel":19,"reqLevel":null,"reqStrength":25,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Spiked Shield","code":"spk","rarity":3,"itemLevel":11,"reqLevel":null,"reqStrength":30,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"War Hat","code":"xap","rarity":1,"itemLevel":34,"reqLevel":22,"reqStrength":20,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Sallet","code":"xkp","rarity":4,"itemLevel":37,"reqLevel":25,"reqStrength":43,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Casque","code":"xlm","rarity":4,"itemLevel":42,"reqLevel":25,"reqStrength":59,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Basinet","code":"xhl","rarity":4,"itemLevel":45,"reqLevel":25,"reqStrength":82,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Winged Helm","code":"xhm","rarity":4,"itemLevel":51,"reqLevel":25,"reqStrength":115,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Grand Crown","code":"xrn","rarity":4,"itemLevel":55,"reqLevel":25,"reqStrength":103,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Death Mask","code":"xsk","rarity":4,"itemLevel":48,"reqLevel":25,"reqStrength":55,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Ghost Armor","code":"xui","rarity":1,"itemLevel":34,"reqLevel":22,"reqStrength":38,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Serpentskin Armor","code":"xea","rarity":2,"itemLevel":36,"reqLevel":24,"reqStrength":43,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Demonhide Armor","code":"xla","rarity":3,"itemLevel":37,"reqLevel":25,"reqStrength":50,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Trellised Armor","code":"xtu","rarity":4,"itemLevel":40,"reqLevel":25,"reqStrength":61,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Linked Mail","code":"xng","rarity":4,"itemLevel":42,"reqLevel":25,"reqStrength":74,"sockets":3,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Tigulated Mail","code":"xcl","rarity":4,"itemLevel":43,"reqLevel":25,"reqStrength":86,"sockets":3,"speedPenalty":10,"baseType":"exceptional"}
+{"name":"Mesh Armor","code":"xhn","rarity":4,"itemLevel":45,"reqLevel":25,"reqStrength":92,"sockets":3,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Cuirass","code":"xrs","rarity":4,"itemLevel":47,"reqLevel":25,"reqStrength":65,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Russet Armor","code":"xpl","rarity":4,"itemLevel":49,"reqLevel":25,"reqStrength":97,"sockets":3,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Templar Coat","code":"xlt","rarity":4,"itemLevel":52,"reqLevel":25,"reqStrength":118,"sockets":3,"speedPenalty":10,"baseType":"exceptional"}
+{"name":"Sharktooth Armor","code":"xld","rarity":4,"itemLevel":55,"reqLevel":25,"reqStrength":103,"sockets":3,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Embossed Plate","code":"xth","rarity":4,"itemLevel":58,"reqLevel":25,"reqStrength":125,"sockets":4,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Chaos Armor","code":"xul","rarity":4,"itemLevel":61,"reqLevel":25,"reqStrength":140,"sockets":4,"speedPenalty":10,"baseType":"exceptional"}
+{"name":"Ornate Armor","code":"xar","rarity":4,"itemLevel":64,"reqLevel":25,"reqStrength":170,"sockets":4,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Mage Plate","code":"xtp","rarity":4,"itemLevel":60,"reqLevel":25,"reqStrength":55,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Defender","code":"xuc","rarity":2,"itemLevel":34,"reqLevel":22,"reqStrength":38,"sockets":1,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Round Shield","code":"xml","rarity":3,"itemLevel":37,"reqLevel":25,"reqStrength":53,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Scutum","code":"xrg","rarity":4,"itemLevel":42,"reqLevel":25,"reqStrength":71,"sockets":3,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Dragon Shield","code":"xit","rarity":4,"itemLevel":45,"reqLevel":25,"reqStrength":91,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Pavise","code":"xow","rarity":4,"itemLevel":50,"reqLevel":25,"reqStrength":133,"sockets":3,"speedPenalty":10,"baseType":"exceptional"}
+{"name":"Ancient Shield","code":"xts","rarity":4,"itemLevel":56,"reqLevel":25,"reqStrength":110,"sockets":3,"speedPenalty":5,"baseType":"exceptional"}
+{"name":"Demonhide Gloves","code":"xlg","rarity":1,"itemLevel":33,"reqLevel":21,"reqStrength":20,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Sharkskin Gloves","code":"xvg","rarity":1,"itemLevel":39,"reqLevel":25,"reqStrength":20,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Heavy Bracers","code":"xmg","rarity":2,"itemLevel":43,"reqLevel":25,"reqStrength":58,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Battle Gauntlets","code":"xtg","rarity":3,"itemLevel":49,"reqLevel":25,"reqStrength":88,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"War Gauntlets","code":"xhg","rarity":4,"itemLevel":54,"reqLevel":25,"reqStrength":110,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Demonhide Boots","code":"xlb","rarity":1,"itemLevel":36,"reqLevel":24,"reqStrength":20,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Sharkskin Boots","code":"xvb","rarity":1,"itemLevel":39,"reqLevel":25,"reqStrength":47,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Mesh Boots","code":"xmb","rarity":2,"itemLevel":43,"reqLevel":25,"reqStrength":65,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Battle Boots","code":"xtb","rarity":3,"itemLevel":49,"reqLevel":25,"reqStrength":95,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"War Boots","code":"xhb","rarity":4,"itemLevel":54,"reqLevel":25,"reqStrength":125,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Demonhide Sash","code":"zlb","rarity":1,"itemLevel":36,"reqLevel":24,"reqStrength":20,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Sharkskin Belt","code":"zvb","rarity":1,"itemLevel":39,"reqLevel":25,"reqStrength":20,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Mesh Belt","code":"zmb","rarity":2,"itemLevel":43,"reqLevel":25,"reqStrength":58,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Battle Belt","code":"ztb","rarity":2,"itemLevel":49,"reqLevel":25,"reqStrength":88,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"War Belt","code":"zhb","rarity":3,"itemLevel":54,"reqLevel":25,"reqStrength":110,"sockets":null,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Grim Helm","code":"xh9","rarity":2,"itemLevel":50,"reqLevel":25,"reqStrength":58,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Grim Shield","code":"xsh","rarity":2,"itemLevel":48,"reqLevel":25,"reqStrength":58,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Barbed Shield","code":"xpk","rarity":3,"itemLevel":42,"reqLevel":25,"reqStrength":65,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Wolf Head","code":"dr1","rarity":1,"itemLevel":4,"reqLevel":3,"reqStrength":16,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Hawk Helm","code":"dr2","rarity":1,"itemLevel":8,"reqLevel":6,"reqStrength":20,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Antlers","code":"dr3","rarity":1,"itemLevel":16,"reqLevel":12,"reqStrength":24,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Falcon Mask","code":"dr4","rarity":1,"itemLevel":20,"reqLevel":15,"reqStrength":28,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Spirit Mask","code":"dr5","rarity":1,"itemLevel":24,"reqLevel":18,"reqStrength":30,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Jawbone Cap","code":"ba1","rarity":2,"itemLevel":4,"reqLevel":3,"reqStrength":25,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Fanged Helm","code":"ba2","rarity":2,"itemLevel":8,"reqLevel":6,"reqStrength":35,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Horned Helm","code":"ba3","rarity":2,"itemLevel":16,"reqLevel":12,"reqStrength":45,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Assault Helmet","code":"ba4","rarity":2,"itemLevel":20,"reqLevel":15,"reqStrength":55,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Avenger Guard","code":"ba5","rarity":2,"itemLevel":24,"reqLevel":18,"reqStrength":65,"sockets":3,"speedPenalty":null,"baseType":"normal"}
+{"name":"Targe","code":"pa1","rarity":2,"itemLevel":4,"reqLevel":3,"reqStrength":16,"sockets":4,"speedPenalty":null,"baseType":"normal"}
+{"name":"Rondache","code":"pa2","rarity":2,"itemLevel":8,"reqLevel":6,"reqStrength":26,"sockets":4,"speedPenalty":null,"baseType":"normal"}
+{"name":"Heraldic Shield","code":"pa3","rarity":2,"itemLevel":16,"reqLevel":12,"reqStrength":40,"sockets":4,"speedPenalty":null,"baseType":"normal"}
+{"name":"Aerin Shield","code":"pa4","rarity":2,"itemLevel":20,"reqLevel":15,"reqStrength":50,"sockets":4,"speedPenalty":null,"baseType":"normal"}
+{"name":"Crown Shield","code":"pa5","rarity":2,"itemLevel":24,"reqLevel":18,"reqStrength":65,"sockets":4,"speedPenalty":null,"baseType":"normal"}
+{"name":"Preserved Head","code":"ne1","rarity":1,"itemLevel":4,"reqLevel":3,"reqStrength":12,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Zombie Head","code":"ne2","rarity":1,"itemLevel":8,"reqLevel":6,"reqStrength":14,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Unraveller Head","code":"ne3","rarity":1,"itemLevel":16,"reqLevel":12,"reqStrength":18,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Gargoyle Head","code":"ne4","rarity":1,"itemLevel":20,"reqLevel":15,"reqStrength":20,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Demon Head","code":"ne5","rarity":1,"itemLevel":24,"reqLevel":18,"reqStrength":25,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Circlet","code":"ci0","rarity":1,"itemLevel":24,"reqLevel":16,"reqStrength":null,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Coronet","code":"ci1","rarity":1,"itemLevel":52,"reqLevel":39,"reqStrength":null,"sockets":2,"speedPenalty":null,"baseType":"normal"}
+{"name":"Tiara","code":"ci2","rarity":1,"itemLevel":70,"reqLevel":52,"reqStrength":null,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Diadem","code":"ci3","rarity":1,"itemLevel":85,"reqLevel":64,"reqStrength":null,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Shako","code":"uap","rarity":1,"itemLevel":58,"reqLevel":43,"reqStrength":50,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Hydraskull","code":"ukp","rarity":4,"itemLevel":63,"reqLevel":47,"reqStrength":84,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Armet","code":"ulm","rarity":4,"itemLevel":68,"reqLevel":51,"reqStrength":109,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Giant Conch","code":"uhl","rarity":4,"itemLevel":54,"reqLevel":40,"reqStrength":142,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Spired Helm","code":"uhm","rarity":4,"itemLevel":79,"reqLevel":59,"reqStrength":192,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Corona","code":"urn","rarity":4,"itemLevel":85,"reqLevel":66,"reqStrength":174,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Demonhead","code":"usk","rarity":4,"itemLevel":74,"reqLevel":55,"reqStrength":102,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Dusk Shroud","code":"uui","rarity":1,"itemLevel":65,"reqLevel":49,"reqStrength":77,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Wyrmhide","code":"uea","rarity":2,"itemLevel":67,"reqLevel":50,"reqStrength":84,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Scarab Husk","code":"ula","rarity":3,"itemLevel":68,"reqLevel":51,"reqStrength":95,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Wire Fleece","code":"utu","rarity":4,"itemLevel":70,"reqLevel":53,"reqStrength":111,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Diamond Mail","code":"ung","rarity":4,"itemLevel":72,"reqLevel":54,"reqStrength":131,"sockets":4,"speedPenalty":5,"baseType":"elite"}
+{"name":"Loricated Mail","code":"ucl","rarity":4,"itemLevel":73,"reqLevel":55,"reqStrength":149,"sockets":4,"speedPenalty":10,"baseType":"elite"}
+{"name":"Boneweave","code":"uhn","rarity":4,"itemLevel":62,"reqLevel":47,"reqStrength":158,"sockets":4,"speedPenalty":5,"baseType":"elite"}
+{"name":"Great Hauberk","code":"urs","rarity":4,"itemLevel":75,"reqLevel":56,"reqStrength":118,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Balrog Skin","code":"upl","rarity":4,"itemLevel":76,"reqLevel":57,"reqStrength":165,"sockets":4,"speedPenalty":5,"baseType":"elite"}
+{"name":"Hellforged Plate","code":"ult","rarity":4,"itemLevel":78,"reqLevel":59,"reqStrength":196,"sockets":4,"speedPenalty":10,"baseType":"elite"}
+{"name":"Kraken Shell","code":"uld","rarity":4,"itemLevel":81,"reqLevel":61,"reqStrength":174,"sockets":4,"speedPenalty":5,"baseType":"elite"}
+{"name":"Lacquered Plate","code":"uth","rarity":4,"itemLevel":82,"reqLevel":62,"reqStrength":208,"sockets":4,"speedPenalty":5,"baseType":"elite"}
+{"name":"Shadow Plate","code":"uul","rarity":4,"itemLevel":83,"reqLevel":64,"reqStrength":230,"sockets":4,"speedPenalty":10,"baseType":"elite"}
+{"name":"Sacred Armor","code":"uar","rarity":4,"itemLevel":85,"reqLevel":66,"reqStrength":232,"sockets":4,"speedPenalty":5,"baseType":"elite"}
+{"name":"Archon Plate","code":"utp","rarity":4,"itemLevel":84,"reqLevel":63,"reqStrength":103,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Heater","code":"uuc","rarity":2,"itemLevel":58,"reqLevel":43,"reqStrength":77,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Luna","code":"uml","rarity":3,"itemLevel":61,"reqLevel":45,"reqStrength":100,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Hyperion","code":"urg","rarity":4,"itemLevel":64,"reqLevel":48,"reqStrength":127,"sockets":3,"speedPenalty":5,"baseType":"elite"}
+{"name":"Monarch","code":"uit","rarity":4,"itemLevel":72,"reqLevel":54,"reqStrength":156,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Aegis","code":"uow","rarity":4,"itemLevel":79,"reqLevel":59,"reqStrength":219,"sockets":4,"speedPenalty":10,"baseType":"elite"}
+{"name":"Ward","code":"uts","rarity":4,"itemLevel":84,"reqLevel":63,"reqStrength":185,"sockets":4,"speedPenalty":5,"baseType":"elite"}
+{"name":"Bramble Mitts","code":"ulg","rarity":1,"itemLevel":57,"reqLevel":42,"reqStrength":50,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Vampirebone Gloves","code":"uvg","rarity":1,"itemLevel":63,"reqLevel":47,"reqStrength":50,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Vambraces","code":"umg","rarity":2,"itemLevel":69,"reqLevel":51,"reqStrength":106,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Crusader Gauntlets","code":"utg","rarity":3,"itemLevel":76,"reqLevel":57,"reqStrength":151,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Ogre Gauntlets","code":"uhg","rarity":4,"itemLevel":85,"reqLevel":64,"reqStrength":185,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Wyrmhide Boots","code":"ulb","rarity":1,"itemLevel":60,"reqLevel":45,"reqStrength":50,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Scarabshell Boots","code":"uvb","rarity":1,"itemLevel":66,"reqLevel":49,"reqStrength":91,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Boneweave Boots","code":"umb","rarity":2,"itemLevel":72,"reqLevel":54,"reqStrength":118,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Mirrored Boots","code":"utb","rarity":3,"itemLevel":81,"reqLevel":60,"reqStrength":163,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Myrmidon Greaves","code":"uhb","rarity":4,"itemLevel":85,"reqLevel":65,"reqStrength":208,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Spiderweb Sash","code":"ulc","rarity":1,"itemLevel":61,"reqLevel":46,"reqStrength":50,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Vampirefang Belt","code":"uvc","rarity":1,"itemLevel":68,"reqLevel":51,"reqStrength":50,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Mithril Coil","code":"umc","rarity":2,"itemLevel":75,"reqLevel":56,"reqStrength":106,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Troll Belt","code":"utc","rarity":2,"itemLevel":82,"reqLevel":62,"reqStrength":151,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Colossus Girdle","code":"uhc","rarity":3,"itemLevel":85,"reqLevel":67,"reqStrength":185,"sockets":null,"speedPenalty":null,"baseType":"elite"}
+{"name":"Bone Visage","code":"uh9","rarity":2,"itemLevel":84,"reqLevel":63,"reqStrength":106,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Troll Nest","code":"ush","rarity":2,"itemLevel":76,"reqLevel":57,"reqStrength":106,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Blade Barrier","code":"upk","rarity":3,"itemLevel":68,"reqLevel":51,"reqStrength":118,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Alpha Helm","code":"dr6","rarity":1,"itemLevel":35,"reqLevel":26,"reqStrength":44,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Griffon Headress","code":"dr7","rarity":1,"itemLevel":40,"reqLevel":30,"reqStrength":50,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Hunter's Guise","code":"dr8","rarity":1,"itemLevel":46,"reqLevel":29,"reqStrength":56,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Sacred Feathers","code":"dr9","rarity":1,"itemLevel":50,"reqLevel":32,"reqStrength":62,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Totemic Mask","code":"dra","rarity":1,"itemLevel":55,"reqLevel":41,"reqStrength":65,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Jawbone Visor","code":"ba6","rarity":2,"itemLevel":33,"reqLevel":25,"reqStrength":58,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Lion Helm","code":"ba7","rarity":2,"itemLevel":38,"reqLevel":29,"reqStrength":73,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Rage Mask","code":"ba8","rarity":2,"itemLevel":44,"reqLevel":29,"reqStrength":88,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Savage Helmet","code":"ba9","rarity":2,"itemLevel":49,"reqLevel":32,"reqStrength":103,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Slayer Guard","code":"baa","rarity":2,"itemLevel":54,"reqLevel":40,"reqStrength":118,"sockets":3,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Akaran Targe","code":"pa6","rarity":2,"itemLevel":35,"reqLevel":26,"reqStrength":44,"sockets":4,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Akaran Rondache","code":"pa7","rarity":2,"itemLevel":40,"reqLevel":30,"reqStrength":59,"sockets":4,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Protector Shield","code":"pa8","rarity":2,"itemLevel":46,"reqLevel":34,"reqStrength":69,"sockets":4,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Guilded Shield","code":"pa9","rarity":2,"itemLevel":51,"reqLevel":38,"reqStrength":89,"sockets":4,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Royal Shield","code":"paa","rarity":2,"itemLevel":55,"reqLevel":41,"reqStrength":114,"sockets":4,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Mummified Trophy","code":"ne6","rarity":1,"itemLevel":33,"reqLevel":24,"reqStrength":38,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Fetish Trophy","code":"ne7","rarity":1,"itemLevel":39,"reqLevel":29,"reqStrength":41,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Sexton Trophy","code":"ne8","rarity":1,"itemLevel":45,"reqLevel":33,"reqStrength":47,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Cantor Trophy","code":"ne9","rarity":1,"itemLevel":49,"reqLevel":36,"reqStrength":50,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Heirophant Trophy","code":"nea","rarity":1,"itemLevel":54,"reqLevel":40,"reqStrength":58,"sockets":2,"speedPenalty":null,"baseType":"exceptional"}
+{"name":"Blood Spirt","code":"drb","rarity":1,"itemLevel":62,"reqLevel":46,"reqStrength":86,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Sun Spirit","code":"drc","rarity":1,"itemLevel":69,"reqLevel":51,"reqStrength":95,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Earth Spirit","code":"drd","rarity":1,"itemLevel":76,"reqLevel":57,"reqStrength":104,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Sky Spirit","code":"dre","rarity":1,"itemLevel":83,"reqLevel":62,"reqStrength":113,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Dream Spirit","code":"drf","rarity":1,"itemLevel":85,"reqLevel":66,"reqStrength":118,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Carnage Helm","code":"bab","rarity":2,"itemLevel":60,"reqLevel":45,"reqStrength":106,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Fury Visor","code":"bac","rarity":2,"itemLevel":66,"reqLevel":49,"reqStrength":129,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Destroyer Helm","code":"bad","rarity":2,"itemLevel":73,"reqLevel":54,"reqStrength":151,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Conquerer Crown","code":"bae","rarity":2,"itemLevel":80,"reqLevel":60,"reqStrength":174,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Guardian Crown","code":"baf","rarity":2,"itemLevel":85,"reqLevel":65,"reqStrength":196,"sockets":3,"speedPenalty":null,"baseType":"elite"}
+{"name":"Sacred Targe","code":"pab","rarity":2,"itemLevel":63,"reqLevel":47,"reqStrength":86,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Sacred Rondache","code":"pac","rarity":2,"itemLevel":70,"reqLevel":52,"reqStrength":109,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Ancient Shield","code":"pad","rarity":2,"itemLevel":74,"reqLevel":55,"reqStrength":124,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Zakarum Shield","code":"pae","rarity":2,"itemLevel":82,"reqLevel":61,"reqStrength":142,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Vortex Shield","code":"paf","rarity":2,"itemLevel":85,"reqLevel":66,"reqStrength":148,"sockets":4,"speedPenalty":null,"baseType":"elite"}
+{"name":"Minion Skull","code":"neb","rarity":1,"itemLevel":59,"reqLevel":44,"reqStrength":77,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Hellspawn Skull","code":"neg","rarity":1,"itemLevel":67,"reqLevel":50,"reqStrength":82,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Overseer Skull","code":"ned","rarity":1,"itemLevel":66,"reqLevel":49,"reqStrength":91,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Succubae Skull","code":"nee","rarity":1,"itemLevel":81,"reqLevel":60,"reqStrength":95,"sockets":2,"speedPenalty":null,"baseType":"elite"}
+{"name":"Bloodlord Skull","code":"nef","rarity":1,"itemLevel":85,"reqLevel":65,"reqStrength":106,"sockets":2,"speedPenalty":null,"baseType":"elite"}
