@@ -46,8 +46,14 @@ module ItemTreeHandler =
     let getWeapons next (ctx : HttpContext) =
         printfn "sending weapons"
         let loader = ctx.GetService<Loading.IServeData>()
-        let armors = loader.Weapons() |> List.map (fun x -> x.EncodeMinimal()) |> Thoth.Json.Net.Encode.list
-        json armors next ctx
+        let weapons = loader.Weapons() |> List.map (fun x -> x.EncodeMinimal()) |> Thoth.Json.Net.Encode.list
+        json weapons next ctx
+
+    let getMonsters next (ctx : HttpContext) =
+        printfn "sending monsters"
+        let loader = ctx.GetService<Loading.IServeData>()
+        let monsters = loader.Monsters() |> List.map (fun x -> x.Encode()) |> Thoth.Json.Net.Encode.list
+        json monsters next ctx
 
     let reloadData next (ctx : HttpContext) =
         let loader = ctx.GetService<Loading.ILoadData>()
@@ -63,4 +69,5 @@ module ItemTreeHandler =
             route "/api/armors" >=> GET >=> getArmors
             route "/api/armors/asdata" >=> GET >=> getArmorsAsData
             route "/api/weapons" >=> GET >=> getWeapons
+            route "/api/monsters" >=> GET >=> getMonsters
         ]

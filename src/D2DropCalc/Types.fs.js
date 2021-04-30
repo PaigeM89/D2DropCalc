@@ -1,11 +1,12 @@
-import { Union, Record } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Types.js";
+import { toString, Union, Record } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Types.js";
 import { bool_type, list_type, tuple_type, union_type, record_type, option_type, int32_type, string_type } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Reflection.js";
-import { Auto_toString_5A41365E, option, object } from "../D2DropCalc.SPA/src/.fable/Thoth.Json.5.1.0/Encode.fs.js";
-import { Auto_fromString_Z5CB6BD, int, string, object as object_1 } from "../D2DropCalc.SPA/src/.fable/Thoth.Json.5.1.0/Decode.fs.js";
-import { comparePrimitives, max as max_1, uncurry } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Util.js";
-import { printf, toFail } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/String.js";
+import { list as list_1, Auto_toString_5A41365E, option, object } from "../D2DropCalc.SPA/src/.fable/Thoth.Json.5.1.0/Encode.fs.js";
+import { list as list_2, Auto_fromString_Z5CB6BD, int, string, object as object_1 } from "../D2DropCalc.SPA/src/.fable/Thoth.Json.5.1.0/Decode.fs.js";
+import { equals, comparePrimitives, max as max_1, uncurry } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Util.js";
+import { interpolate, toText, printf, toFail } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/String.js";
 import { value as value_17 } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Option.js";
-import { sumBy, cons, map, ofArray } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/List.js";
+import { filter, sumBy, cons, map, ofArray } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/List.js";
+import { FSharpResult$2 } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Choice.js";
 
 export class Items_UniqueItem extends Record {
     constructor(Name, BaseItemCode, BaseItemName, ItemLevel, ReqLevel, Rarity) {
@@ -372,10 +373,42 @@ export class ItemTree_Difficulty extends Union {
     cases() {
         return ["Normal", "Nightmare", "Hell"];
     }
+    toString() {
+        const this$ = this;
+        switch (this$.tag) {
+            case 1: {
+                return "nightmare";
+            }
+            case 2: {
+                return "hell";
+            }
+            default: {
+                return "normal";
+            }
+        }
+    }
 }
 
 export function ItemTree_Difficulty$reflection() {
     return union_type("D2DropCalc.Types.ItemTree.Difficulty", [], ItemTree_Difficulty, () => [[], [], []]);
+}
+
+export function ItemTree_Difficulty_FromString_Z721C83C5(str) {
+    switch (str) {
+        case "normal": {
+            return new FSharpResult$2(0, new ItemTree_Difficulty(0));
+        }
+        case "nightmare": {
+            return new FSharpResult$2(0, new ItemTree_Difficulty(1));
+        }
+        case "hell": {
+            return new FSharpResult$2(0, new ItemTree_Difficulty(2));
+        }
+        default: {
+            const e = str;
+            return new FSharpResult$2(1, toText(interpolate("Could not create Difficulty from string \u0027%s%P()\u0027", [e])));
+        }
+    }
 }
 
 export class ItemTree_Act extends Union {
@@ -612,5 +645,145 @@ export function ItemTree_TreasureClassNode_Decode_Z721C83C5(str) {
     return Auto_fromString_Z5CB6BD(str, void 0, void 0, {
         ResolveType: ItemTree_TreasureClassNode$reflection,
     });
+}
+
+export class Monsters_MonsterDropQuality extends Union {
+    constructor(tag, ...fields) {
+        super();
+        this.tag = (tag | 0);
+        this.fields = fields;
+    }
+    cases() {
+        return ["Normal", "Champion", "Unique", "Quest"];
+    }
+    toString() {
+        const this$ = this;
+        switch (this$.tag) {
+            case 1: {
+                return "champion";
+            }
+            case 2: {
+                return "unique";
+            }
+            case 3: {
+                return "quest";
+            }
+            default: {
+                return "normal";
+            }
+        }
+    }
+}
+
+export function Monsters_MonsterDropQuality$reflection() {
+    return union_type("D2DropCalc.Types.Monsters.MonsterDropQuality", [], Monsters_MonsterDropQuality, () => [[], [], [], []]);
+}
+
+export function Monsters_MonsterDropQuality_FromString_Z721C83C5(str) {
+    switch (str) {
+        case "normal": {
+            return new FSharpResult$2(0, new Monsters_MonsterDropQuality(0));
+        }
+        case "champion": {
+            return new FSharpResult$2(0, new Monsters_MonsterDropQuality(1));
+        }
+        case "unique": {
+            return new FSharpResult$2(0, new Monsters_MonsterDropQuality(2));
+        }
+        case "quest": {
+            return new FSharpResult$2(0, new Monsters_MonsterDropQuality(3));
+        }
+        default: {
+            const e = str;
+            return new FSharpResult$2(1, toText(interpolate("Could not create monster drop quality from string \u0027%s%P()\u0027", [e])));
+        }
+    }
+}
+
+export class Monsters_Entrypoint extends Record {
+    constructor(Quality, Diff, ItemTreeNode) {
+        super();
+        this.Quality = Quality;
+        this.Diff = Diff;
+        this.ItemTreeNode = ItemTreeNode;
+    }
+}
+
+export function Monsters_Entrypoint$reflection() {
+    return record_type("D2DropCalc.Types.Monsters.Entrypoint", [], Monsters_Entrypoint, () => [["Quality", Monsters_MonsterDropQuality$reflection()], ["Diff", ItemTree_Difficulty$reflection()], ["ItemTreeNode", string_type]]);
+}
+
+export function Monsters_Entrypoint__Encode(this$) {
+    return object([["quality", toString(this$.Quality)], ["difficulty", toString(this$.Diff)], ["node", this$.ItemTreeNode]]);
+}
+
+export function Monsters_Entrypoint_Decoder() {
+    return (path_3) => ((v) => object_1((get$) => {
+        const qualRes = Monsters_MonsterDropQuality_FromString_Z721C83C5(get$.Required.Field("quality", (path, value) => string(path, value)));
+        const diffRes = ItemTree_Difficulty_FromString_Z721C83C5(get$.Required.Field("difficulty", (path_1, value_1) => string(path_1, value_1)));
+        const matchValue = [qualRes, diffRes];
+        let pattern_matching_result, diff, qual, e;
+        const copyOfStruct = matchValue[0];
+        if (copyOfStruct.tag === 1) {
+            pattern_matching_result = 1;
+            e = copyOfStruct.fields[0];
+        }
+        else {
+            const copyOfStruct_1 = matchValue[1];
+            if (copyOfStruct_1.tag === 1) {
+                pattern_matching_result = 1;
+                e = copyOfStruct_1.fields[0];
+            }
+            else {
+                pattern_matching_result = 0;
+                diff = copyOfStruct_1.fields[0];
+                qual = copyOfStruct.fields[0];
+            }
+        }
+        switch (pattern_matching_result) {
+            case 0: {
+                return new Monsters_Entrypoint(qual, diff, get$.Required.Field("node", (path_2, value_2) => string(path_2, value_2)));
+            }
+            case 1: {
+                throw (new Error(toText(interpolate("Unable to decode entrypoint : \u0027%s%P()\u0027", [e]))));
+            }
+        }
+    }, path_3, v));
+}
+
+export class Monsters_Monster extends Record {
+    constructor(Id, Name, Level, LevelNightmare, LevelHell, ItemTreeEntrypoints) {
+        super();
+        this.Id = Id;
+        this.Name = Name;
+        this.Level = (Level | 0);
+        this.LevelNightmare = LevelNightmare;
+        this.LevelHell = LevelHell;
+        this.ItemTreeEntrypoints = ItemTreeEntrypoints;
+    }
+}
+
+export function Monsters_Monster$reflection() {
+    return record_type("D2DropCalc.Types.Monsters.Monster", [], Monsters_Monster, () => [["Id", string_type], ["Name", string_type], ["Level", int32_type], ["LevelNightmare", option_type(int32_type)], ["LevelHell", option_type(int32_type)], ["ItemTreeEntrypoints", list_type(Monsters_Entrypoint$reflection())]]);
+}
+
+export function Monsters_Monster__Encode(this$) {
+    return object([["id", this$.Id], ["name", this$.Name], ["level", this$.Level], ["level(N)", option((value_3) => value_3)(this$.LevelNightmare)], ["level(H)", option((value_5) => value_5)(this$.LevelHell)], ["entrypoints", list_1(map((x) => Monsters_Entrypoint__Encode(x), this$.ItemTreeEntrypoints))]]);
+}
+
+export function Monsters_Monster_Decoder() {
+    return (path_3) => ((v) => object_1((get$) => {
+        let decoder;
+        const entrypoints = get$.Required.Field("entrypoints", uncurry(2, (decoder = Monsters_Entrypoint_Decoder(), (path) => ((value) => list_2(uncurry(2, decoder), path, value)))));
+        return new Monsters_Monster(get$.Required.Field("id", (path_1, value_1) => string(path_1, value_1)), get$.Required.Field("name", (path_2, value_2) => string(path_2, value_2)), get$.Required.Field("level", uncurry(2, int)), get$.Optional.Field("level(N)", uncurry(2, int)), get$.Optional.Field("level(H)", uncurry(2, int)), entrypoints);
+    }, path_3, v));
+}
+
+export function Monsters_getEntrypointsForDifficulty(diff, eps) {
+    return filter((x) => equals(x[1], diff), eps);
+}
+
+export function Monsters_getEntrypointsForQuality(qual, eps) {
+    return filter((x) => equals(x[0], qual), eps);
 }
 

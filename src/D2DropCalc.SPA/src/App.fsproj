@@ -11,6 +11,7 @@
     <Compile Include="components/ItemBaseDropdowns.fs" />
     <Compile Include="components/Armors.fs" />
     <Compile Include="components/ViewItem.fs" />
+    <Compile Include="components/MonsterDrop.fs" />
     <Compile Include="components/Navbar.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>

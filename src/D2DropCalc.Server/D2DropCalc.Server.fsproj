@@ -12,7 +12,6 @@
     </Content>
     <Compile Include="Config.fs" />
     <Compile Include="FileLoading.fs" />
-    <Compile Include="TreasureClasses.fs" />
     <Compile Include="handlers/ItemTreeHandler.fs" /> 
     <Compile Include="Init.fs" />
     <Compile Include="Program.fs" />

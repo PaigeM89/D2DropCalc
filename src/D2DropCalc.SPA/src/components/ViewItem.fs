@@ -8,9 +8,14 @@ module ViewItem =
   open Fable.FontAwesome
   open D2DropCalc.SPA
   open D2DropCalc.Types.Items
+  open D2DropCalc.Types.ItemTree
   open Fulma
 
   module private ItemTemplates =
+    let intStrOrNone (io : int option) =
+      match io with
+      | Some x -> string x
+      | None -> "None"
 
     [<ReactComponent>]
     let ViewArmor (armor : Armor) =
@@ -18,10 +23,23 @@ module ViewItem =
         Label.label [] [ str "Armor stuff goes here" ]
       ]
 
+    let ViewWeapon (weapon : Weapon) =
+      div [] [
+        Label.label [] [ str weapon.Name ]
+        Label.label [] [ str ("Type: " + weapon.Type)]
+        Label.label [] [ str ("Base Quality: " + (weapon.BaseType.ToString()))]
+        Label.label [] [ str ("Item Level: " + (intStrOrNone weapon.ItemLevel)) ]
+        Label.label [] [ str ("Max Sockets: " + (intStrOrNone weapon.MaxSockets)) ]
+        Label.label [] [ str ("Req Level: " + (intStrOrNone weapon.ReqLevel)) ]
+        Label.label [] [ str ("Required Strength: " + (intStrOrNone weapon.ReqStrength)) ]
+        Label.label [] [ str ("Required Dexterity: " + (intStrOrNone weapon.ReqDex)) ]
+      ]
+
   type SearchProps = {
     weapons : Weapon list
     armors : Armor list
     selectedCode : string option
+    selectionChangeCallback : ItemCode -> unit
   }
 
   let private lookupCodeAndRender = React.functionComponent(fun (props : SearchProps) ->
@@ -49,7 +67,6 @@ module ViewItem =
   let weaponDDLValue (weap : Weapon) =
     Micro.Dropdown.createDDLValue weap.Code weap.Name
 
-  // i think this causes react dom errors due to hook stuff
   let private renderSearch = React.functionComponent(fun (props : SearchProps) ->
     let (selectValue, setSelected) = React.useState(None)
     let (ddlValues, setDDLValues) = React.useState([])
@@ -95,7 +112,7 @@ module ViewItem =
 
     match armors, weapons with
     | Deferred.Resolved (Ok armors), Deferred.Resolved (Ok weapons) ->
-      let props = { weapons = weapons; armors = armors; selectedCode = None}
+      let props = { weapons = weapons; armors = armors; selectedCode = None; selectionChangeCallback = fun _ -> ()}
       renderSearch props
     | Deferred.Resolved (Error e), Deferred.Resolved _->
       printfn "error loading armors: %A" e
@@ -113,3 +130,38 @@ module ViewItem =
       div [ Class ("block " + Fa.Classes.Size.Fa3x) ] [
         Fa.i [ Fa.Solid.Spinner; Fa.Spin ] []
       ]
+
+  type SelectItemProps = { callback : ItemCode -> unit }
+
+  let SelectAndViewItemWithCallback = React.functionComponent(fun (props : SelectItemProps) -> 
+    let (armors, setArmors) = React.useState(Deferred.HasNotStartedYet)
+    let (weapons, setWeapons) = React.useState(Deferred.HasNotStartedYet)
+
+    let startLoadingArmors = React.useDeferredCallback((fun () -> Fetch.getArmors()), setArmors)
+    let startLoadingWeapons = React.useDeferredCallback((fun () -> Fetch.getWeapons()), setWeapons)
+
+    React.useEffect(startLoadingArmors, [||])
+    React.useEffect(startLoadingWeapons, [||])
+
+    match armors, weapons with
+    | Deferred.Resolved (Ok armors), Deferred.Resolved (Ok weapons) ->
+      let props = { weapons = weapons; armors = armors; selectedCode = None; selectionChangeCallback = props.callback}
+      renderSearch props
+    | Deferred.Resolved (Error e), Deferred.Resolved _->
+      printfn "error loading armors: %A" e
+      Micro.Error.ErrorMessage "Unable to load data"
+    | Deferred.Resolved _, Deferred.Resolved (Error e) ->
+      printfn "error loading weapons: %A" e
+      Micro.Error.ErrorMessage "Unable to load data"
+    | Deferred.Failed error, _ ->
+      printfn "deffered error: %A" error
+      Micro.Error.ErrorMessage "Unable to resolve data load"
+    | _, Deferred.Failed error ->
+      printfn "deffered error: %A" error
+      Micro.Error.ErrorMessage "Unable to resolve data load"
+    | _ ->
+      div [ Class ("block " + Fa.Classes.Size.Fa3x) ] [
+        Fa.i [ Fa.Solid.Spinner; Fa.Spin ] []
+      ]
+  
+  )

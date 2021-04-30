@@ -1,14 +1,14 @@
+import { equals, int32ToString } from "../.fable/fable-library.3.1.15/Util.js";
 import { createElement } from "react";
 import * as react from "react";
 import { label } from "../.fable/Fulma.2.10.0/Elements/Form/Label.fs.js";
 import { ofArray, append, map, singleton, empty } from "../.fable/fable-library.3.1.15/List.js";
-import { Record } from "../.fable/fable-library.3.1.15/Types.js";
+import { Record, toString } from "../.fable/fable-library.3.1.15/Types.js";
 import { Items_Armor$reflection, Items_Weapon$reflection } from "../../../D2DropCalc/Types.fs.js";
-import { record_type, option_type, string_type, list_type } from "../.fable/fable-library.3.1.15/Reflection.js";
+import { record_type, lambda_type, unit_type, option_type, string_type, list_type } from "../.fable/fable-library.3.1.15/Reflection.js";
 import { useReact_useEffect_Z101E1A95, useFeliz_React__React_useState_Static_1505, React_functionComponent_2F9D7239 } from "../.fable/Feliz.1.43.0/React.fs.js";
 import { tryFind, ofList, isEmpty, empty as empty_1 } from "../.fable/fable-library.3.1.15/Map.js";
 import { SearchableWithFunc, SearchableProps, createDDLValue } from "./micro/Dropdown.fs.js";
-import { equals } from "../.fable/fable-library.3.1.15/Util.js";
 import { printf, toConsole } from "../.fable/fable-library.3.1.15/String.js";
 import { singleton as singleton_1, append as append_1, delay, toList } from "../.fable/fable-library.3.1.15/Seq.js";
 import { columns } from "../.fable/Fulma.2.10.0/Layouts/Columns.fs.js";
@@ -19,21 +19,36 @@ import { getWeapons, getArmors } from "../Fetch.fs.js";
 import { ErrorMessage } from "./micro/Error.fs.js";
 import { Fa_IconOption, Fa_i } from "../.fable/Fable.FontAwesome.2.0.0/FontAwesome.fs.js";
 
+function ItemTemplates_intStrOrNone(io) {
+    if (io == null) {
+        return "None";
+    }
+    else {
+        const x = io | 0;
+        return int32ToString(x);
+    }
+}
+
 function ItemTemplates_ViewArmor(armor) {
     return react.createElement("div", {}, label(empty(), singleton("Armor stuff goes here")));
 }
 
+function ItemTemplates_ViewWeapon(weapon) {
+    return react.createElement("div", {}, label(empty(), singleton(weapon.Name)), label(empty(), singleton("Type: " + weapon.Type)), label(empty(), singleton("Base Quality: " + toString(weapon.BaseType))), label(empty(), singleton("Item Level: " + ItemTemplates_intStrOrNone(weapon.ItemLevel))), label(empty(), singleton("Max Sockets: " + ItemTemplates_intStrOrNone(weapon.MaxSockets))), label(empty(), singleton("Req Level: " + ItemTemplates_intStrOrNone(weapon.ReqLevel))), label(empty(), singleton("Required Strength: " + ItemTemplates_intStrOrNone(weapon.ReqStrength))), label(empty(), singleton("Required Dexterity: " + ItemTemplates_intStrOrNone(weapon.ReqDex))));
+}
+
 export class SearchProps extends Record {
-    constructor(weapons, armors, selectedCode) {
+    constructor(weapons, armors, selectedCode, selectionChangeCallback) {
         super();
         this.weapons = weapons;
         this.armors = armors;
         this.selectedCode = selectedCode;
+        this.selectionChangeCallback = selectionChangeCallback;
     }
 }
 
 export function SearchProps$reflection() {
-    return record_type("D2DropCalc.SPA.Components.ViewItem.SearchProps", [], SearchProps, () => [["weapons", list_type(Items_Weapon$reflection())], ["armors", list_type(Items_Armor$reflection())], ["selectedCode", option_type(string_type)]]);
+    return record_type("D2DropCalc.SPA.Components.ViewItem.SearchProps", [], SearchProps, () => [["weapons", list_type(Items_Weapon$reflection())], ["armors", list_type(Items_Armor$reflection())], ["selectedCode", option_type(string_type)], ["selectionChangeCallback", lambda_type(string_type, unit_type)]]);
 }
 
 const lookupCodeAndRender = React_functionComponent_2F9D7239((props) => {
@@ -95,7 +110,7 @@ const renderSearch = React_functionComponent_2F9D7239((props) => {
         }
         else {
             const sv = selectValue;
-            return singleton_1(lookupCodeAndRender(new SearchProps(props.weapons, props.armors, sv)));
+            return singleton_1(lookupCodeAndRender(new SearchProps(props.weapons, props.armors, sv, props.selectionChangeCallback)));
         }
     })))));
 });
@@ -159,7 +174,8 @@ export function SelectAndViewItem() {
     }
     switch (pattern_matching_result) {
         case 0: {
-            const props = new SearchProps(weapons_1, armors_1, void 0);
+            const props = new SearchProps(weapons_1, armors_1, void 0, (_arg1) => {
+            });
             return renderSearch(props);
         }
         case 1: {
@@ -193,4 +209,109 @@ export function SelectAndViewItem() {
         }
     }
 }
+
+export class SelectItemProps extends Record {
+    constructor(callback) {
+        super();
+        this.callback = callback;
+    }
+}
+
+export function SelectItemProps$reflection() {
+    return record_type("D2DropCalc.SPA.Components.ViewItem.SelectItemProps", [], SelectItemProps, () => [["callback", lambda_type(string_type, unit_type)]]);
+}
+
+export const SelectAndViewItemWithCallback = React_functionComponent_2F9D7239((props) => {
+    const patternInput = useFeliz_React__React_useState_Static_1505(new Deferred$1(0));
+    const setArmors = patternInput[1];
+    const armors = patternInput[0];
+    const patternInput_1 = useFeliz_React__React_useState_Static_1505(new Deferred$1(0));
+    const weapons = patternInput_1[0];
+    const setWeapons = patternInput_1[1];
+    const startLoadingArmors = useFeliz_React__React_useDeferredCallback_Static_7088D81D(getArmors, setArmors);
+    const startLoadingWeapons = useFeliz_React__React_useDeferredCallback_Static_7088D81D(getWeapons, setWeapons);
+    useReact_useEffect_Z101E1A95(startLoadingArmors, []);
+    useReact_useEffect_Z101E1A95(startLoadingWeapons, []);
+    const matchValue = [armors, weapons];
+    let pattern_matching_result, armors_1, weapons_1, e, e_1, error, error_1;
+    if (matchValue[0].tag === 2) {
+        if (matchValue[0].fields[0].tag === 1) {
+            if (matchValue[1].tag === 2) {
+                pattern_matching_result = 1;
+                e = matchValue[0].fields[0].fields[0];
+            }
+            else if (matchValue[1].tag === 3) {
+                pattern_matching_result = 4;
+                error_1 = matchValue[1].fields[0];
+            }
+            else {
+                pattern_matching_result = 5;
+            }
+        }
+        else if (matchValue[1].tag === 2) {
+            if (matchValue[1].fields[0].tag === 1) {
+                pattern_matching_result = 2;
+                e_1 = matchValue[1].fields[0].fields[0];
+            }
+            else {
+                pattern_matching_result = 0;
+                armors_1 = matchValue[0].fields[0].fields[0];
+                weapons_1 = matchValue[1].fields[0].fields[0];
+            }
+        }
+        else if (matchValue[1].tag === 3) {
+            pattern_matching_result = 4;
+            error_1 = matchValue[1].fields[0];
+        }
+        else {
+            pattern_matching_result = 5;
+        }
+    }
+    else if (matchValue[0].tag === 3) {
+        pattern_matching_result = 3;
+        error = matchValue[0].fields[0];
+    }
+    else if (matchValue[1].tag === 3) {
+        pattern_matching_result = 4;
+        error_1 = matchValue[1].fields[0];
+    }
+    else {
+        pattern_matching_result = 5;
+    }
+    switch (pattern_matching_result) {
+        case 0: {
+            const props_1 = new SearchProps(weapons_1, armors_1, void 0, props.callback);
+            return renderSearch(props_1);
+        }
+        case 1: {
+            toConsole(printf("error loading armors: %A"))(e);
+            return createElement(ErrorMessage, {
+                msg: "Unable to load data",
+            });
+        }
+        case 2: {
+            toConsole(printf("error loading weapons: %A"))(e_1);
+            return createElement(ErrorMessage, {
+                msg: "Unable to load data",
+            });
+        }
+        case 3: {
+            toConsole(printf("deffered error: %A"))(error);
+            return createElement(ErrorMessage, {
+                msg: "Unable to resolve data load",
+            });
+        }
+        case 4: {
+            toConsole(printf("deffered error: %A"))(error_1);
+            return createElement(ErrorMessage, {
+                msg: "Unable to resolve data load",
+            });
+        }
+        case 5: {
+            return react.createElement("div", {
+                className: "block fa-3x",
+            }, Fa_i(ofArray([new Fa_IconOption(11, "fas fa-spinner"), new Fa_IconOption(12)]), []));
+        }
+    }
+});
 

@@ -2,6 +2,7 @@ namespace D2DropCalc.SPA
 
 module Fetch =
   open Fable.SimpleHttp
+  open D2DropCalc.Types
   open D2DropCalc.Types.Items
 
   #if FABLE_COMPILER
@@ -29,12 +30,19 @@ module Fetch =
     | Ok values -> Ok values
     | Error e -> DecodeError e |> Error
 
+  let private decodeMonsters (monsters : string) =
+    let decoder = Monsters.Monster.Decoder()
+    let decodeResult = Decode.fromString (Thoth.Json.Decode.list decoder) monsters
+    match decodeResult with
+    | Ok values -> Ok values
+    | Error e -> DecodeError e |> Error
+
   let private genericFetch route decoder =
     async {
       let! (statusCode, responseText) = Http.get route
       match statusCode with
       | 200 ->
-        printfn "successfully hit armors endpoint"
+        printfn $"successfully hit %s{route} endpoint"
         return responseText |> decoder
       | 404 ->
         printfn "route '%s' not found, response text is '%s'" route responseText
@@ -47,6 +55,9 @@ module Fetch =
   let getArmors() =
     let route = "/api/armors"
     genericFetch route decodeArmors
-    
 
   let getWeapons() = genericFetch "/api/weapons" decodeWeapons
+
+  let getMonsters() =
+    printfn "Fetching monsters"
+    genericFetch "/api/monsters" decodeMonsters

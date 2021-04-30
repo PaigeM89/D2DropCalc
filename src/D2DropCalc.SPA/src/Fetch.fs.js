@@ -1,12 +1,12 @@
 import { Union } from "./.fable/fable-library.3.1.15/Types.js";
 import { union_type, string_type, int32_type } from "./.fable/fable-library.3.1.15/Reflection.js";
-import { Items_Weapon_DecoderMinimal, Items_Armor_DecoderMinimal } from "../../D2DropCalc/Types.fs.js";
+import { Monsters_Monster_Decoder, Items_Weapon_DecoderMinimal, Items_Armor_DecoderMinimal } from "../../D2DropCalc/Types.fs.js";
 import { list, fromString } from "./.fable/Thoth.Json.5.1.0/Decode.fs.js";
 import { uncurry } from "./.fable/fable-library.3.1.15/Util.js";
 import { FSharpResult$2 } from "./.fable/fable-library.3.1.15/Choice.js";
 import { singleton } from "./.fable/fable-library.3.1.15/AsyncBuilder.js";
 import { Http_get } from "./.fable/Fable.SimpleHttp.3.0.0/Http.fs.js";
-import { printf, toConsole } from "./.fable/fable-library.3.1.15/String.js";
+import { printf, interpolate, toConsole } from "./.fable/fable-library.3.1.15/String.js";
 
 export class FetchError extends Union {
     constructor(tag, ...fields) {
@@ -49,13 +49,26 @@ function decodeWeapons(weapons) {
     }
 }
 
+function decodeMonsters(monsters) {
+    const decoder = Monsters_Monster_Decoder();
+    const decodeResult = fromString((path, value) => list(uncurry(2, decoder), path, value), monsters);
+    if (decodeResult.tag === 1) {
+        const e = decodeResult.fields[0];
+        return new FSharpResult$2(1, new FetchError(2, e));
+    }
+    else {
+        const values = decodeResult.fields[0];
+        return new FSharpResult$2(0, values);
+    }
+}
+
 function genericFetch(route, decoder) {
     return singleton.Delay(() => singleton.Bind(Http_get(route), (_arg1) => {
         const statusCode = _arg1[0] | 0;
         const responseText = _arg1[1];
         switch (statusCode) {
             case 200: {
-                toConsole(printf("successfully hit armors endpoint"));
+                toConsole(interpolate("successfully hit %s%P() endpoint", [route]));
                 return singleton.Return(decoder(responseText));
             }
             case 404: {
@@ -78,5 +91,10 @@ export function getArmors() {
 
 export function getWeapons() {
     return genericFetch("/api/weapons", (weapons) => decodeWeapons(weapons));
+}
+
+export function getMonsters() {
+    toConsole(printf("Fetching monsters"));
+    return genericFetch("/api/monsters", (monsters) => decodeMonsters(monsters));
 }
 

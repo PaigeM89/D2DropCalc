@@ -6,15 +6,17 @@ open Fable.SimpleHttp
 open Fable.React
 open Fulma
 
+open D2DropCalc.SPA.Components
 
 [<ReactComponent>]
 let RootComponent() =
-    div [] [
+    div [  ] [
         D2DropCalc.SPA.Components.Navbar.Navbar()
-        Columns.columns [] [
+        Columns.columns [  ] [
             Column.column [] [
                 Container.container [] [
-                    D2DropCalc.SPA.Components.ViewItem.SelectAndViewItem()
+                    ViewItem.SelectAndViewItem()
+                    MonsterDrop.monsterSearchDropdown( { callback = fun _ -> () } )
                 ]
             ]
         ]

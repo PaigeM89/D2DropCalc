@@ -8,6 +8,7 @@ open Thoth.Json.Net
 #endif
 
 
+
 /// types relating to base items, and their magical variants
 module Items =
 
@@ -369,6 +370,18 @@ module ItemTree =
     | Normal
     | Nightmare
     | Hell
+    with
+        override this.ToString() =
+            match this with
+            | Normal -> "normal"
+            | Nightmare -> "nightmare"
+            | Hell -> "hell"
+        static member FromString str =
+            match str with
+            | "normal" -> Ok Normal
+            | "nightmare" -> Ok Nightmare
+            | "hell" -> Ok Hell
+            | e -> $"Could not create Difficulty from string '%s{e}'" |> Error
 
     /// Some treasure classes are associated with a specific act
     type Act =
@@ -469,25 +482,6 @@ module ItemTree =
         Rare : int option
         Magic : int option
     } with
-        // static member (+) (cm1, cm2) =
-        //     match cm1, cm2 with
-        //     | Some cm1, Some cm2 ->
-        //         let max (io1 : int option) io2 =
-        //             match io1, io2 with
-        //             | Some x, Some y -> Math.Max(x, y) |> Some
-        //             | Some x, None -> x |> Some
-        //             | None, Some y  -> y |> Some
-        //             | None, None -> None
-        //         {
-        //             Unique = max cm1.Unique cm2.Unique
-        //             Set = max cm1.Set cm2.Set
-        //             Rare = max cm1.Rare cm2.Rare
-        //             Magic = max cm1.Magic cm2.Magic
-        //         } |> Some
-        //     | Some cm1, None -> cm1 |> Some
-        //     | None, Some cm2 -> cm2 |> Some
-        //     | None, None -> None
-
         static member Empty = {
             Unique = None
             Set = None
@@ -538,23 +532,103 @@ module ItemTree =
         member this.Encode() = Encode.Auto.toString(0, this)
         static member Decode str = Decode.Auto.fromString<TreasureClassNode> str
 
-// module Loading =
-//     open System
-//     open System.IO
+module Monsters =
 
-//     let loadTreasureClassesFromPath path =
-//         let lines = File.ReadAllLines path
-//         [ 
-//             for line in lines do 
-//                 if line <> "" then
-//                     ItemTree.TreasureClassNode.Decode line
-//         ]
+    type MonsterDropQuality =
+    | Normal
+    | Champion
+    | Unique
+    | Quest
+    with
+        override this.ToString() =
+            match this with
+            | Normal -> "normal"
+            | Champion -> "champion"
+            | Unique -> "unique"
+            | Quest -> "quest"
 
-//     let loadArmorsFromPath path =
-//         let lines = File.ReadAllLines path
-//         let decoder = Items.Armor.Decoder()
-//         [
-//             for line in lines do
-//                 if line <> "" then
-//                     Decode.fromString decoder line
-//         ]
+        static member FromString str =
+            match str with
+            | "normal" -> Ok Normal
+            | "champion" -> Ok Champion
+            | "unique" -> Ok Unique
+            | "quest" -> Ok Quest
+            | e -> $"Could not create monster drop quality from string '%s{e}'" |> Error
+
+    type Entrypoint = {
+        Quality : MonsterDropQuality
+        Diff : ItemTree.Difficulty
+        ItemTreeNode : string
+    } with
+        member this.Encode() =
+            Encode.object [
+                "quality", Encode.string (this.Quality.ToString())
+                "difficulty", Encode.string (this.Diff.ToString())
+                "node", Encode.string (this.ItemTreeNode)
+            ]
+
+        static member Decoder() : Decoder<Entrypoint> =
+            Decode.object (fun get ->
+                let qualRes =   get.Required.Field "quality" Decode.string
+                                |> MonsterDropQuality.FromString
+                let diffRes =   get.Required.Field "difficulty" Decode.string
+                                |> ItemTree.Difficulty.FromString
+                match qualRes, diffRes with
+                | Ok qual, Ok diff ->
+                    {
+                        Quality = qual
+                        Diff = diff
+                        ItemTreeNode = get.Required.Field "node" Decode.string
+                    }
+                | Error e, _
+                | _, Error e ->
+                    failwith $"Unable to decode entrypoint : '%s{e}'"
+            )
+
+    type Monster = {
+        Id : string
+        Name : string
+        Level : int
+        LevelNightmare : int option
+        LevelHell : int option
+        ItemTreeEntrypoints : Entrypoint list
+    } with
+        member this.Encode() =
+            Encode.object [
+                "id", Encode.string this.Id
+                "name", Encode.string this.Name
+                "level", Encode.int this.Level
+                "level(N)", Encode.option Encode.int this.LevelNightmare
+                "level(H)", Encode.option Encode.int this.LevelHell
+                "entrypoints", Encode.list (this.ItemTreeEntrypoints |> List.map (fun x -> x.Encode()))
+            ]
+
+        static member Decoder() : Decoder<Monster> =
+            Decode.object(fun get ->
+                // need to only get successful results
+                let entrypoints =
+                    get.Required.Field "entrypoints" (Decode.list (Entrypoint.Decoder()))
+                    // |> List.map (fun x -> 
+                    //     match x with
+                    //     | Ok v -> Some v
+                    //     | Error e ->
+                    //         // todo: logging
+                    //         printfn "Error deserializing entrypoints: %s" e
+                    //         None
+                    // )
+                    // |> List.choose id
+
+                {
+                    Id = get.Required.Field "id" Decode.string
+                    Name = get.Required.Field "name" Decode.string
+                    Level = get.Required.Field "level" Decode.int
+                    LevelNightmare = get.Optional.Field "level(N)" Decode.int
+                    LevelHell = get.Optional.Field "level(H)" Decode.int
+                    ItemTreeEntrypoints = entrypoints
+                }
+            )
+
+    let getEntrypointsForDifficulty diff eps =
+        eps |> List.filter (fun x -> snd x = diff)
+    let getEntrypointsForQuality qual eps =
+        eps |> List.filter (fun x -> fst x = qual)
