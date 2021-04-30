@@ -1,14 +1,15 @@
 import { createElement } from "react";
 import * as react from "react";
 import { label } from "../.fable/Fulma.2.10.0/Elements/Form/Label.fs.js";
-import { ofArray, map, append, singleton, empty } from "../.fable/fable-library.3.1.15/List.js";
+import { ofArray, append, map, singleton, empty } from "../.fable/fable-library.3.1.15/List.js";
 import { Record } from "../.fable/fable-library.3.1.15/Types.js";
 import { Items_Armor$reflection, Items_Weapon$reflection } from "../../../D2DropCalc/Types.fs.js";
-import { record_type, list_type } from "../.fable/fable-library.3.1.15/Reflection.js";
-import { SearchableWithFunc, SearchableProps, createDDLValue } from "./micro/Dropdown.fs.js";
+import { record_type, option_type, string_type, list_type } from "../.fable/fable-library.3.1.15/Reflection.js";
 import { useReact_useEffect_Z101E1A95, useFeliz_React__React_useState_Static_1505, React_functionComponent_2F9D7239 } from "../.fable/Feliz.1.43.0/React.fs.js";
+import { tryFind, ofList, isEmpty, empty as empty_1 } from "../.fable/fable-library.3.1.15/Map.js";
+import { SearchableWithFunc, SearchableProps, createDDLValue } from "./micro/Dropdown.fs.js";
 import { equals } from "../.fable/fable-library.3.1.15/Util.js";
-import { interpolate, toText, printf, toConsole } from "../.fable/fable-library.3.1.15/String.js";
+import { printf, toConsole } from "../.fable/fable-library.3.1.15/String.js";
 import { singleton as singleton_1, append as append_1, delay, toList } from "../.fable/fable-library.3.1.15/Seq.js";
 import { columns } from "../.fable/Fulma.2.10.0/Layouts/Columns.fs.js";
 import { Option, ISize, column } from "../.fable/Fulma.2.10.0/Layouts/Column.fs.js";
@@ -23,16 +24,45 @@ function ItemTemplates_ViewArmor(armor) {
 }
 
 export class SearchProps extends Record {
-    constructor(weapons, armors) {
+    constructor(weapons, armors, selectedCode) {
         super();
         this.weapons = weapons;
         this.armors = armors;
+        this.selectedCode = selectedCode;
     }
 }
 
 export function SearchProps$reflection() {
-    return record_type("D2DropCalc.SPA.Components.ViewItem.SearchProps", [], SearchProps, () => [["weapons", list_type(Items_Weapon$reflection())], ["armors", list_type(Items_Armor$reflection())]]);
+    return record_type("D2DropCalc.SPA.Components.ViewItem.SearchProps", [], SearchProps, () => [["weapons", list_type(Items_Weapon$reflection())], ["armors", list_type(Items_Armor$reflection())], ["selectedCode", option_type(string_type)]]);
 }
+
+const lookupCodeAndRender = React_functionComponent_2F9D7239((props) => {
+    const patternInput = useFeliz_React__React_useState_Static_1505(empty_1());
+    const setArmorMap = patternInput[1];
+    const armorMap = patternInput[0];
+    const patternInput_1 = useFeliz_React__React_useState_Static_1505(empty_1());
+    const weaponMap = patternInput_1[0];
+    const setWeaponMap = patternInput_1[1];
+    const armorMap_1 = isEmpty(armorMap) ? ofList(map((x) => [x.Code, x], props.armors)) : armorMap;
+    const weaponMap_1 = isEmpty(weaponMap) ? ofList(map((x_1) => [x_1.Code, x_1], props.weapons)) : weaponMap;
+    const tryArmors = (c) => tryFind(c, armorMap_1);
+    const tryWeapons = (c_1) => tryFind(c_1, weaponMap_1);
+    const matchValue = props.selectedCode;
+    if (matchValue == null) {
+        return label(empty(), singleton("No item selected"));
+    }
+    else {
+        const code = matchValue;
+        const matchValue_1 = tryArmors(code);
+        if (matchValue_1 == null) {
+            return label(empty(), singleton("You did not select an armor"));
+        }
+        else {
+            const armor = matchValue_1;
+            return createElement(ItemTemplates_ViewArmor, armor);
+        }
+    }
+});
 
 export function armorDDLValue(armor) {
     return createDDLValue(armor.Code, armor.Name);
@@ -57,15 +87,15 @@ const renderSearch = React_functionComponent_2F9D7239((props) => {
         toConsole(printf("on change function fired, value is %s"))(value);
         setSelected(value);
     };
-    const props_1 = new SearchableProps(ddlValues, "Select an item base", onChange);
-    const searchable = SearchableWithFunc(props_1);
+    const ddlProps = new SearchableProps(ddlValues, "Select an item base", onChange);
+    const searchable = SearchableWithFunc(ddlProps);
     return react.createElement("div", {}, ...toList(delay(() => append_1(singleton_1(columns(empty(), singleton(column(singleton(new Option(0, new Screen(0), new ISize(6))), singleton(searchable))))), delay(() => {
         if (selectValue == null) {
             return singleton_1(null);
         }
         else {
             const sv = selectValue;
-            return singleton_1(label(empty(), singleton(toText(interpolate("You selected: \u0027%A%P()\u0027", [sv])))));
+            return singleton_1(lookupCodeAndRender(new SearchProps(props.weapons, props.armors, sv)));
         }
     })))));
 });
@@ -129,7 +159,7 @@ export function SelectAndViewItem() {
     }
     switch (pattern_matching_result) {
         case 0: {
-            const props = new SearchProps(weapons_1, armors_1);
+            const props = new SearchProps(weapons_1, armors_1, void 0);
             return renderSearch(props);
         }
         case 1: {

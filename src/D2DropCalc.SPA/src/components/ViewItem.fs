@@ -21,7 +21,27 @@ module ViewItem =
   type SearchProps = {
     weapons : Weapon list
     armors : Armor list
+    selectedCode : string option
   }
+
+  let private lookupCodeAndRender = React.functionComponent(fun (props : SearchProps) ->
+    let (armorMap, setArmorMap) = React.useState(Map.empty)
+    let (weaponMap, setWeaponMap) = React.useState(Map.empty)
+
+    let armorMap = if Map.isEmpty armorMap then props.armors |> List.map (fun x -> x.Code,x) |> Map.ofList else armorMap
+    let weaponMap = if Map.isEmpty weaponMap then props.weapons |> List.map (fun x -> x.Code,x) |> Map.ofList else weaponMap
+
+    let tryArmors c = Map.tryFind c armorMap
+    let tryWeapons c = Map.tryFind c weaponMap
+
+    match props.selectedCode with
+    | Some code ->
+      match tryArmors code with
+      | Some armor -> ItemTemplates.ViewArmor armor
+      | None -> Label.label [] [str "You did not select an armor"]
+    | None ->
+      Label.label [] [ str "No item selected" ]
+  )
 
   let armorDDLValue (armor : Armor) =
     Micro.Dropdown.createDDLValue armor.Code armor.Name
@@ -41,13 +61,13 @@ module ViewItem =
       printfn "on change function fired, value is %s" value
       setSelected (Some value)
 
-    let props = {
+    let ddlProps = {
       Micro.Dropdown.SearchableProps.elements = ddlValues
       Micro.Dropdown.SearchableProps.placeholder = "Select an item base"
       Micro.Dropdown.SearchableProps.callback = onChange
     }
 
-    let searchable = Micro.Dropdown.SearchableWithFunc props
+    let searchable = Micro.Dropdown.SearchableWithFunc ddlProps
     div [] [
       Columns.columns [] [
         Column.column [ Column.Width(Screen.All, Column.Is2) ] [
@@ -56,7 +76,8 @@ module ViewItem =
       ]
       match selectValue with
       | Some sv ->
-        Label.label [] [str ($"You selected: '%A{sv}'") ]
+        //Label.label [] [str ($"You selected: '%A{sv}'") ]
+        lookupCodeAndRender { props with selectedCode = (Some sv)}
       | None -> Html.none
     ]
   )
@@ -74,9 +95,7 @@ module ViewItem =
 
     match armors, weapons with
     | Deferred.Resolved (Ok armors), Deferred.Resolved (Ok weapons) ->
-      //let ddlValues = (armors |> List.map armorDDLValue) @ (weapons |> List.map weaponDDLValue)
-      //Micro.Dropdown.SearchableWithPlaceholder ddlValues "Select an item base"
-      let props = { weapons = weapons; armors = armors}
+      let props = { weapons = weapons; armors = armors; selectedCode = None}
       renderSearch props
     | Deferred.Resolved (Error e), Deferred.Resolved _->
       printfn "error loading armors: %A" e

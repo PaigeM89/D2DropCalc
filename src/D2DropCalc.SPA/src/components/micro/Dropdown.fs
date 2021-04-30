@@ -50,9 +50,7 @@ module Dropdown =
     callback : string -> unit
   }
 
-  //[<ReactComponent>]
   let SearchableWithFunc = 
-  //(elements : DDLValue list) placeholder callback
     React.functionComponent (fun (props: SearchableProps) ->
       let (selectValue, setSelected) = React.useState(None)
       let getValue (sv : string option) = 
