@@ -1,8 +1,6 @@
 module App
 
 open Feliz
-open Feliz.UseDeferred
-open Fable.SimpleHttp
 open Fable.React
 open Fulma
 
@@ -15,6 +13,11 @@ let RootComponent() =
     let ddoCallback ddo =
         setDDO (Some ddo)
 
+    let (chance, setChance) = React.useState(None)
+    let calcChangeCallback (x : CalcDrop.CalcDropOutputs) =
+        printfn $"drop calc outputs: %A{x}"
+        setChance (Some x)
+
     div [  ] [
         D2DropCalc.SPA.Components.Navbar.Navbar()
         Container.container [ Container.CustomClass "input-dropdowns" ] [
@@ -23,9 +26,16 @@ let RootComponent() =
             /// only display the calc button when an item or monster has been selected
             /// in the future, only one of these will be needed to run a calculation.
             | Some ddo when ddo.itemCode.IsSome || ddo.monster.IsSome ->
-                CalcDrop.DropCalc( ddo.itemCode, ddo.treasureClass )
+                CalcDrop.DropCalc( ddo.itemCode, ddo.treasureClass, calcChangeCallback )
             | _ ->
                 Html.none
+
+            match chance, dropdownOutputs with
+            | Some chance, Some { monster = Some monster} ->
+                printfn "rendering calc display"
+                CalcDisplay.DisplayCalculationHistory(monster.Name, chance.itemCode, chance.chance)
+            | _ -> Html.none
+
         ]
     ]
 

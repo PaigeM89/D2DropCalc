@@ -67,4 +67,3 @@ module Armors =
           ]
       | Deferred.Resolved ((Error fetchError)) ->
         Html.h1 $"Error fetching data: %A{fetchError}"
-      //| Deferred.Resolved (Error e) -> Html.h1 $"No results returned:%A{e}"

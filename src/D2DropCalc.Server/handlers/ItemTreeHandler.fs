@@ -66,14 +66,20 @@ module ItemTreeHandler =
         Successful.OK "Reload Complete" next ctx
 
     let calculateDrop next (ctx : HttpContext) = task {
-        let! inputs = ctx.BindJsonAsync<DropCalculation.CalculationInput>()
-        let dropCalc = ctx.GetService<Loading.ICalculateDrops>()
-        let result = dropCalc.CalculateDropForItem inputs
-        match result with
-        | Ok (itemCode, chance) ->
-            return! json chance next ctx
+        let! body = ctx.ReadBodyFromRequestAsync()
+        let inputs = Thoth.Json.Net.Decode.fromString (D2DropCalc.Types.DropCalculation.CalculationInput.Decoder()) body
+        match inputs with
+        | Ok inputs ->
+            let dropCalc = ctx.GetService<Loading.ICalculateDrops>()
+            let result = dropCalc.CalculateDropForItem inputs
+            match result with
+            | Ok (itemCode, chance) ->
+                return! json chance next ctx
+            | Error e ->
+                return! ServerErrors.INTERNAL_ERROR (e.ToString()) next ctx
         | Error e ->
-            return! ServerErrors.INTERNAL_ERROR (e.ToString()) next ctx
+            printfn $"Unable to deserialize %s{body}: %A{e}"
+            return! RequestErrors.BAD_REQUEST e next ctx
     }
 
     module Routes =
