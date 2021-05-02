@@ -20,12 +20,15 @@ module ViewItem =
     [<ReactComponent>]
     let ViewArmor (armor : Armor) =
       div [] [
-        Label.label [] [ str "Armor stuff goes here" ]
+        Label.label [] [ str ("Item Level: " + intStrOrNone armor.ItemLevel) ]
+        Label.label [] [ str ("Max Sockets: " + intStrOrNone armor.MaxSockets) ]
+        Label.label [] [ str ("Req Level: " + intStrOrNone armor.ReqLevel) ]
+        Label.label [] [ str ("Req Strength: " + intStrOrNone armor.ReqStrength) ]
       ]
 
     let ViewWeapon (weapon : Weapon) =
       div [] [
-        Label.label [] [ str weapon.Name ]
+        //Label.label [] [ str weapon.Name ]
         Label.label [] [ str ("Type: " + weapon.Type)]
         Label.label [] [ str ("Base Quality: " + (weapon.BaseType.ToString()))]
         Label.label [] [ str ("Item Level: " + (intStrOrNone weapon.ItemLevel)) ]
@@ -56,7 +59,10 @@ module ViewItem =
     | Some code ->
       match tryArmors code with
       | Some armor -> ItemTemplates.ViewArmor armor
-      | None -> Label.label [] [str "You did not select an armor"]
+      | None ->
+        match tryWeapons code with
+        | Some weapon -> ItemTemplates.ViewWeapon weapon
+        | None -> Html.none
     | None ->
       Label.label [] [ str "No item selected" ]
   )
@@ -67,33 +73,42 @@ module ViewItem =
   let weaponDDLValue (weap : Weapon) =
     Micro.Dropdown.createDDLValue weap.Code weap.Name
 
+  let makeDDLValues armors weapons =
+    [
+      SelectSearch.SelectOption.Group {
+        name = "Armors"
+        items = armors |> List.map armorDDLValue
+      }
+      SelectSearch.SelectOption.Group {
+        name = "Weapons"
+        items = weapons |> List.map weaponDDLValue
+      }
+    ]
+
   let private renderSearch = React.functionComponent(fun (props : SearchProps) ->
     let (selectValue, setSelected) = React.useState(None)
     let (ddlValues, setDDLValues) = React.useState([])
     if ddlValues = [] then
-      let values = (props.armors |> List.map armorDDLValue) @ (props.weapons |> List.map weaponDDLValue)
-      setDDLValues values
-    
+      //let values = (props.armors |> List.map armorDDLValue) @ (props.weapons |> List.map weaponDDLValue)
+      makeDDLValues props.armors props.weapons
+      |> setDDLValues
+
     let onChange (value : string) =
       printfn "on change function fired, value is %s" value
       setSelected (Some value)
+      props.selectionChangeCallback value
 
     let ddlProps = {
-      Micro.Dropdown.SearchableProps.elements = ddlValues
-      Micro.Dropdown.SearchableProps.placeholder = "Select an item base"
-      Micro.Dropdown.SearchableProps.callback = onChange
+      Micro.Dropdown.GroupedProps.groupedElements = ddlValues
+      Micro.Dropdown.GroupedProps.placeholder = "Select an item base"
+      Micro.Dropdown.GroupedProps.callback = onChange
     }
 
-    let searchable = Micro.Dropdown.SearchableWithFunc ddlProps
-    div [] [
-      Columns.columns [] [
-        Column.column [ Column.Width(Screen.All, Column.Is2) ] [
-          searchable
-        ]
-      ]
+    let searchable = Micro.Dropdown.GroupedSearchable ddlProps
+    div [ Class "item-dropdown" ] [
+      searchable
       match selectValue with
       | Some sv ->
-        //Label.label [] [str ($"You selected: '%A{sv}'") ]
         lookupCodeAndRender { props with selectedCode = (Some sv)}
       | None -> Html.none
     ]
@@ -133,7 +148,7 @@ module ViewItem =
 
   type SelectItemProps = { callback : ItemCode -> unit }
 
-  let SelectAndViewItemWithCallback = React.functionComponent(fun (props : SelectItemProps) -> 
+  let SelectAndViewItemWithCallback = React.functionComponent(fun (props : SelectItemProps) ->
     let (armors, setArmors) = React.useState(Deferred.HasNotStartedYet)
     let (weapons, setWeapons) = React.useState(Deferred.HasNotStartedYet)
 
@@ -163,5 +178,6 @@ module ViewItem =
       div [ Class ("block " + Fa.Classes.Size.Fa3x) ] [
         Fa.i [ Fa.Solid.Spinner; Fa.Spin ] []
       ]
-  
   )
+
+

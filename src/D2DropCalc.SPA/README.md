@@ -1,5 +1,17 @@
 # Fable Minimal App
 
+TODO:
+0. make a single dropdown component
+1. make output render components
+2. recreate that scss error from zaid's dropdown package and try to fix?
+
+1. I don't have the data where I need it to convert a (difficulty, drop quality, monster) to a treasure class.
+2. I DO have a treasure class, I can invoke a callback on that in the meantime.
+3. I SHOULD put all the core data into core state, fuck responsible size limits.
+
+    a. This also lets me fine-tune how i display the active treasure classes
+4. once i can build the calculation inputs, i can finally get back to testing the endpoint
+
 This is a small Fable app project so you can easily get started and add your own code easily in it.
 
 ## Requirements

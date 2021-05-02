@@ -1,7 +1,7 @@
+group Client
 FSharp.Core
 Newtonsoft.Json
-
-group Client
+FsToolkit.ErrorHandling
 Fable.Browser.Dom
 Fable.Core
 Thoth.Json

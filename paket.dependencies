@@ -8,6 +8,7 @@ nuget YoloDev.Expecto.TestSdk 0.9.2
 nuget Microsoft.NET.Test.Sdk 16.8.0
 nuget altcover ~> 7
 nuget FsToolkit.ErrorHandling
+nuget FsToolkit.ErrorHandling.TaskResult
 nuget Thoth.Json.Net
 nuget Newtonsoft.Json
 
@@ -16,11 +17,13 @@ group Client
     source https://www.nuget.org/api/v2
     source https://api.nuget.org/v3/index.json
 
+    nuget FSharp.Core 5.0.1
     nuget Fable.Browser.Dom 2.3.0
-    nuget Fable.Core 3.2.3
+    nuget Fable.Core 3.2.6
     nuget Thoth.Json
     nuget Fable.SimpleHttp
     nuget Fable.Promise
+    nuget Newtonsoft.Json
 
     # added for react project
     nuget Feliz
@@ -29,14 +32,22 @@ group Client
     nuget Fable.FontAwesome
     nuget Fable.FontAwesome.Free
     nuget Feliz.SelectSearch
+    nuget FsToolkit.ErrorHandling
 
 group Server
     storage: none
     source https://www.nuget.org/api/v2
     source https://api.nuget.org/v3/index.json
 
+    nuget FSharp.Core 5.0.1
     nuget Giraffe 5.0.0-rc-6
     nuget Giraffe.ViewEngine
+    nuget Thoth.Json.Net
+    nuget Newtonsoft.Json
+    nuget FsToolkit.ErrorHandling
+    nuget FsToolkit.ErrorHandling.TaskResult
+
+
 
 // [ FAKE GROUP ]
 group Build

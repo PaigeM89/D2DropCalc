@@ -52,6 +52,7 @@ var commonPlugins = [
 ];
 
 module.exports = {
+    plugins: [new MiniCssExtractPlugin()],
     mode: "development",
     // entry: {
     //     demo: [

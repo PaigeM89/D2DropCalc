@@ -1,7 +1,7 @@
 import { toString, Union, Record } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Types.js";
 import { bool_type, list_type, tuple_type, union_type, record_type, option_type, int32_type, string_type } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Reflection.js";
 import { list as list_1, Auto_toString_5A41365E, option, object } from "../D2DropCalc.SPA/src/.fable/Thoth.Json.5.1.0/Encode.fs.js";
-import { list as list_2, Auto_fromString_Z5CB6BD, int, string, object as object_1 } from "../D2DropCalc.SPA/src/.fable/Thoth.Json.5.1.0/Decode.fs.js";
+import { list as list_2, Auto_generateDecoderCached_7848D058, Auto_fromString_Z5CB6BD, int, string, object as object_1 } from "../D2DropCalc.SPA/src/.fable/Thoth.Json.5.1.0/Decode.fs.js";
 import { equals, comparePrimitives, max as max_1, uncurry } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Util.js";
 import { interpolate, toText, printf, toFail } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/String.js";
 import { value as value_17 } from "../D2DropCalc.SPA/src/.fable/fable-library.3.1.15/Option.js";
@@ -647,6 +647,12 @@ export function ItemTree_TreasureClassNode_Decode_Z721C83C5(str) {
     });
 }
 
+export function ItemTree_TreasureClassNode_Decoder() {
+    return Auto_generateDecoderCached_7848D058(void 0, void 0, {
+        ResolveType: ItemTree_TreasureClassNode$reflection,
+    });
+}
+
 export class Monsters_MonsterDropQuality extends Union {
     constructor(tag, ...fields) {
         super();
@@ -785,5 +791,70 @@ export function Monsters_getEntrypointsForDifficulty(diff, eps) {
 
 export function Monsters_getEntrypointsForQuality(qual, eps) {
     return filter((x) => equals(x[0], qual), eps);
+}
+
+export class DropCalculation_CalculationInput extends Union {
+    constructor(tag, ...fields) {
+        super();
+        this.tag = (tag | 0);
+        this.fields = fields;
+    }
+    cases() {
+        return ["ItemAndNode"];
+    }
+}
+
+export function DropCalculation_CalculationInput$reflection() {
+    return union_type("D2DropCalc.Types.DropCalculation.CalculationInput", [], DropCalculation_CalculationInput, () => [[["itemCode", string_type], ["nodeName", string_type]]]);
+}
+
+export function DropCalculation_CalculationInput__Encode(this$) {
+    return Auto_toString_5A41365E(0, this$, void 0, void 0, void 0, {
+        ResolveType: DropCalculation_CalculationInput$reflection,
+    });
+}
+
+export function DropCalculation_CalculationInput_Decode_Z721C83C5(str) {
+    return Auto_fromString_Z5CB6BD(str, void 0, void 0, {
+        ResolveType: DropCalculation_CalculationInput$reflection,
+    });
+}
+
+export function DropCalculation_CalculationInput_Decoder() {
+    return Auto_generateDecoderCached_7848D058(void 0, void 0, {
+        ResolveType: DropCalculation_CalculationInput$reflection,
+    });
+}
+
+export class DropCalculation_DropCalculationError extends Union {
+    constructor(tag, ...fields) {
+        super();
+        this.tag = (tag | 0);
+        this.fields = fields;
+    }
+    cases() {
+        return ["InsufficientInputs", "MissingTreasureClass", "MissingItemPostCalc"];
+    }
+    toString() {
+        const this$ = this;
+        switch (this$.tag) {
+            case 1: {
+                const msg_1 = this$.fields[0];
+                return toText(interpolate("Treasure class \u0027%s%P()\u0027 not found.", [msg_1]));
+            }
+            case 2: {
+                const itemCode = this$.fields[0];
+                return toText(interpolate("Item \u0027%s%P()\u0027 not found after calculations.", [itemCode]));
+            }
+            default: {
+                const msg = this$.fields[0];
+                return toText(interpolate("Insufficient inputs to complete the operation. %s%P()", [msg]));
+            }
+        }
+    }
+}
+
+export function DropCalculation_DropCalculationError$reflection() {
+    return union_type("D2DropCalc.Types.DropCalculation.DropCalculationError", [], DropCalculation_DropCalculationError, () => [[["msg", string_type]], [["msg", string_type]], [["itemCode", string_type]]]);
 }
 

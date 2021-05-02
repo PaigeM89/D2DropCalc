@@ -140,6 +140,7 @@ let configureServices (services : IServiceCollection) =
             let src = provider.GetService<Loading.ILoadData>()
             src :?> Loading.DataSource
         )
+        .AddTransient<Loading.ICalculateDrops, Loading.DropCalculator>()
 
         |> ignore
 

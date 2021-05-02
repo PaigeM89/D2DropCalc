@@ -74,16 +74,18 @@ let tryGetEntryPoint v tcn qual diff =
     } |> Some
   | None -> None
 
-let getName v =
+let getName (id : string) v =
+  let addUber str =
+    if id.Contains "Uber" then "Uber " + str else str
   match maybeGetPropAs v "Name" asString with
-  | Some name -> Some name
+  | Some name -> Some (name |> addUber)
   | None ->
-    maybeGetPropAs v "NameStr" asString
+    maybeGetPropAs v "NameStr" asString |> Option.map addUber
 
 let getLevel v = maybeGetPropAs v "Level" asInt
 
-let getReq v =
-  match getName v with
+let getReq id v =
+  match getName id v with
   | Some name ->
     match getLevel v with
     | Some lvl -> Some (name, lvl)
@@ -93,10 +95,10 @@ let getReq v =
 
 // try to create a monster
 let tryFrankenstein (v : JsonValue) =
-  let req = getReq v
+  let monsterId = getPropAs v "Id" asString
+  let req = getReq monsterId v
   match req with
   | Some (name, level) ->
-    let monsterId = getPropAs v "Id" asString
      //getPropAs v "Name" asString
     //let level = getPropAs v "Level" asInt
     let levelNightmare = maybeGetPropAs v "Level(N)" asInt
@@ -119,6 +121,12 @@ let tryFrankenstein (v : JsonValue) =
 let calcMonsters = 
   monsters
   |> Array.map (fun x -> x.JsonValue |> tryFrankenstein)
+
+let dupes =
+  calcMonsters
+  |> Array.choose id
+  |> Array.groupBy (fun x -> x.Id)
+  |> Array.filter (fun (_, v) -> Array.length v > 1)
 
 // **************************
 // WRITING

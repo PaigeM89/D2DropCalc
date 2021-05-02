@@ -19,7 +19,7 @@
     "fable-loader": "^2.1.9",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.1",
-    "mini-css-extract-plugin": "^1.5.1",
+    "mini-css-extract-plugin": "^1.6.0",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
     "react-refresh": "^0.10.0",

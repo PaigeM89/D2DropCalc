@@ -383,6 +383,7 @@ module ItemTree =
             | "hell" -> Ok Hell
             | e -> $"Could not create Difficulty from string '%s{e}'" |> Error
 
+
     /// Some treasure classes are associated with a specific act
     type Act =
     | Act1
@@ -531,6 +532,7 @@ module ItemTree =
 
         member this.Encode() = Encode.Auto.toString(0, this)
         static member Decode str = Decode.Auto.fromString<TreasureClassNode> str
+        static member Decoder() = Decode.Auto.generateDecoderCached<TreasureClassNode>()
 
 module Monsters =
 
@@ -608,16 +610,6 @@ module Monsters =
                 // need to only get successful results
                 let entrypoints =
                     get.Required.Field "entrypoints" (Decode.list (Entrypoint.Decoder()))
-                    // |> List.map (fun x -> 
-                    //     match x with
-                    //     | Ok v -> Some v
-                    //     | Error e ->
-                    //         // todo: logging
-                    //         printfn "Error deserializing entrypoints: %s" e
-                    //         None
-                    // )
-                    // |> List.choose id
-
                 {
                     Id = get.Required.Field "id" Decode.string
                     Name = get.Required.Field "name" Decode.string
@@ -632,3 +624,34 @@ module Monsters =
         eps |> List.filter (fun x -> snd x = diff)
     let getEntrypointsForQuality qual eps =
         eps |> List.filter (fun x -> fst x = qual)
+
+
+module DropCalculation =
+    open ItemTree
+
+    type CalculationInput = 
+    /// the most specific calculation; get the chance for an item from a given root node
+    | ItemAndNode of itemCode : ItemCode * nodeName : string
+    with
+
+        // override this.ToString() =
+        //     match this with
+        //     | ItemAndNode (ic, name) -> $"Item And Node: %s{ic}, %s{name}"
+        // member this.Encode() = 
+        //     Encode.object [
+        //         "type", this.ToString()
+        //     ]
+        member this.Encode() = Encode.Auto.toString(0, this)
+        static member Decode str = Decode.Auto.fromString<CalculationInput> str
+        static member Decoder() = Decode.Auto.generateDecoderCached<CalculationInput>()
+
+    type DropCalculationError =
+    | InsufficientInputs of msg : string
+    | MissingTreasureClass of msg : string
+    | MissingItemPostCalc of itemCode : ItemCode
+    with
+        override this.ToString() =
+            match this with
+            | InsufficientInputs msg -> $"Insufficient inputs to complete the operation. %s{msg}"
+            | MissingTreasureClass msg -> $"Treasure class '%s{msg}' not found."
+            | MissingItemPostCalc itemCode -> $"Item '%s{itemCode}' not found after calculations."

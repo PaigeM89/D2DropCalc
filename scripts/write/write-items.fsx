@@ -119,8 +119,8 @@ let maybeCreateWeapon (v : JsonValue) =
             (maybeGetPropAs v "level" asInt)
             (maybeGetPropAs v "levelreq" asInt)
             (maybeGetPropAs v "gemsockets" asInt)
-            (maybeGetPropAs v "reqStr" asInt)
-            (maybeGetPropAs v "reqDex" asInt)
+            (maybeGetPropAs v "reqstr" asInt)
+            (maybeGetPropAs v "reqdex" asInt)
             (getBase code v)
         |> Ok
     | None ->

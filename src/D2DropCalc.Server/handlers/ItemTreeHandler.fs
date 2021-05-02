@@ -1,14 +1,19 @@
 namespace D2DropCalc.Server.Handlers
 
 open D2DropCalc.Server
+open D2DropCalc.Types
 
 module ItemTreeHandler =
     open Microsoft.AspNetCore.Http
     open Giraffe
+    // open FsToolkit.ErrorHandling
+    // open FsToolkit.ErrorHandling.TaskResult
+    open System.Threading.Tasks
+    open FSharp.Control.Tasks.Affine
 
     module Views =
         open Giraffe.ViewEngine
-        
+
         let armorsView =
             html [] [
                 head [] [
@@ -60,14 +65,26 @@ module ItemTreeHandler =
         loader.LoadAll()
         Successful.OK "Reload Complete" next ctx
 
+    let calculateDrop next (ctx : HttpContext) = task {
+        let! inputs = ctx.BindJsonAsync<DropCalculation.CalculationInput>()
+        let dropCalc = ctx.GetService<Loading.ICalculateDrops>()
+        let result = dropCalc.CalculateDropForItem inputs
+        match result with
+        | Ok (itemCode, chance) ->
+            return! json chance next ctx
+        | Error e ->
+            return! ServerErrors.INTERNAL_ERROR (e.ToString()) next ctx
+    }
+
     module Routes =
 
         let routes : HttpHandler = choose [
             route "/armors" >=> GET >=> Views.armorsView
-            
-            route "/api/reload" >=> POST >=> reloadData
-            route "/api/armors" >=> GET >=> getArmors
-            route "/api/armors/asdata" >=> GET >=> getArmorsAsData
-            route "/api/weapons" >=> GET >=> getWeapons
-            route "/api/monsters" >=> GET >=> getMonsters
+
+            routeCi "/api/reload" >=> POST >=> reloadData
+            routeCi "/api/armors" >=> GET >=> getArmors
+            routeCi "/api/armors/asdata" >=> GET >=> getArmorsAsData
+            routeCi "/api/weapons" >=> GET >=> getWeapons
+            routeCi "/api/monsters" >=> GET >=> getMonsters
+            routeCi "/api/calculatedrop" >=> POST >=> calculateDrop
         ]

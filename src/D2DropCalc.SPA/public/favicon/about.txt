@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Spartan
+- Font Author: Copyright 2020 The Spartan Project Authors (https://github.com/bghryct/Spartan-MB)
+- Font Source: http://fonts.gstatic.com/s/spartan/v3/l7gAbjR61M69yt8Z8w6FZf9WoBxdBrGFuW6OChXtf4qS.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL)

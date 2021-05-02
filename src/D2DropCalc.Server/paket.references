@@ -1,5 +1,8 @@
-Thoth.Json.Net
-Newtonsoft.Json
+
 group Server
 Giraffe
 Giraffe.ViewEngine
+Thoth.Json.Net
+Newtonsoft.Json
+FsToolkit.ErrorHandling
+FsToolkit.ErrorHandling.TaskResult

@@ -12,6 +12,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts/";
 //@import "~bulma/sass/utilities/functions";
 @import '~bulma/sass/utilities/functions';
 
+$black: #000000;
 $diablo-red: #9C0000;
 $diablo-red-invert: findColorInvert($diablo-red);
 
@@ -24,7 +25,17 @@ $custom-colors: (
   border-color: black;
 }
 
+.exact-tc-match {
+  color: #E1B800
+}
 
+.partial-tc-match {
+  color: #0060E1
+}
+
+.no-tc-match {
+  color: #a2a2a2
+}
 
 // Import the derived variables from Bulma
 // It will use our $custom-colors
