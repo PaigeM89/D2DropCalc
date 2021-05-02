@@ -8,15 +8,9 @@
     <Compile Include="Fetch.fs" />
     <Compile Include="components/micro/Error.fs" />
     <Compile Include="components/micro/Dropdown.fs" />
-    <Compile Include="components/ItemBaseDropdowns.fs" />
-    <Compile Include="components/Armors.fs" />
-    <Compile Include="components/ViewItem.fs" />
-    <Compile Include="components/MonsterDrop.fs" />
     <Compile Include="components/CalcDrop.fs" />
-    <Compile Include="components/DifficultyDropdown.fs" />
-    <Compile Include="components/DropQualityDropdown.fs" />
     <Compile Include="components/Navbar.fs" />
-    <Compile Include="components/DropCalDropdowns.fs" />
+    <Compile Include="components/DropCalcDropdowns.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>
   <Import Project="..\..\..\.paket\Paket.Restore.targets" />
