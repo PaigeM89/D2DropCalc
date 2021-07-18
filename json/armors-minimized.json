@@ -1,0 +1,203 @@
+name,code,rarity,itemLevel,reqStrength,reqLevel,sockets,speedPenalty,baseType
+Cap/hat,cap,1,1,0,0,2,0,no
+Skull Cap,skp,4,5,15,0,2,0,no
+Helm,hlm,4,11,26,0,2,0,no
+Full Helm,fhl,4,15,41,0,2,0,no
+Great Helm,ghm,4,23,63,0,3,0,no
+Crown,crn,4,29,55,0,3,0,no
+Mask,msk,4,19,23,0,3,0,no
+Quilted Armor,qui,1,1,12,0,2,0,no
+Leather Armor,lea,2,3,15,0,2,0,no
+Hard Leather Armor,hla,3,5,20,0,2,0,no
+Studded Leather ,stu,4,8,27,0,2,0,no
+Ring Mail,rng,4,11,36,0,3,5,no
+Scale Mail,scl,4,13,44,0,2,10,no
+Chain Mail,chn,4,15,48,0,2,5,no
+Breast Plate,brs,4,18,30,0,3,0,no
+Splint Mail,spl,4,20,51,0,2,5,no
+Plate Mail,plt,4,24,65,0,2,10,no
+Field Plate,fld,4,28,55,0,2,5,no
+Gothic Plate,gth,4,32,70,0,4,5,no
+Full Plate Mail,ful,4,37,80,0,4,10,no
+Ancient Armor,aar,4,40,100,0,4,5,no
+Light Plate,ltp,4,35,41,0,3,0,no
+Buckler,buc,2,1,12,0,1,0,no
+Small Shield,sml,3,5,22,0,2,0,no
+Large Shield,lrg,4,11,34,0,3,5,no
+Kite Shield,kit,4,15,47,0,3,0,no
+Tower Shield,tow,4,22,75,0,3,10,no
+Gothic Shield,gts,4,30,60,0,3,5,no
+Gloves,lgl,1,3,0,0,0,0,no
+Heavy Gloves,vgl,1,7,0,0,0,0,no
+Bracers,mgl,2,12,25,0,0,0,no
+Light Gauntlets,tgl,3,20,45,0,0,0,no
+Gauntlets,hgl,4,27,60,0,0,0,no
+Leather Boots,lbt,1,3,0,0,0,0,no
+Heavy Boots,vbt,1,7,18,0,0,0,no
+Chain Boots,mbt,2,12,30,0,0,0,no
+Light Plate Boots,tbt,3,20,50,0,0,0,no
+Plate Boots,hbt,4,27,70,0,0,0,no
+Sash,lbl,1,3,0,0,0,0,no
+Light Belt,vbl,1,7,0,0,0,0,no
+Belt,mbl,2,12,25,0,0,0,no
+Heavy Belt,tbl,2,20,45,0,0,0,no
+Girdle,hbl,3,27,60,0,0,0,no
+Bone Helm,bhm,2,22,25,0,2,0,no
+Bone Shield,bsh,2,19,25,0,2,0,no
+Spiked Shield,spk,3,11,30,0,2,0,no
+War Hat,xap,1,34,20,22,2,0,ex
+Sallet,xkp,4,37,43,25,2,0,ex
+Casque,xlm,4,42,59,25,2,0,ex
+Basinet,xhl,4,45,82,25,2,0,ex
+Winged Helm,xhm,4,51,115,25,3,0,ex
+Grand Crown,xrn,4,55,103,25,3,0,ex
+Death Mask,xsk,4,48,55,25,3,0,ex
+Ghost Armor,xui,1,34,38,22,2,0,ex
+Serpentskin Armor,xea,2,36,43,24,2,0,ex
+Demonhide Armor,xla,3,37,50,25,2,0,ex
+Trellised Armor,xtu,4,40,61,25,2,0,ex
+Linked Mail,xng,4,42,74,25,3,5,ex
+Tigulated Mail,xcl,4,43,86,25,3,10,ex
+Mesh Armor,xhn,4,45,92,25,3,5,ex
+Cuirass,xrs,4,47,65,25,3,0,ex
+Russet Armor,xpl,4,49,97,25,3,5,ex
+Templar Coat,xlt,4,52,118,25,3,10,ex
+Sharktooth Armor,xld,4,55,103,25,3,5,ex
+Embossed Plate,xth,4,58,125,25,4,5,ex
+Chaos Armor,xul,4,61,140,25,4,10,ex
+Ornate Armor,xar,4,64,170,25,4,5,ex
+Mage Plate,xtp,4,60,55,25,3,0,ex
+Defender,xuc,2,34,38,22,1,0,ex
+Round Shield,xml,3,37,53,25,2,0,ex
+Scutum,xrg,4,42,71,25,3,5,ex
+Dragon Shield,xit,4,45,91,25,3,0,ex
+Pavise,xow,4,50,133,25,3,10,ex
+Ancient Shield,xts,4,56,110,25,3,5,ex
+Demonhide Gloves,xlg,1,33,20,21,0,0,ex
+Sharkskin Gloves,xvg,1,39,20,25,0,0,ex
+Heavy Bracers,xmg,2,43,58,25,0,0,ex
+Battle Gauntlets,xtg,3,49,88,25,0,0,ex
+War Gauntlets,xhg,4,54,110,25,0,0,ex
+Demonhide Boots,xlb,1,36,20,24,0,0,ex
+Sharkskin Boots,xvb,1,39,47,25,0,0,ex
+Mesh Boots,xmb,2,43,65,25,0,0,ex
+Battle Boots,xtb,3,49,95,25,0,0,ex
+War Boots,xhb,4,54,125,25,0,0,ex
+Demonhide Sash,zlb,1,36,20,24,0,0,ex
+Sharkskin Belt,zvb,1,39,20,25,0,0,ex
+Mesh Belt,zmb,2,43,58,25,0,0,ex
+Battle Belt,ztb,2,49,88,25,0,0,ex
+War Belt,zhb,3,54,110,25,0,0,ex
+Grim Helm,xh9,2,50,58,25,2,0,ex
+Grim Shield,xsh,2,48,58,25,2,0,ex
+Barbed Shield,xpk,3,42,65,25,2,0,ex
+Wolf Head,dr1,1,4,16,3,3,0,no
+Hawk Helm,dr2,1,8,20,6,3,0,no
+Antlers,dr3,1,16,24,12,3,0,no
+Falcon Mask,dr4,1,20,28,15,3,0,no
+Spirit Mask,dr5,1,24,30,18,3,0,no
+Jawbone Cap,ba1,2,4,25,3,3,0,no
+Fanged Helm,ba2,2,8,35,6,3,0,no
+Horned Helm,ba3,2,16,45,12,3,0,no
+Assault Helmet,ba4,2,20,55,15,3,0,no
+Avenger Guard,ba5,2,24,65,18,3,0,no
+Targe,pa1,2,4,16,3,4,0,no
+Rondache,pa2,2,8,26,6,4,0,no
+Heraldic Shield,pa3,2,16,40,12,4,0,no
+Aerin Shield,pa4,2,20,50,15,4,0,no
+Crown Shield,pa5,2,24,65,18,4,0,no
+Preserved Head,ne1,1,4,12,3,2,0,no
+Zombie Head,ne2,1,8,14,6,2,0,no
+Unraveller Head,ne3,1,16,18,12,2,0,no
+Gargoyle Head,ne4,1,20,20,15,2,0,no
+Demon Head,ne5,1,24,25,18,2,0,no
+Circlet,ci0,1,24,0,16,2,0,no
+Coronet,ci1,1,52,0,39,2,0,no
+Tiara,ci2,1,70,0,52,3,0,ex
+Diadem,ci3,1,85,0,64,3,0,el
+Shako,uap,1,58,50,43,2,0,el
+Hydraskull,ukp,4,63,84,47,2,0,el
+Armet,ulm,4,68,109,51,2,0,el
+Giant Conch,uhl,4,54,142,40,2,0,el
+Spired Helm,uhm,4,79,192,59,3,0,el
+Corona,urn,4,85,174,66,3,0,el
+Demonhead,usk,4,74,102,55,3,0,el
+Dusk Shroud,uui,1,65,77,49,4,0,el
+Wyrmhide,uea,2,67,84,50,4,0,el
+Scarab Husk,ula,3,68,95,51,4,0,el
+Wire Fleece,utu,4,70,111,53,4,0,el
+Diamond Mail,ung,4,72,131,54,4,5,el
+Loricated Mail,ucl,4,73,149,55,4,10,el
+Boneweave,uhn,4,62,158,47,4,5,el
+Great Hauberk,urs,4,75,118,56,4,0,el
+Balrog Skin,upl,4,76,165,57,4,5,el
+Hellforged Plate,ult,4,78,196,59,4,10,el
+Kraken Shell,uld,4,81,174,61,4,5,el
+Lacquered Plate,uth,4,82,208,62,4,5,el
+Shadow Plate,uul,4,83,230,64,4,10,el
+Sacred Armor,uar,4,85,232,66,4,5,el
+Archon Plate,utp,4,84,103,63,4,0,el
+Heater,uuc,2,58,77,43,2,0,el
+Luna,uml,3,61,100,45,2,0,el
+Hyperion,urg,4,64,127,48,3,5,el
+Monarch,uit,4,72,156,54,4,0,el
+Aegis,uow,4,79,219,59,4,10,el
+Ward,uts,4,84,185,63,4,5,el
+Bramble Mitts,ulg,1,57,50,42,0,0,el
+Vampirebone Gloves,uvg,1,63,50,47,0,0,el
+Vambraces,umg,2,69,106,51,0,0,el
+Crusader Gauntlets,utg,3,76,151,57,0,0,el
+Ogre Gauntlets,uhg,4,85,185,64,0,0,el
+Wyrmhide Boots,ulb,1,60,50,45,0,0,el
+Scarabshell Boots,uvb,1,66,91,49,0,0,el
+Boneweave Boots,umb,2,72,118,54,0,0,el
+Mirrored Boots,utb,3,81,163,60,0,0,el
+Myrmidon Greaves,uhb,4,85,208,65,0,0,el
+Spiderweb Sash,ulc,1,61,50,46,0,0,el
+Vampirefang Belt,uvc,1,68,50,51,0,0,el
+Mithril Coil,umc,2,75,106,56,0,0,el
+Troll Belt,utc,2,82,151,62,0,0,el
+Colossus Girdle,uhc,3,85,185,67,0,0,el
+Bone Visage,uh9,2,84,106,63,3,0,el
+Troll Nest,ush,2,76,106,57,3,0,el
+Blade Barrier,upk,3,68,118,51,3,0,el
+Alpha Helm,dr6,1,35,44,26,3,0,ex
+Griffon Headress,dr7,1,40,50,30,3,0,ex
+Hunter's Guise,dr8,1,46,56,29,3,0,ex
+Sacred Feathers,dr9,1,50,62,32,3,0,ex
+Totemic Mask,dra,1,55,65,41,3,0,ex
+Jawbone Visor,ba6,2,33,58,25,3,0,ex
+Lion Helm,ba7,2,38,73,29,3,0,ex
+Rage Mask,ba8,2,44,88,29,3,0,ex
+Savage Helmet,ba9,2,49,103,32,3,0,ex
+Slayer Guard,baa,2,54,118,40,3,0,ex
+Akaran Targe,pa6,2,35,44,26,4,0,ex
+Akaran Rondache,pa7,2,40,59,30,4,0,ex
+Protector Shield,pa8,2,46,69,34,4,0,ex
+Guilded Shield,pa9,2,51,89,38,4,0,ex
+Royal Shield,paa,2,55,114,41,4,0,ex
+Mummified Trophy,ne6,1,33,38,24,2,0,ex
+Fetish Trophy,ne7,1,39,41,29,2,0,ex
+Sexton Trophy,ne8,1,45,47,33,2,0,ex
+Cantor Trophy,ne9,1,49,50,36,2,0,ex
+Heirophant Trophy,nea,1,54,58,40,2,0,ex
+Blood Spirt,drb,1,62,86,46,3,0,el
+Sun Spirit,drc,1,69,95,51,3,0,el
+Earth Spirit,drd,1,76,104,57,3,0,el
+Sky Spirit,dre,1,83,113,62,3,0,el
+Dream Spirit,drf,1,85,118,66,3,0,el
+Carnage Helm,bab,2,60,106,45,3,0,el
+Fury Visor,bac,2,66,129,49,3,0,el
+Destroyer Helm,bad,2,73,151,54,3,0,el
+Conquerer Crown,bae,2,80,174,60,3,0,el
+Guardian Crown,baf,2,85,196,65,3,0,el
+Sacred Targe,pab,2,63,86,47,4,0,el
+Sacred Rondache,pac,2,70,109,52,4,0,el
+Ancient Shield,pad,2,74,124,55,4,0,el
+Zakarum Shield,pae,2,82,142,61,4,0,el
+Vortex Shield,paf,2,85,148,66,4,0,el
+Minion Skull,neb,1,59,77,44,2,0,el
+Hellspawn Skull,neg,1,67,82,50,2,0,el
+Overseer Skull,ned,1,66,91,49,2,0,el
+Succubae Skull,nee,1,81,95,60,2,0,el
+Bloodlord Skull,nef,1,85,106,65,2,0,el

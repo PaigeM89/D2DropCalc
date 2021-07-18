@@ -1,0 +1,725 @@
+{
+  "type": "record",
+  "name": "D2DropCalc.Types.ItemTree.TreasureClassNode",
+  "fields": [
+    {
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "name": "Nodes",
+      "type": {
+        "type": "array",
+        "items": [
+          {
+            "type": "record",
+            "name": "D2DropCalc.Types.ItemTree.NodeValue.ItemCollection",
+            "fields": [
+              {
+                "name": "collection",
+                "type": {
+                  "type": "record",
+                  "name": "D2DropCalc.Types.ItemTree.ItemCollection",
+                  "fields": [
+                    {
+                      "name": "Name",
+                      "type": "string"
+                    },
+                    {
+                      "name": "Level",
+                      "type": "int"
+                    },
+                    {
+                      "name": "Code",
+                      "type": "string"
+                    },
+                    {
+                      "name": "Items",
+                      "type": {
+                        "type": "array",
+                        "items": {
+                          "type": "record",
+                          "name": "Tuple_Of_D2DropCalc.Types.ItemTree.Item_And_Int32",
+                          "fields": [
+                            {
+                              "name": "Item1",
+                              "type": [
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Base",
+                                  "fields": [
+                                    {
+                                      "name": "itemType",
+                                      "type": [
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.ItemType.Weapon",
+                                          "fields": [
+                                            {
+                                              "name": "code",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.ItemType.Melee",
+                                          "fields": [
+                                            {
+                                              "name": "code",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.ItemType.Bow",
+                                          "fields": [
+                                            {
+                                              "name": "code",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.ItemType.Armor",
+                                          "fields": [
+                                            {
+                                              "name": "code",
+                                              "type": "string"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "level",
+                                      "type": "int"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Rune",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Jewelry",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    },
+                                    {
+                                      "name": "jewelryType",
+                                      "type": [
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.JewelryType.Ring",
+                                          "fields": []
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.JewelryType.Amulet",
+                                          "fields": []
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.JewelryType.Jewel",
+                                          "fields": []
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.JewelryType.GrandCharm",
+                                          "fields": []
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.JewelryType.LargeCharm",
+                                          "fields": []
+                                        },
+                                        {
+                                          "type": "record",
+                                          "name": "D2DropCalc.Types.ItemTree.JewelryType.SmallCharm",
+                                          "fields": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Keys",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Essence",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Gem",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Gold",
+                                  "fields": [
+                                    {
+                                      "name": "multiplier",
+                                      "type": "int"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Potion",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Junk",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Ingredient",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "record",
+                                  "name": "D2DropCalc.Types.ItemTree.Item.Annihilus",
+                                  "fields": [
+                                    {
+                                      "name": "code",
+                                      "type": "string"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Item2",
+                              "type": "int"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "probability",
+                "type": "int"
+              }
+            ]
+          },
+          {
+            "type": "record",
+            "name": "D2DropCalc.Types.ItemTree.NodeValue.ItemCode",
+            "fields": [
+              {
+                "name": "item",
+                "type": [
+                  "D2DropCalc.Types.ItemTree.Item.Base",
+                  "D2DropCalc.Types.ItemTree.Item.Rune",
+                  "D2DropCalc.Types.ItemTree.Item.Jewelry",
+                  "D2DropCalc.Types.ItemTree.Item.Keys",
+                  "D2DropCalc.Types.ItemTree.Item.Essence",
+                  "D2DropCalc.Types.ItemTree.Item.Gem",
+                  "D2DropCalc.Types.ItemTree.Item.Gold",
+                  "D2DropCalc.Types.ItemTree.Item.Potion",
+                  "D2DropCalc.Types.ItemTree.Item.Junk",
+                  "D2DropCalc.Types.ItemTree.Item.Ingredient",
+                  "D2DropCalc.Types.ItemTree.Item.Annihilus"
+                ]
+              },
+              {
+                "name": "probability",
+                "type": "int"
+              }
+            ]
+          },
+          {
+            "type": "record",
+            "name": "D2DropCalc.Types.ItemTree.NodeValue.TreasureClassReference",
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "tct",
+                "type": [
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Ammo",
+                    "fields": []
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Misc",
+                    "fields": []
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Gems",
+                    "fields": []
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Jewelry",
+                    "fields": []
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Potions",
+                    "fields": []
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.CPot",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Act.Act1",
+                            "fields": []
+                          },
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Act.Act2",
+                            "fields": []
+                          },
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Act.Act3",
+                            "fields": []
+                          },
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Act.Act4",
+                            "fields": []
+                          },
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Act.Act5",
+                            "fields": []
+                          }
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                            "fields": []
+                          },
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                            "fields": []
+                          },
+                          {
+                            "type": "record",
+                            "name": "D2DropCalc.Types.ItemTree.Difficulty.Hell",
+                            "fields": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Junk",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Good",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Equipment",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Melee",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Bows",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Magic",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.Boss",
+                    "fields": [
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      },
+                      {
+                        "name": "quest",
+                        "type": "boolean"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.CountessRune",
+                    "fields": [
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.CountessItem",
+                    "fields": [
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.UItem",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "record",
+                    "name": "D2DropCalc.Types.ItemTree.TreasureClassType.CItem",
+                    "fields": [
+                      {
+                        "name": "act",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Act.Act1",
+                          "D2DropCalc.Types.ItemTree.Act.Act2",
+                          "D2DropCalc.Types.ItemTree.Act.Act3",
+                          "D2DropCalc.Types.ItemTree.Act.Act4",
+                          "D2DropCalc.Types.ItemTree.Act.Act5"
+                        ]
+                      },
+                      {
+                        "name": "diff",
+                        "type": [
+                          "D2DropCalc.Types.ItemTree.Difficulty.Normal",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Nightmare",
+                          "D2DropCalc.Types.ItemTree.Difficulty.Hell"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "probability",
+                "type": "int"
+              }
+            ]
+          },
+          {
+            "type": "record",
+            "name": "D2DropCalc.Types.ItemTree.NodeValue.UnknownTreasureClassReference",
+            "fields": [
+              {
+                "name": "name",
+                "type": "string"
+              },
+              {
+                "name": "probability",
+                "type": "int"
+              }
+            ]
+          },
+          {
+            "type": "record",
+            "name": "D2DropCalc.Types.ItemTree.NodeValue.RunesReference",
+            "fields": [
+              {
+                "name": "runeCode",
+                "type": "string"
+              },
+              {
+                "name": "probability",
+                "type": "int"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Picks",
+      "type": "int"
+    },
+    {
+      "name": "NoDrop",
+      "type": "int"
+    },
+    {
+      "name": "TreasureClassType",
+      "type": [
+        "null",
+        [
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Ammo",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Misc",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Gems",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Jewelry",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Potions",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.CPot",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Junk",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Good",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Equipment",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Melee",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Bows",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Magic",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.Boss",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.CountessRune",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.CountessItem",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.UItem",
+          "D2DropCalc.Types.ItemTree.TreasureClassType.CItem"
+        ]
+      ]
+    },
+    {
+      "name": "Chances",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "D2DropCalc.Types.ItemTree.ChanceModifiers",
+          "fields": [
+            {
+              "name": "Unique",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "Set",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "Rare",
+              "type": [
+                "null",
+                "int"
+              ]
+            },
+            {
+              "name": "Magic",
+              "type": [
+                "null",
+                "int"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

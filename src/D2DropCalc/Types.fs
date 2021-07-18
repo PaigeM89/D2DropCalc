@@ -230,6 +230,22 @@ module Items =
                 "sp", Encode.option Encode.int this.SpeedPenalty
                 "bt", (this.BaseType.EncodeMinimal())
             ]
+        
+        member this.EncodeAsData() =
+            Encode.array [|
+                Encode.string this.Name
+                Encode.string this.Code
+                Encode.option Encode.int this.Rarity
+                Encode.option Encode.int this.ItemLevel
+                Encode.option Encode.int this.ReqLevel
+                Encode.option Encode.int this.ReqStrength
+                Encode.option Encode.int this.MaxSockets
+                Encode.option Encode.int this.SpeedPenalty
+                (this.BaseType.EncodeMinimal())
+            |]
+
+        static member EncodeList (li : Armor list) = 
+            Encode.list (li |> List.map (fun a -> a.Encode()))
 
         static member Decoder() : Decoder<Armor> =
             Decode.object (fun get -> 
@@ -259,37 +275,106 @@ module Items =
                     BaseType = get.Required.Field "bt" Decode.string |> BaseType.FromMinimalString
                 })
 
-    let encodeArmorAsData (armors : Armor list) =
+    let encodeArmorsAsData (armors : Armor list) =
         let jstr (str : string) = Newtonsoft.Json.Linq.JValue str
         let jinto (i : int option) =
             if i.IsSome then
                 Newtonsoft.Json.Linq.JValue(i.Value)
             else
-                Newtonsoft.Json.Linq.JValue(Unchecked.defaultof<string>)
+                Newtonsoft.Json.Linq.JValue(Unchecked.defaultof<int>)
         let header = [
             jstr "name"
             jstr "code"
             jstr "rarity"
             jstr "itemLevel"
-            jstr "reqLevl"
+            jstr "reqStrength"
+            jstr "reqLevel"
             jstr "sockets"
             jstr "speedPenalty"
             jstr "baseType"
         ]
         let makeRow (armor : Armor) =
             [
-                jstr armor.Name
-                jstr armor.Code
-                jinto armor.Rarity
-                jinto armor.ItemLevel
-                jinto armor.ReqLevel
-                jinto armor.MaxSockets
-                jinto armor.SpeedPenalty
-                jstr (armor.BaseType.MinimalString())
+                jstr armor.Name //0
+                jstr armor.Code //1
+                jinto armor.Rarity //2
+                jinto armor.ItemLevel //3
+                jinto armor.ReqStrength //4
+                jinto armor.ReqLevel //5
+                jinto armor.MaxSockets //6
+                jinto armor.SpeedPenalty //7
+                jstr (armor.BaseType.MinimalString()) //8
             ]
 
         let armorsEncoded = armors |> List.map makeRow
         header :: armorsEncoded
+
+    let decodeArmorsFromData (data : Newtonsoft.Json.Linq.JValue list list) =
+        let fromJstr (jv : Newtonsoft.Json.Linq.JValue) = jv.Value :?> string
+        let fromJIntOpt (jv : Newtonsoft.Json.Linq.JValue) = jv.Value :?> int option
+        let item ind r = List.item ind r
+        match data with
+        | [] -> []
+        | [x] -> []
+        | x :: xs ->
+            // skip headers
+            xs |> List.map (fun row ->
+                {
+                    Name = item 0 row |> fromJstr
+                    Code = item 1 row |> fromJstr
+                    Rarity = item 0 row |> fromJIntOpt
+                    ItemLevel = item 0 row |> fromJIntOpt
+                    ReqStrength = item 0 row |> fromJIntOpt
+                    ReqLevel = item 0 row |> fromJIntOpt
+                    MaxSockets = item 0 row |> fromJIntOpt
+                    SpeedPenalty = item 0 row |> fromJIntOpt
+                    BaseType = BaseType.FromMinimalString (fromJstr (List.item 8 row))
+                }
+            )
+
+    let decodeArmorsFromDataString (data : string) =
+        let item ind l = List.item ind l
+        let intOpt (s : string) = 
+            try
+                if s = "" then None else Int32.Parse s |> Some
+            with
+            | ex ->
+                printfn "Unable to parse %s as int" s
+                None
+
+        let decodeRow (s : string) =
+            try
+                let rowData = s.Split(",") |> List.ofArray
+                {
+                    Name = item 0 rowData
+                    Code = item 1 rowData
+                    Rarity = item 2 rowData |> intOpt
+                    ItemLevel = item 3 rowData |> intOpt
+                    ReqStrength = item 4 rowData |> intOpt
+                    ReqLevel = item 5 rowData |> intOpt
+                    MaxSockets = item 6 rowData |> intOpt
+                    SpeedPenalty = item 7 rowData |> intOpt
+                    BaseType = BaseType.FromMinimalString (List.item 8 rowData)
+                }
+            with
+            | ex ->
+                printfn $"Unable to decode row '%s{s}':\n%A{ex}"
+                raise ex
+        
+        let data = data.Split("\n") |> List.ofArray
+        match data with
+        | [] -> []
+        | [x] -> [] // discard headers
+        | x :: xs ->
+            xs
+            |> List.map (fun row -> 
+                if String.IsNullOrEmpty row then
+                    printfn "Skipping empty row"
+                    None
+                else
+                    decodeRow row |> Some
+            )
+            |> List.choose id
 
 /// Types relating to the recursive item tree
 module ItemTree =
@@ -363,7 +448,7 @@ module ItemTree =
         Items : (Item * Probability) list
     } with
         member this.SumProbability() =
-            this.Items |> List.sumBy (fun x -> snd x)
+            this.Items |> List.sumBy snd
 
     /// Some treasure classes are associated with a difficulty
     type Difficulty =

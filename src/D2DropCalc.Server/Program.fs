@@ -31,9 +31,9 @@ module Views =
         html [] [
             head [] [
                 title []  [ encodedText "D2DropCalc.Server" ]
-                link [ _rel  "stylesheet"
-                       _type "text/css"
-                       _href "/main.css" ]
+                link [  _rel  "stylesheet"
+                        _type "text/css"
+                        _href "/main.css" ]
                 script [ _src "./scripts/bundle.js" ] []
             ]
             body [] content

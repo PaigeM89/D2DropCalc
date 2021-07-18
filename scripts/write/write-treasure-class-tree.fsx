@@ -1,5 +1,6 @@
 #r "nuget: FSharp.Data"
 #r "nuget: Newtonsoft.Json"
+#r "nuget: Thoth.Json.Net"
 #load "../types/treasureClasses.fsx"
 #load "../types/atomics.fsx"
 #r "../../src/D2DropCalc/bin/Debug/net5.0/D2DropCalc.dll"
@@ -468,6 +469,8 @@ let buildChances (tc : TreasureClass) =
         c.Unique.IsNone && c.Set.IsNone && c.Rare.IsNone && c.Magic.IsNone
 
     if allNone chances then None else Some chances
+
+open Thoth.Json.Net
 
 let buildTreeNode (tc : TreasureClass) =
     let name = tc.TreasureClassName

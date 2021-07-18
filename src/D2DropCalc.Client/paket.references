@@ -1,4 +1,5 @@
 FSharp.Core
+Avro.FSharp
 
 group Client
 Fable.Browser.Dom
@@ -6,3 +7,4 @@ Fable.Core
 Thoth.Json
 Fable.SimpleHttp
 Fable.Promise
+Fable.Avro

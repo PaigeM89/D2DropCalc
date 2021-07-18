@@ -2,3 +2,4 @@ FSharp.Core
 Microsoft.SourceLink.GitHub
 Thoth.Json.Net
 FsToolkit.Errorhandling
+Avro.FSharp

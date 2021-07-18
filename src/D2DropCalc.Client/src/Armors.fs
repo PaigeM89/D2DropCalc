@@ -3,10 +3,15 @@ namespace App
 module Armors =
     open Browser.Dom
 
-    //module Fetch =
+    
     open Fable.SimpleHttp
 
     let getArmors() = async {
+        let response =
+            Http.request "/api/armors"
+            |> Http.method GET
+            |> Http.header (Headers.accept "application/avro")
+            |> Http.send
         let! (statusCode, responseText) = Http.get "/api/armors"
         match statusCode with
         | 200 ->

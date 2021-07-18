@@ -36,7 +36,7 @@ module DropCalcDropdowns =
                     ] |> Ok
             | Error e1, Error e2 ->
                 printfn $"Fetch errors: %A{e1}, %A{e2}"
-                return Error "Unable to load values"//Error "Unable to load values"
+                return Error "Unable to load values"
             | Error e1, _
             | _, Error e1 ->
                 printfn $"Fetch error: %A{e1}"

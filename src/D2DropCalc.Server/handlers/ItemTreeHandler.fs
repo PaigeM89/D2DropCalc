@@ -37,15 +37,32 @@ module ItemTreeHandler =
             ] |> htmlView
 
 
-    let getArmors next (ctx : HttpContext) =
+    let getArmors next (ctx : HttpContext) = task {
         printfn "sending armors"
-        let loader = ctx.GetService<Loading.IServeData>()
-        let armors = loader.Armors() |> List.map (fun x -> x.EncodeMinimal()) |> Thoth.Json.Net.Encode.list
-        json armors next ctx
+        match ctx.TryGetRequestHeader "Accept" with
+        | Some "application/avro" ->
+            let loader = ctx.GetService<Loading.IServeData>()
+            let armors = loader.Armors()
+            let stream = new System.IO.MemoryStream()
+            armors
+            |> List.map (fun a -> D2DropCalc.Avro.armorSerializer a stream)
+            |> ignore
+            ctx.Response.Headers.Add ("Content-Type", Microsoft.Extensions.Primitives.StringValues "application/avro")
+            return! ctx.WriteStreamAsync(
+                        false,
+                        stream,
+                        None,
+                        None
+            )
+        | _ ->
+            let loader = ctx.GetService<Loading.IServeData>()
+            let armors = loader.Armors() |> List.map (fun x -> x.Encode()) |> Thoth.Json.Net.Encode.list
+            return! json armors next ctx
+    }
 
     let getArmorsAsData next (ctx : HttpContext) =
         let loader = ctx.GetService<Loading.IServeData>()
-        let armors = loader.Armors() |> D2DropCalc.Types.Items.encodeArmorAsData
+        let armors = loader.Armors() |> D2DropCalc.Types.Items.encodeArmorsAsData
         json armors next ctx
 
     let getWeapons next (ctx : HttpContext) =

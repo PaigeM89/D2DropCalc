@@ -1,5 +1,11 @@
 # D2DropCalc
 
+TODO:
+* Cache Cow (if not use protected endpoints)
+* Avro size check / compare to JSON
+* Endpoints return data
+* Endpoint to calculate?
+
 [Enter useful description for D2DropCalc]
 
 ## Hot Reloading

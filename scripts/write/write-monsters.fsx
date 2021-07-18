@@ -76,7 +76,7 @@ let tryGetEntryPoint v tcn qual diff =
 
 let getName (id : string) v =
   let addUber str =
-    if id.Contains "Uber" then "Uber " + str else str
+    if id.Contains "uber" then "Uber " + str else str
   match maybeGetPropAs v "Name" asString with
   | Some name -> Some (name |> addUber)
   | None ->
@@ -127,6 +127,7 @@ let dupes =
   |> Array.choose id
   |> Array.groupBy (fun x -> x.Id)
   |> Array.filter (fun (_, v) -> Array.length v > 1)
+
 
 // **************************
 // WRITING

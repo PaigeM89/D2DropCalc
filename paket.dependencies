@@ -11,6 +11,9 @@ nuget FsToolkit.ErrorHandling
 nuget FsToolkit.ErrorHandling.TaskResult
 nuget Thoth.Json.Net
 nuget Newtonsoft.Json
+nuget Avro.FSharp
+nuget Giraffe
+nuget Giraffe.ViewEngine
 
 group Client
     storage: none
@@ -18,12 +21,14 @@ group Client
     source https://api.nuget.org/v3/index.json
 
     nuget FSharp.Core 5.0.1
+    nuget Avro.FSharp
     nuget Fable.Browser.Dom 2.3.0
     nuget Fable.Core 3.2.6
     nuget Thoth.Json
     nuget Fable.SimpleHttp
     nuget Fable.Promise
     nuget Newtonsoft.Json
+    nuget Fable.Avro
 
     # added for react project
     nuget Feliz
@@ -33,21 +38,6 @@ group Client
     nuget Fable.FontAwesome.Free
     nuget Feliz.SelectSearch
     nuget FsToolkit.ErrorHandling
-
-group Server
-    storage: none
-    source https://www.nuget.org/api/v2
-    source https://api.nuget.org/v3/index.json
-
-    nuget FSharp.Core 5.0.1
-    nuget Giraffe 5.0.0-rc-6
-    nuget Giraffe.ViewEngine
-    nuget Thoth.Json.Net
-    nuget Newtonsoft.Json
-    nuget FsToolkit.ErrorHandling
-    nuget FsToolkit.ErrorHandling.TaskResult
-
-
 
 // [ FAKE GROUP ]
 group Build

@@ -9,12 +9,10 @@ open FsToolkit.ErrorHandling
 open System
 open Thoth.Json.Net
 open FSharp.Data
-//open Newtonsoft.Json
+open Newtonsoft.Json
 open D2DropCalc.Types.Items
 //open Items
 
-
-open Newtonsoft.Json
 let outputDir = __SOURCE_DIRECTORY__ + "/../../json/"
 
 let inline isOk (r : Result<'a, 'b>) =
@@ -207,7 +205,7 @@ let maybeCreateArmor (v : JsonValue) =
         printfn "Unable to create weapon from json value %A" v
         Error v
 
-let armorOutputPath = outputDir + "armors.json"
+let armorOutputPath = outputDir + "armor-list.json"
 
 let armorResults =
     armorProps
@@ -218,18 +216,40 @@ let armorResults =
 let encodeArmor (a : Armor) = a.Encode()
 
 let errorArmors = armorResults |> Array.filter (isOk >> not)
-let armors =
+let armors : Armor list =
     armorResults
     |> Array.filter (fun x -> isOk x)
-    |> Array.map (fun x -> forceResult x |> encodeArmor)
+    //|> Array.map (fun x -> forceResult x |> encodeArmor)
+    |> Array.map forceResult
+    |> List.ofArray
+    // |> encodeArmorsAsData
 
-let armorSb = Text.StringBuilder()
-armors
-|> Array.iter (fun item ->
-    item.ToString(Formatting.None, [||])
-    |> armorSb.AppendLine
-    |> ignore
-)
+// let armorSb = Text.StringBuilder()
+// armors
+// |> List.iter(fun (row : Newtonsoft.Json.Linq.JValue list) ->
+//     row |> List.iter( fun cell -> armorSb.Append (string cell))
+// )
 
-System.IO.File.WriteAllText(armorOutputPath, (string armorSb))
+// let buildSb (values : Newtonsoft.Json.Linq.JValue list list) =
+//     let armorSb = Text.StringBuilder()
+//     values
+//     |> List.iter(fun (row : Newtonsoft.Json.Linq.JValue list) ->
+//         // row |> List.map (string) //( fun cell -> armorSb.Append (string cell) |> ignore)
+//         let s = String.Join(",", (Array.ofList row))
+//         armorSb.AppendLine s |> ignore
+//     )
+//     string armorSb
+
+// let armorData = buildSb armors
+// let decoded = decodeArmorsFromDataString armorData
+
+// |> Array.iter (fun item ->
+//     item.ToString(Formatting.None, [||])
+//     |> armorSb.AppendLine
+//     |> ignore
+// )
+
+let armorAsList = Armor.EncodeList armors
+
+System.IO.File.WriteAllText(armorOutputPath, (string armorAsList))
 printfn "Armor file created!"
